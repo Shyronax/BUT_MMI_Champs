@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2022 at 03:40 PM
+-- Generation Time: Dec 12, 2022 at 04:46 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -28,27 +28,16 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `article` (
-  `id_article` int(3) NOT NULL,
-  `nom_article` varchar(100) NOT NULL,
-  `contenu_article` varchar(1000) NOT NULL,
+  `id_article` int(4) NOT NULL,
+  `nom_article_fr` varchar(100) NOT NULL,
+  `contenu_article_fr` varchar(1000) NOT NULL,
+  `nom_article_en` varchar(100) NOT NULL,
+  `contenu_article_en` varchar(1000) NOT NULL,
+  `synopsis_en` varchar(200) NOT NULL,
   `date_article` date NOT NULL,
-  `synopsis` varchar(200) NOT NULL,
+  `synopsis_fr` varchar(200) NOT NULL,
   `miniature_article` varchar(50) NOT NULL,
   `ext_auteur` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `permissions`
---
-
-CREATE TABLE `permissions` (
-  `ext_prof` int(3) NOT NULL,
-  `p_articles` int(1) NOT NULL,
-  `p_projets` int(1) NOT NULL,
-  `p_temoignages` int(1) NOT NULL,
-  `p_admin` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -58,12 +47,13 @@ CREATE TABLE `permissions` (
 --
 
 CREATE TABLE `projet` (
-  `id_projet` int(3) NOT NULL,
+  `id_projet` int(2) NOT NULL,
   `nom_projet` varchar(50) NOT NULL,
   `etudiants` varchar(100) NOT NULL,
   `date_projet` date NOT NULL,
   `niveau` varchar(10) NOT NULL,
-  `description` varchar(500) NOT NULL
+  `description_fr` varchar(500) NOT NULL,
+  `description_en` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -73,11 +63,12 @@ CREATE TABLE `projet` (
 --
 
 CREATE TABLE `temoignage` (
-  `id_temoignage` int(3) NOT NULL,
+  `id_temoignage` int(2) NOT NULL,
   `etudiant` varchar(100) NOT NULL,
   `promo` varchar(15) NOT NULL,
   `nom_temoignage` varchar(50) NOT NULL,
-  `contenu_temoignage` varchar(1000) NOT NULL
+  `contenu_temoignage_fr` varchar(1000) NOT NULL,
+  `contenu_temoignage_en` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -93,8 +84,14 @@ CREATE TABLE `utilisateur` (
   `mdp` varchar(20) NOT NULL,
   `mail` varchar(50) NOT NULL,
   `url_photo` varchar(70) NOT NULL,
-  `competences` varchar(100) NOT NULL,
-  `bio` varchar(500) NOT NULL
+  `competences_fr` varchar(100) NOT NULL,
+  `competences_en` varchar(100) NOT NULL,
+  `bio_fr` varchar(500) NOT NULL,
+  `bio_en` varchar(500) NOT NULL,
+  `p_articles` tinyint(4) NOT NULL,
+  `p_projets` tinyint(4) NOT NULL,
+  `p_temoignages` tinyint(4) NOT NULL,
+  `p_admin` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -133,19 +130,19 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT for table `article`
 --
 ALTER TABLE `article`
-  MODIFY `id_article` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_article` int(4) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `projet`
 --
 ALTER TABLE `projet`
-  MODIFY `id_projet` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_projet` int(2) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `temoignage`
 --
 ALTER TABLE `temoignage`
-  MODIFY `id_temoignage` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_temoignage` int(2) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `utilisateur`
