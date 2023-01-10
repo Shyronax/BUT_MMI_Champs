@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include 'bootsrapfiles.php'; ?>
+    <title>BUT MMI</title>
+</head>
+
+<body>
+    <?php include 'menu.php'; ?>
+    <main class='mb-5'>
+        <div class="container-fluid m-0 p-0 mb-5 position-relative">
+
+
+            <img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt="">
+            <div class="row d-flex justify-content-center align-items-center h-100 w-100">
+                <div class="col-6 position-absolute top-50 start-50 translate-middle">
+                    <h1 class=' display-1'>BUT MMI CHAMPS</h1>
+                    <p class=''> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-4">
+            <h2>MMI en bref :</h2>
+            <div class="row row-cols-1 row-cols-md-3 ">
+                <div class="col ">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-4">
+            <h3>Où sommes-nous?</h3>
+
+            <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.6743561309602!2d2.5839759004617586!3d48.837146438660476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sca!4v1673112834622!5m2!1sfr!2sca" width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="container mb-4">
+            <h3>MMI en chiffres</h3>
+            <div class="p-3 mb-2 bg-secondary text-white rounded">
+                <div class="display-4 d-flex justify-content-between">
+                    <div>
+                        <p class='text-center'> 100 </p>
+                        <p>Etudiants</p>
+                    </div>
+
+                    <div>
+
+                        <p class='text-center'> 100 </p>
+                        <p>Etudiants</p>
+                    </div>
+
+
+                    <div>
+                        <p class='text-center'> 100 </p>
+                        <p>Etudiants</p>
+                    </div>
+                    <div>
+                        <p class='text-center'> 100 </p>
+                        <p>Etudiants</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container mb-4">
+            <h3>Projets étudiants :</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card h-100">
+                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 mb-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button">Button</button>
+            </div>
+
+        </div>
+        <div class="container">
+            <h3>Témoignages d'étudiants</h3>
+
+            <div class="row row-cols-1 row-cols-md-3 g-5">
+                <div class="col-3">
+                    <div class="card h-100">
+                        <img src="https://media.gq.com/photos/5ac3bdda390ea906d769b424/16:9/w_2560%2Cc_limit/GettyImages-887941442.jpg" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <blockquote class="blockquote mb-0">
+                                <p>A well-known quote, contained in a blockquote element.</p>
+                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card h-100">
+                        <img src="https://media.gq.com/photos/5ac3bdda390ea906d769b424/16:9/w_2560%2Cc_limit/GettyImages-887941442.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <blockquote class="blockquote mb-0">
+                                <p>A well-known quote, contained in a blockquote element.</p>
+                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card h100">
+                        <img src="https://media.gq.com/photos/5ac3bdda390ea906d769b424/16:9/w_2560%2Cc_limit/GettyImages-887941442.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <blockquote class="blockquote mb-0">
+                                <p>A well-known quote, contained in a blockquote element.</p>
+                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                <button class="btn btn-primary me-md-2" type="button">Button</button>
+            </div>
+
+        </div>
+        <div class="container">
+            <h3>Actualités MMI</h3>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Title
+                </div>
+
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>15/15/15</p>
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-header">
+                    Title
+                </div>
+
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>15/15/15</p>
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                <button class="btn btn-primary me-md-2" type="button">Button</button>
+            </div>
+        </div>
+
+
+    </main>
+    <?php include 'footer.php' ?>
+</body>
+
+</html>
