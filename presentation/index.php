@@ -15,8 +15,8 @@
         <main class='d-flex flex-column justify-conte,t-center'>
             <header class='mb-5 d-flex flex-column align-items-center container'>
                 <h1 class='display-3 text-center '>MMI, c'est quoi?</h1>
-                <div class="row ">
-                    <div class="col-12 col-lg-7">
+                <div class="row d-flex justify-content-center ">
+                    <div class="col-12 col-lg-7 ">
                         <p class='align-left'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem nihil dolorum facere quibusdam? Impedit cupiditate qui, voluptate est saepe vitae, eveniet blanditiis magni quo velit, non fugit sunt ratione?
                         </p>
