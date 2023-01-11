@@ -1,4 +1,4 @@
-<footer class="bg-primary text-white pt-3">
+<footer class="bg-dark text-white pt-3">
     <div class="container d-flex justify-content-between">
         <div>
             <!-- Logo -->
