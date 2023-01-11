@@ -11,7 +11,7 @@
 
 <body>
     <?php include '../menu.php'; ?>
-    <h1 class='display-3 text-center mt-2 mb-5'>Témoignages des étudiants</h1>
+    <h1 class='display-3 text-center mt-2 mb-5'>Nos étudiants témoignent</h1>
     <div class="container">
         <div class="row d-flex flex-column justify-content-center align-items-center">
 
