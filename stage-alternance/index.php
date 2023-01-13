@@ -53,6 +53,20 @@
                 </p>
                 </div>
             </li>
+            <li class='work'>
+                <input class='radio' id='work1' name='works' type='radio'>
+                <div class="relative">
+                <label for='work1'>MMI3 : Alternance</label>
+                
+                <span class='circle'></span>
+                </div>
+                <div class='content'>
+                <p class='date'>À partir de septembre</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+                </p>
+                </div>
+            </li>
             </ul>
         </main>
     </div>
