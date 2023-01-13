@@ -2,7 +2,7 @@
     <div class="container d-flex justify-content-between">
         <div>
             <!-- Logo -->
-            <img src="logo.png" alt="Logo de votre entreprise">
+            <img src="logo/logo-but-mmi-champs.png" class="img-fluid" alt="">
         </div>
         <div class='d-flex'>
             <!-- Colonne "A propos" -->

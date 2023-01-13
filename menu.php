@@ -1,7 +1,7 @@
 <nav class="autohide navbar navbar-expand-lg navbar-expand-lg navbar-dark bg-dark sticky-top">
 
     <a class="navbar-brand amsterdam" href="index.php">
-        <img src="ressources/logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top ms-3">
+        <img src="logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top ms-3">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
