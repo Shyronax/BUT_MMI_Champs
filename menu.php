@@ -1,7 +1,7 @@
-<nav class="autohide navbar navbar-expand-lg navbar-expand-lg navbar-dark bg-dark sticky-top">
+<nav class="autohide navbar navbar-expand-lg navbar-expand-lg navbar-dark bg-white sticky-top px-4">
 
     <a class="navbar-brand amsterdam" href="index.php">
-        <img src="logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top ms-3">
+        <img src="logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,7 +13,7 @@
 
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     MMI c'est quoi?
                 </a>
                 <ul class="dropdown-menu">
@@ -26,7 +26,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     MMI c'est qui?
                 </a>
                 <ul class="dropdown-menu">
@@ -35,8 +35,8 @@
                 </ul>
             </li>
 
-            <li class="nav-item ">
-                <a class="nav-link " href="actu.php">Actualités</a>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="actu.php">Actualités</a>
             </li>
 
         </ul>
