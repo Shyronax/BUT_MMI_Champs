@@ -1,6 +1,6 @@
 <nav class="autohide navbar navbar-expand-lg navbar-expand-lg navbar-dark bg-dark sticky-top">
 
-    <a class="navbar-brand amsterdam" href="../index.php">
+    <a class="navbar-brand amsterdam" href="index.php">
         <img src="ressources/logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top ms-3">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,12 +17,12 @@
                     MMI c'est quoi?
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../presentation/index.php">La formation MMI</a></li>
-                    <li><a class="dropdown-item" href="../matieres/index.php">Les matières enseignées</a></li>
-                    <li><a class="dropdown-item" href="../enseignants/index.php">L'équipe enseignante</a></li>
-                    <li><a class="dropdown-item" href="../debouches/index.php">Après MMI</a></li>
-                    <li><a class="dropdown-item" href="../stage-alternance/index.php">Stages & Alternance</a></li>
-                    <li><a class="dropdown-item" href="../international/index.php">À l'nternational</a></li>
+                    <li><a class="dropdown-item" href="presentation.php">La formation MMI</a></li>
+                    <li><a class="dropdown-item" href="matieres.php">Les matières enseignées</a></li>
+                    <li><a class="dropdown-item" href="enseignants.php">L'équipe enseignante</a></li>
+                    <li><a class="dropdown-item" href="debouches.php">Après MMI</a></li>
+                    <li><a class="dropdown-item" href="stage-alternance.php">Stages & Alternance</a></li>
+                    <li><a class="dropdown-item" href="international.php">À l'nternational</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -30,13 +30,13 @@
                     MMI c'est qui?
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../projets/index.php">Projets</a></li>
-                    <li><a class="dropdown-item" href="../temoignages/index.php">Témoignages</a></li>
+                    <li><a class="dropdown-item" href="projets.php">Projets</a></li>
+                    <li><a class="dropdown-item" href="temoignages.php">Témoignages</a></li>
                 </ul>
             </li>
 
             <li class="nav-item ">
-                <a class="nav-link " href="flash-info/index.php">Actualités</a>
+                <a class="nav-link " href="actu.php">Actualités</a>
             </li>
 
         </ul>
