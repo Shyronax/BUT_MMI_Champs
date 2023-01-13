@@ -14,7 +14,7 @@
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
                         <p class='align-left'>
-                            Ici retrouvez les informations sur les stages et alternance qui pourraient vous attendre !
+                            Ici retrouvez les informations sur les stages et alternance qui pourraient vous attendre si vous rejoindrez l'aventure MMI !
                         </p>
                     </div>
                 </div>
@@ -30,7 +30,8 @@
                 <div class='content'>
                 <p class='date'>À partir de juin-juillet</p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+                    Durant la première année de la formation, vous serez amené à faire 2 semaines de stage minimum dans une entreprise. Le stage ne doit pas obligatoirement est dans le domaine du multimédia. Le but de ce stage est de découvrir le monde du travail et d'acquérir de l'expérience. 
+                    Mais stage, dis aussi rapport de stage, alors préparez-vous ! 
                 </p>
                 </div>
             </li>
@@ -44,7 +45,7 @@
                 <div class='content'>
                 <p class='date'>Entre avril et juin</p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+                    Durant la deuxième année de la formation, vous devrez réaliser un stage de 10 semaines minimum, soit 2 mois et 2 semaines obligatoirement rémunéré
                 </p>
                 </div>
             </li>
