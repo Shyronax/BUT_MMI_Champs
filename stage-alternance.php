@@ -59,7 +59,7 @@
                 <div class='content'>
                 <p class='date'>À partir de septembre</p>
                 <p>
-                    Etant donné que c'est la première fois qu'il existe uen troisième année en MMI, les modalités de l'alternance en MMI sont toutes nouvelles aussi ! Alors dès que nous aurons davantage d'informations sur le sujet, nous vous les tarnsmettrons.
+                    Etant donné que c'est la première fois qu'il existe uen troisième année en MMI, les modalités de l'alternance en MMI sont toutes nouvelles aussi ! Alors dès que nous aurons davantage d'informations sur le sujet, nous vous les transmettrons.
                 </p>
                 </div>
             </li>
