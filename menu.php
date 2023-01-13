@@ -1,6 +1,6 @@
 <nav class="autohide navbar navbar-expand-lg navbar-expand-lg navbar-dark bg-dark sticky-top">
 
-    <a class="navbar-brand amsterdam" href="#">
+    <a class="navbar-brand amsterdam" href="index.php">
         <img src="ressources/logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top ms-3">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,13 +13,15 @@
 
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="presentation/index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     MMI c'est quoi?
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="matieres/index.php">Les matières enseignées</a></li>
+                    <li><a class="dropdown-item" href="enseignants/index.php">L'équipe enseignante</a></li>
+                    <li><a class="dropdown-item" href="debouches/index.php">Après MMI</a></li>
+                    <li><a class="dropdown-item" href="stage-alternance/index.php">Stages & Alternance</a></li>
+                    <li><a class="dropdown-item" href="international/index.php">À l'nternational</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -27,14 +29,13 @@
                     MMI c'est qui?
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="projets/index.php">Projets</a></li>
+                    <li><a class="dropdown-item" href="temoignages/index.php">Témoignages</a></li>
                 </ul>
             </li>
 
             <li class="nav-item ">
-                <a class="nav-link " href="#">Actualités</a>
+                <a class="nav-link " href="flash-info/index.php">Actualités</a>
             </li>
 
         </ul>
