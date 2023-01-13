@@ -15,15 +15,15 @@
                 <h3>Besoin d'aide</h3>
                 <ul>
                     <li><a href="#">Aide en ligne</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="faq.php">FAQ</a></li>
                 </ul>
             </div>
             <!-- Colonne "Contact" -->
             <div class="col">
                 <h3>Contact</h3>
-                <p>Adresse : 123 rue de l'entreprise</p>
-                <p>E-mail : contact@entreprise.com</p>
-                <p>Téléphone : 01 23 45 67 89</p>
+                <p>Adresse : 2 Rue Albert Einstein, 77420 Champs-sur-Marne</p>
+                <p>E-mail : mmi-dir.iut@univ-eiffel.fr</p>
+                <p>Téléphone : 01 60 95 85 85</p>
             </div>
         </div>
     </div>
