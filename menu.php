@@ -9,7 +9,7 @@
 
     <div class=" collapse navbar-collapse
         collapse navbar-collapse text-right justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav domine ml-auto text-end">
+        <ul class="navbar-nav domine ml-auto text-end me-5">
 
 
             <li class="nav-item dropdown">
@@ -41,6 +41,8 @@
             <li>
                 <label class="switch">
                     <input type="checkbox" id='switch-theme'>
+                    <i class="bi bi-brightness-high-fill checkbox-image "></i>
+                    <i class="bi bi-moon-stars-fill checkbox-image checked"></i>
                     <span class="slider round"></span>
                 </label>
             </li>

@@ -26,7 +26,7 @@
         </div>
         <div class="container vh75 p-0 mb-5 position-relative">
 
-            <div class="row">
+            <div class="row ps-3">
                 <div class="col"><img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt=""></div>
                 <div class="col">
                     <div class="row h-100 justify-content-center align-items-center">
@@ -84,24 +84,25 @@
             <div class="p-3 mb-2  rounded">
                 <div class="display-4 d-flex justify-content-between">
                     <div>
-                        <p class='text-center'> 100 </p>
-                        <p>Etudiants</p>
-                    </div>
-
-                    <div>
-
-                        <p class='text-center'> 100 </p>
-                        <p>Etudiants</p>
+                        <p class='text-center'> 28 </p>
+                        <p class="display-6">ans d'existence</p>
                     </div>
 
 
                     <div>
-                        <p class='text-center'> 100 </p>
-                        <p>Etudiants</p>
+
+                        <p class='text-center'> 1600 </p>
+                        <p class="display-6">Diplômés</p>
+                    </div>
+
+
+                    <div>
+                        <p class='text-center'> 2500 </p>
+                        <p class="display-6">Candidats par an</p>
                     </div>
                     <div>
-                        <p class='text-center'> 100 </p>
-                        <p>Etudiants</p>
+                        <p class='text-center'> 56 </p>
+                        <p class="display-6">Places</p>
                     </div>
 
                 </div>

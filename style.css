@@ -1,5 +1,25 @@
-$dark: black;
+input[type=checkbox] {
+  display: none;
+}
 
+[data-bs-theme=dark] {
+  --bs-body-bg: #000000 !important;
+}
+
+.checkbox-image {
+  display: none;
+  cursor: pointer;
+}
+
+
+
+#switch-theme:not(:checked)~.bi.bi-brightness-high-fill {
+  display: inline-block;
+}
+
+#switch-theme:checked~.bi.bi-moon-stars-fill {
+  display: inline-block;
+}
 
 @import "bootstrap";
 
