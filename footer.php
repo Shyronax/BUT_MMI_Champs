@@ -1,6 +1,6 @@
-<footer class="bg-dark text-white pt-3">
+<footer class=" pt-3">
     <div class="container d-flex justify-content-between">
-        <div>
+        <div class="w-25">
             <!-- Logo -->
             <img src="logo/logo-but-mmi-champs.png" class="img-fluid" alt="">
         </div>

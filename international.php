@@ -11,7 +11,7 @@
     <div class="container w-75">
         <main class='d-flex flex-column justify-content-center'>
             <header class='mb-5 mt-3 d-flex flex-column align-items-center container'>
-                <h1 class='display-3 text-center '>MMI part en voyage?</h1>
+                <h1 class='display-3 text-center '>MMI à l'international </h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
                         <p class='align-left'>

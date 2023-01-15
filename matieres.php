@@ -8,9 +8,9 @@
 
 <body>
     <?php include 'menu.php'; ?>
-    <div class="container mb-5 mt-2">
+    <div class="container  mb-5 mt-2">
         <main class='d-flex flex-column justify-conte,t-center'>
-            <header class='mb-5 d-flex flex-column align-items-center container'>
+            <header class='mb-5 d-flex flex-column align-items-center container d-flex flex-column align-items-center vh100 justify-content-center'>
                 <h1 class='display-3 text-center '>Ce qu'on fait en MMI</h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">

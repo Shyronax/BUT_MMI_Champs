@@ -46,7 +46,7 @@
                         <div class="card-body ">
                             <h5 class="card-title">Special title treatment</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
+                            <a href="#" class="btn btn-dark w-50">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Special title treatment</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
+                            <a href="#" class="btn btn-dark w-50">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         <div class="card-body ">
                             <h5 class="card-title">Special title treatment</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
+                            <a href="#" class="btn btn-dark w-50">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="button">Button</button>
+                <button class="btn btn-dark me-md-2" type="button">Button</button>
             </div>
 
         </div>
@@ -226,7 +226,7 @@
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
-                <button class="btn btn-primary me-md-2" type="button">Button</button>
+                <button class="btn btn-dark me-md-2" type="button">Button</button>
             </div>
 
         </div>
@@ -259,7 +259,7 @@
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
-                <button class="btn btn-primary me-md-2" type="button">Button</button>
+                <button class="btn btn-dark me-md-2" type="button">Button</button>
             </div>
         </div>
 
