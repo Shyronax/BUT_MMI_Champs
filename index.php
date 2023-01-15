@@ -182,13 +182,13 @@
             </div>
 
         </div>
-        <div class="container">
+        <div class="container vh75 d-flex flex-column  justify-content-center ">
             <h3 class="mb-3">Témoignages d'étudiants</h3>
 
             <div class="row row-cols-1 row-cols-md-3 g-5">
                 <div class="col-3">
                     <div class="card h-100">
-                        <img src="https://media.gq.com/photos/5ac3bdda390ea906d769b424/16:9/w_2560%2Cc_limit/GettyImages-887941442.jpg" alt="...">
+
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
 
@@ -202,7 +202,7 @@
                 </div>
                 <div class="col-3">
                     <div class="card h-100">
-                        <img src="https://media.gq.com/photos/5ac3bdda390ea906d769b424/16:9/w_2560%2Cc_limit/GettyImages-887941442.jpg" class="card-img-top" alt="...">
+
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <blockquote class="blockquote mb-0">
@@ -214,7 +214,7 @@
                 </div>
                 <div class="col-3">
                     <div class="card h100">
-                        <img src="https://media.gq.com/photos/5ac3bdda390ea906d769b424/16:9/w_2560%2Cc_limit/GettyImages-887941442.jpg" class="card-img-top" alt="...">
+
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <blockquote class="blockquote mb-0">
@@ -230,7 +230,7 @@
             </div>
 
         </div>
-        <div class="container">
+        <div class="container flex-column  justify-content-center vh75 ">
             <h3 class="mb-3">Actualités MMI</h3>
             <div class="card mb-3">
                 <div class="card-header">
