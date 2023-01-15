@@ -16,7 +16,7 @@
                     <h1 class='display-1 inline text-center'>BUT MMI CHAMPS</h1>
                     <div class="w-100"></div>
                     <div class=" row col-12 justify-content-end">
-                        <p class=' col-8 me-0 text-end'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
+                        <p class=' col-8 pe-0 text-end'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
                     </div>
                 </div>
 
@@ -38,8 +38,8 @@
 
         </div>
         </div>
-        <div class="container vh100 mb-4">
-            <h2>MMI en bref :</h2>
+        <div class="container vh50 mb-4">
+            <h2 class="mb-3">MMI en bref :</h2>
             <div class="row row-cols-1 row-cols-md-3 ">
                 <div class="col ">
                     <div class="card h-100">
@@ -71,17 +71,17 @@
                 </div>
             </div>
         </div>
-        <div class="container mb-4">
-            <h3>Où sommes-nous?</h3>
+        <div class="container flex-column  justify-content-center vh75 mb-4">
+            <h3 class="mb-3">Où sommes-nous?</h3>
             <div class="overflow-hidden">
 
-                <iframe class="rounded " src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.6743561309602!2d2.5839759004617586!3d48.837146438660476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sca!4v1673112834622!5m2!1sfr!2sca" width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="rounded" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.6743561309602!2d2.5839759004617586!3d48.837146438660476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sca!4v1673112834622!5m2!1sfr!2sca" width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
-        <div class="container mb-4">
-            <h3>MMI en chiffres</h3>
-            <div class="p-3 mb-2 bg-secondary text-white rounded">
+        <div class="container d-flex flex-column  justify-content-center vh75 mb-4">
+            <h3 class="mb-3">MMI en chiffres</h3>
+            <div class="p-3 mb-2  rounded">
                 <div class="display-4 d-flex justify-content-between">
                     <div>
                         <p class='text-center'> 100 </p>
@@ -108,8 +108,8 @@
             </div>
 
         </div>
-        <div class="container mb-4">
-            <h3>Projets étudiants :</h3>
+        <div class="container mb-4 ">
+            <h3 class="mb-3">Projets étudiants :</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <div class="col">
                     <div class="card h-100">
@@ -183,7 +183,7 @@
 
         </div>
         <div class="container">
-            <h3>Témoignages d'étudiants</h3>
+            <h3 class="mb-3">Témoignages d'étudiants</h3>
 
             <div class="row row-cols-1 row-cols-md-3 g-5">
                 <div class="col-3">
@@ -231,7 +231,7 @@
 
         </div>
         <div class="container">
-            <h3>Actualités MMI</h3>
+            <h3 class="mb-3">Actualités MMI</h3>
             <div class="card mb-3">
                 <div class="card-header">
                     Title
