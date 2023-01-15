@@ -57,8 +57,13 @@
     switchTheme.addEventListener('change', function() {
         if (this.checked) {
             document.documentElement.setAttribute('data-bs-theme', 'dark');
+            document.body.classList.remove("fadin");
+            document.body.classList.toggle("fadin");
+
         } else {
             document.documentElement.setAttribute('data-bs-theme', 'light');
+            document.body.classList.remove("fadin");
+            document.body.classList.toggle("fadin");
         }
     })
 </script>
