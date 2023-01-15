@@ -1,4 +1,4 @@
-<nav class="autohide navbar navbar-expand-lg navbar-expand-lg navbar-dark bg-white sticky-top px-4">
+<nav class=" navbar navbar-expand-lg bg-body sticky-top px-4">
 
     <a class="navbar-brand amsterdam" href="index.php">
         <img src="logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top">
@@ -13,7 +13,7 @@
 
 
             <li class="nav-item dropdown">
-                <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     MMI c'est quoi?
                 </a>
                 <ul class="dropdown-menu">
@@ -26,7 +26,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     MMI c'est qui?
                 </a>
                 <ul class="dropdown-menu">
@@ -36,9 +36,27 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-black" href="actu.php">Actualités</a>
+                <a class="nav-link " href="actu.php">Actualités</a>
             </li>
+            <li>
+                <label class="switch">
+                    <input type="checkbox" id='switch-theme'>
+                    <span class="slider round"></span>
+                </label>
+            </li>
+        </ul>
+        </li>
 
         </ul>
     </div>
 </nav>
+<script>
+    var switchTheme = document.getElementById('switch-theme');
+    switchTheme.addEventListener('change', function() {
+        if (this.checked) {
+            document.documentElement.setAttribute('data-bs-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-bs-theme', 'light');
+        }
+    })
+</script>

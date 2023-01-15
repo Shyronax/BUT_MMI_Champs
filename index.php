@@ -6,26 +6,44 @@
     <title>BUT MMI</title>
 </head>
 
-<body>
+<body class="h-100">
     <?php include 'menu.php'; ?>
-    <main class='mb-5'>
-        <div class="container-fluid m-0 p-0 mb-5 position-relative">
+    <main class='mb-5 container h-100'>
+        <div class="container vh100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-7">
+
+                    <h1 class='display-1 inline text-center'>BUT MMI CHAMPS</h1>
+                    <div class="w-100"></div>
+                    <div class=" row col-12 justify-content-end">
+                        <p class=' col-8 me-0 text-end'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
+                    </div>
+                </div>
+
+            </div>
 
 
-            <img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt="">
-            <div class="row d-flex justify-content-center align-items-center h-100 w-100">
-                <div class="col-6 position-absolute top-50 start-50 translate-middle">
-                    <h1 class=' display-1'>BUT MMI CHAMPS</h1>
-                    <p class=''> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
+        </div>
+        <div class="container vh75 p-0 mb-5 position-relative">
+
+            <div class="row">
+                <div class="col"><img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt=""></div>
+                <div class="col">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <p class=''> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-        <div class="container mb-4">
+        </div>
+        <div class="container vh100 mb-4">
             <h2>MMI en bref :</h2>
             <div class="row row-cols-1 row-cols-md-3 ">
                 <div class="col ">
                     <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body ">
                             <h5 class="card-title">Special title treatment</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                             <a href="#" class="btn btn-primary w-50">En savoir plus</a>
@@ -34,7 +52,7 @@
                 </div>
                 <div class="col ">
                     <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body">
                             <h5 class="card-title">Special title treatment</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                             <a href="#" class="btn btn-primary w-50">En savoir plus</a>
@@ -44,7 +62,7 @@
 
                 <div class="col">
                     <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body ">
                             <h5 class="card-title">Special title treatment</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                             <a href="#" class="btn btn-primary w-50">En savoir plus</a>
