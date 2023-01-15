@@ -53,9 +53,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.fit-content {
-  width: fit-content;
-}
 
 /* style pour la page "stages & alternance" */
 #timeline {
@@ -134,7 +131,6 @@ h2 {
   color: transparent;
   text-align: justify;
   word-break: break-word;
-  hyphens: auto;
   overflow: hidden;
 }
 
@@ -160,7 +156,7 @@ label {
 }
 
 .radio:checked~.content {
-  max-height: fit-content;
+
   border-color: #eee9dc;
   -webkit-transform: translateX(20px);
   -webkit-transition: max-height 0.4s linear, border-color 0.5s linear, -webkit-transform 0.2s linear;

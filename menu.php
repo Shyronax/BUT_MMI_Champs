@@ -9,7 +9,7 @@
 
     <div class=" collapse navbar-collapse
         collapse navbar-collapse text-right justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav domine ml-auto text-end me-5">
+        <ul class="navbar-nav domine ml-auto text-end me-3">
 
 
             <li class="nav-item dropdown">
