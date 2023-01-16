@@ -2,7 +2,7 @@
     <div class="container d-flex justify-content-between">
         <div class="w-25">
             <!-- Logo -->
-            <img src="logo/logo-but-mmi-champs.png" class="img-fluid" alt="">
+            <img src="logo/logo-but-mmi-champs.png" class="img-fluid logo" alt="">
         </div>
         <div class='d-flex'>
             <!-- Colonne "A propos" -->
@@ -28,3 +28,6 @@
         </div>
     </div>
 </footer>
+<script>
+    AOS.init();
+</script>

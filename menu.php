@@ -54,29 +54,29 @@
 </nav>
 <script>
     let switchTheme = document.getElementById('switch-theme');
-    let logo = document.querySelector(".logo")
+    let logos = document.querySelectorAll(".logo");
 
     let theme = localStorage.getItem("theme");
     if (theme === "dark") {
         switchTheme.checked = true;
         document.documentElement.setAttribute('data-bs-theme', 'dark');
-        logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png");
+        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
     } else {
         switchTheme.checked = false;
         document.documentElement.setAttribute('data-bs-theme', 'light');
-        logo.setAttribute("src", "logo/logo-but-mmi-champs.png");
+        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
     }
 
     switchTheme.addEventListener('change', function() {
         if (this.checked) {
             document.documentElement.setAttribute('data-bs-theme', 'dark');
-            logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png");
+            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
             document.body.classList.remove("fadin");
             document.body.classList.toggle("fadin");
             localStorage.setItem("theme", "dark");
         } else {
             document.documentElement.setAttribute('data-bs-theme', 'light');
-            logo.setAttribute("src", "logo/logo-but-mmi-champs.png");
+            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
             document.body.classList.remove("fadin");
             document.body.classList.toggle("fadin");
             localStorage.setItem("theme", "light");
