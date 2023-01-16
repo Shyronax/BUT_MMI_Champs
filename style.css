@@ -4,7 +4,19 @@ input[type=checkbox] {
 
 [data-bs-theme=dark] {
   --bs-body-bg: #000000 !important;
+
   transition: all ease-in-out 2s;
+
+
+}
+
+.btn-primary {
+  --bs-btn-bg: #2A9D8F;
+  --bs-btn-border-color: #2A9D8F;
+  --bs-btn-hover-bg: #22877c;
+  --bs-btn-hover-border-color: #22877c;
+  --bs-btn-active-bg: #1f766c;
+  --bs-btn-active-border-color: #1f766c;
 }
 
 .checkbox-image {
