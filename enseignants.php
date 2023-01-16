@@ -32,7 +32,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/philippe-gambette.png" alt="photo du professeur" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Nom Prenom</h4>
