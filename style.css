@@ -4,6 +4,19 @@ input[type=checkbox] {
 
 [data-bs-theme=dark] {
   --bs-body-bg: #000000 !important;
+
+  transition: all ease-in-out 2s;
+
+
+}
+
+.btn-primary {
+  --bs-btn-bg: #2A9D8F;
+  --bs-btn-border-color: #2A9D8F;
+  --bs-btn-hover-bg: #22877c;
+  --bs-btn-hover-border-color: #22877c;
+  --bs-btn-active-bg: #1f766c;
+  --bs-btn-active-border-color: #1f766c;
 }
 
 .checkbox-image {
@@ -11,14 +24,18 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
-
+.fadin {
+  transition: all 1s;
+}
 
 #switch-theme:not(:checked)~.bi.bi-brightness-high-fill {
   display: inline-block;
+  transition: all ease-in-out 2s;
 }
 
 #switch-theme:checked~.bi.bi-moon-stars-fill {
   display: inline-block;
+  transition: all ease-in-out 2s;
 }
 
 @import "bootstrap";
@@ -27,8 +44,7 @@ body {
   margin: 0 auto;
   font-size: 100%;
   font-family: 'Clash Display', sans-serif;
-  /* color: #eee9dc;
-  background: #48b379; */
+
 }
 
 h1 {

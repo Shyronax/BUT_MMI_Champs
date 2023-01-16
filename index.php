@@ -6,11 +6,12 @@
     <title>BUT MMI</title>
 </head>
 
+
 <body class="h-100">
     <?php include 'menu.php'; ?>
-    <main class='mb-5 container h-100'>
+    <main class='mb-5 container h-100 '>
         <div class="container vh100">
-            <div class="row h-100 justify-content-center align-items-center">
+            <div data-aos="fade-down" data-aos-offset="500" class="row h-100 justify-content-center align-items-center">
                 <div class="col-7">
 
                     <h1 class='display-1 inline text-center'>BUT MMI CHAMPS</h1>
@@ -26,7 +27,11 @@
         </div>
         <div class="container vh75 p-0 mb-5 position-relative">
 
-            <div class="row ps-3">
+
+
+
+
+            <div data-aos="fade-right" data-aos-offset="500" class="row ps-3">
                 <div class="col"><img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt=""></div>
                 <div class="col">
                     <div class="row h-100 justify-content-center align-items-center">
@@ -36,26 +41,27 @@
             </div>
 
 
+
         </div>
         </div>
-        <div class="container vh50 mb-4">
+        <div data-aos="fade-left" data-aos-offset="500" class="container vh50 mb-4">
             <h2 class="mb-3">MMI en bref :</h2>
             <div class="row row-cols-1 row-cols-md-3 ">
                 <div class="col ">
                     <div class="card h-100">
                         <div class="card-body ">
-                            <h5 class="card-title">Special title treatment</h5>
+                            <h5 class="card-title">Formation en 3 ans</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-dark w-50">En savoir plus</a>
+                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
                         </div>
                     </div>
                 </div>
                 <div class="col ">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-dark w-50">En savoir plus</a>
+                            <h5 class="card-title">Formation pluridisciplinaire</h5>
+                            <p class="card-text">La formation MMI couvre tous les champs du digital, offrant ainsi une expertise globale sur les métiers du multimédia et de l'Internet...</p>
+                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -63,23 +69,23 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-body ">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-dark w-50">En savoir plus</a>
+                            <h5 class="card-title">Stage/Alternance</h5>
+                            <p class="card-text">MMI est une formation profesionalisante, c'est pourquoi l'étudiant est confronté au mond du travail dès la fin de la première année...</p>
+                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container flex-column  justify-content-center vh75 mb-4">
+        <div data-aos="fade-right" data-aos-offset="500" class="container flex-column  justify-content-center vh75 mb-4">
             <h3 class="mb-3">Où sommes-nous?</h3>
             <div class="overflow-hidden">
 
-                <iframe class="rounded" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.6743561309602!2d2.5839759004617586!3d48.837146438660476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sca!4v1673112834622!5m2!1sfr!2sca" width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="rounded" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.6743561309602!2d2.5839759004617586!3d48.837146438660476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sca!4v1673112834622!5m2!1sfr!2sca" width="1500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
-        <div class="container d-flex flex-column  justify-content-center vh75 mb-4">
+        <div data-aos="fade-left" data-aos-offset="500" class="container d-flex flex-column  justify-content-center vh75 mb-4">
             <h3 class="mb-3">MMI en chiffres</h3>
             <div class="p-3 mb-2  rounded">
                 <div class="display-4 d-flex justify-content-between">
@@ -109,7 +115,7 @@
             </div>
 
         </div>
-        <div class="container mb-4 ">
+        <div data-aos="fade-right" data-aos-offset="500" class="container mb-4 ">
             <h3 class="mb-3">Projets étudiants :</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <div class="col">
@@ -179,11 +185,11 @@
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-dark me-md-2" type="button">Button</button>
+                <button class="btn btn-primary me-md-2" type="button">Button</button>
             </div>
 
         </div>
-        <div class="container vh75 d-flex flex-column  justify-content-center ">
+        <div data-aos="fade-left" data-aos-offset="500" class="container vh75 d-flex flex-column  justify-content-center ">
             <h3 class="mb-3">Témoignages d'étudiants</h3>
 
             <div class="row row-cols-1 row-cols-md-3 g-5">
@@ -227,11 +233,11 @@
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
-                <button class="btn btn-dark me-md-2" type="button">Button</button>
+                <button class="btn btn-primary me-md-2" type="button">Button</button>
             </div>
 
         </div>
-        <div class="container flex-column  justify-content-center vh75 ">
+        <div data-aos="fade-right" data-aos-offset="500" class="container  flex-column  justify-content-center vh75 ">
             <h3 class="mb-3">Actualités MMI</h3>
             <div class="card mb-3">
                 <div class="card-header">
@@ -260,7 +266,7 @@
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
-                <button class="btn btn-dark me-md-2" type="button">Button</button>
+                <button class="btn btn-primary me-md-2" type="button">Button</button>
             </div>
         </div>
 

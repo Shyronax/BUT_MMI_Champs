@@ -1,7 +1,7 @@
 <nav class=" navbar navbar-expand-lg sticky-top px-4">
 
     <a class="navbar-brand amsterdam" href="index.php">
-        <img src="logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top">
+        <img src="logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -53,12 +53,33 @@
     </div>
 </nav>
 <script>
-    var switchTheme = document.getElementById('switch-theme');
+    let switchTheme = document.getElementById('switch-theme');
+    let logos = document.querySelectorAll(".logo");
+
+    let theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+        switchTheme.checked = true;
+        document.documentElement.setAttribute('data-bs-theme', 'dark');
+        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
+    } else {
+        switchTheme.checked = false;
+        document.documentElement.setAttribute('data-bs-theme', 'light');
+        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
+    }
+
     switchTheme.addEventListener('change', function() {
         if (this.checked) {
             document.documentElement.setAttribute('data-bs-theme', 'dark');
+            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
+            document.body.classList.remove("fadin");
+            document.body.classList.toggle("fadin");
+            localStorage.setItem("theme", "dark");
         } else {
             document.documentElement.setAttribute('data-bs-theme', 'light');
+            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
+            document.body.classList.remove("fadin");
+            document.body.classList.toggle("fadin");
+            localStorage.setItem("theme", "light");
         }
-    })
+    });
 </script>
