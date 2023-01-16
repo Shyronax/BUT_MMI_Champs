@@ -53,6 +53,10 @@ body {
   border-bottom: #ffffff solid 2px;
 }
 
+.breadcrumb-item a {
+  color: #2A9D8F;
+}
+
 h1 {
   font-weight: 900 !important;
 }

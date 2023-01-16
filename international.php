@@ -10,6 +10,12 @@
     <?php include 'menu.php'; ?>
     <div class="container w-75">
         <main class='d-flex flex-column justify-content-center'>
+        <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">MMI à l'international</li>
+            </ol>
+        </nav>
             <header class='mb-5 mt-3 d-flex flex-column align-items-center container'>
                 <h1 class='display-3 text-center '>MMI à l'international </h1>
                 <div class="row d-flex justify-content-center ">

@@ -10,6 +10,12 @@
     <?php include 'menu.php'; ?>
     <div class="container mb-5 mt-2">
         <main class='d-flex flex-column justify-conte,t-center'>
+        <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Actualités</li>
+            </ol>
+        </nav>
             <header class='mb-5 d-flex flex-column align-items-center container'>
                 <h1 class='display-3 text-center '>Flash' info!</h1>
                 <div class="row d-flex justify-content-center ">
