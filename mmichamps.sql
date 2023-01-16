@@ -31,13 +31,13 @@ CREATE TABLE `article` (
   `id_article` int(4) NOT NULL,
   `nom_article_fr` varchar(100) NOT NULL,
   `contenu_article_fr` varchar(1000) NOT NULL,
-  `nom_article_en` varchar(100) NOT NULL,
-  `contenu_article_en` varchar(1000) NOT NULL,
-  `synopsis_en` varchar(200) NOT NULL,
+  `nom_article_en` varchar(100),
+  `contenu_article_en` varchar(1000),
+  `synopsis_en` varchar(200),
   `date_article` date NOT NULL,
   `synopsis_fr` varchar(200) NOT NULL,
-  `miniature_article` varchar(50) NOT NULL,
-  `ext_auteur` int(11) NOT NULL
+  `miniature_article` varchar(100),
+  `auteur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -50,10 +50,14 @@ CREATE TABLE `projet` (
   `id_projet` int(2) NOT NULL,
   `nom_projet` varchar(50) NOT NULL,
   `etudiants` varchar(100) NOT NULL,
-  `date_projet` date NOT NULL,
+  `annee_projet` date NOT NULL,
   `niveau` varchar(10) NOT NULL,
+  `miniature_projet` varchar(100),
+  `iframe_projet` varchar(100),
+  `lien_projet` varchar(100),
+  `image_projet` varchar(100) NOT NULL,
   `description_fr` varchar(500) NOT NULL,
-  `description_en` varchar(500) NOT NULL
+  `description_en` varchar(500)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -63,12 +67,12 @@ CREATE TABLE `projet` (
 --
 
 CREATE TABLE `temoignage` (
-  `id_temoignage` int(2) NOT NULL,
+  `id_temoignage` int(3) NOT NULL,
   `etudiant` varchar(100) NOT NULL,
   `promo` varchar(15) NOT NULL,
-  `nom_temoignage` varchar(50) NOT NULL,
+  `titre` varchar(100) NOT NULL,
   `contenu_temoignage_fr` varchar(1000) NOT NULL,
-  `contenu_temoignage_en` varchar(1000) NOT NULL
+  `contenu_temoignage_en` varchar(1000)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -80,14 +84,12 @@ CREATE TABLE `temoignage` (
 CREATE TABLE `utilisateur` (
   `id_prof` int(3) NOT NULL,
   `nom_prof` varchar(50) NOT NULL,
-  `login` varchar(20) NOT NULL,
+  `login_prof` varchar(20) NOT NULL,
   `mdp` varchar(20) NOT NULL,
   `mail` varchar(50) NOT NULL,
-  `url_photo` varchar(70) NOT NULL,
-  `competences_fr` varchar(100) NOT NULL,
-  `competences_en` varchar(100) NOT NULL,
-  `bio_fr` varchar(500) NOT NULL,
-  `bio_en` varchar(500) NOT NULL,
+  `url_photo` varchar(70),
+  `bio_fr` varchar(500),
+  `bio_en` varchar(500),
   `p_articles` tinyint(4) NOT NULL,
   `p_projets` tinyint(4) NOT NULL,
   `p_temoignages` tinyint(4) NOT NULL,
