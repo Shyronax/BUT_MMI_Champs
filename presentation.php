@@ -10,6 +10,12 @@
     <?php include 'menu.php'; ?>
     <div class="container">
         <main class='d-flex flex-column justify-conte,t-center'>
+        <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">La formation MMI</li>
+            </ol>
+        </nav>
             <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center  justify-content-center container vh100'>
                 <h1 class='display-3 text-center '>MMI, c'est quoi?</h1>
                 <div class="row d-flex justify-content-center ">
