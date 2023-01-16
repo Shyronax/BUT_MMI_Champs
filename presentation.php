@@ -10,7 +10,7 @@
     <?php include 'menu.php'; ?>
     <div class="container">
         <main class='d-flex flex-column justify-conte,t-center'>
-            <header class='mb-5 d-flex flex-column align-items-center  justify-content-center container vh100'>
+            <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center  justify-content-center container vh100'>
                 <h1 class='display-3 text-center '>MMI, c'est quoi?</h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </header>
-            <div class="container d-flex flex-column align-items-center vh75 justify-content-center mb-5">
+            <div data-aos="fade-left" data-aos-offset="500" class="container d-flex flex-column align-items-center vh75 justify-content-center mb-5">
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-7 ">
                         <h2 class='display-6 '>MMI c'est <b> une formation</b></h2>
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <div class="container d-flex flex-column align-items-center vh75 justify-content-center mb-5">
+            <div data-aos="fade-right" data-aos-offset="500" class="container d-flex flex-column align-items-center vh75 justify-content-center mb-5">
                 <div class="row ">
                     <div class="col-12 col-lg-5 d-flex flex-column justify-content-center">
                         <img class="img-fluid" src="https://www.booska-p.com/wp-content/uploads/2022/07/The-Rock-Visu-News-1024x750.jpg" alt="">
@@ -46,10 +46,10 @@
                     </div>
                 </div>
             </div>
-            <div class="container d-flex flex-column align-items-center vh100 justify-content-center mb-5">
+            <div data-aos="fade-left" data-aos-offset="500" class="container d-flex flex-column align-items-center vh100 justify-content-center mb-5">
                 <img class='img-fluid' src="https://fr.web.img6.acsta.net/r_1280_720/newsv7/21/09/06/11/58/3970126.jpg" alt="">
             </div>
-            <div class="container d-flex flex-column align-items-center vh75 justify-content-center mb-5">
+            <div data-aos="fade-right" data-aos-offset="500" class="container d-flex flex-column align-items-center vh75 justify-content-center mb-5">
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h2 class='display-6 '>MMI c'est <b> une formation</b></h2>
