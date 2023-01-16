@@ -10,7 +10,7 @@
     <?php include 'menu.php'; ?>
     <div class="container  mb-5 mt-2">
         <main class='d-flex flex-column justify-conte,t-center'>
-            <header class='mb-5 d-flex flex-column align-items-center container d-flex flex-column align-items-center vh100 justify-content-center'>
+            <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center container d-flex flex-column align-items-center vh100 justify-content-center'>
                 <h1 class='display-3 text-center '>Ce qu'on fait en MMI</h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </header>
-            <div class="container w-75">
+            <div data-aos="fade-right" data-aos-offset="500" class="container w-75 ">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
