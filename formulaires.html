@@ -1,25 +1,45 @@
-<form action="" method="post">
-    <label for=""></label>
-    <input required type="text">
-    <label for=""></label>
-    <input required type="text">
-    <label for=""></label>
-    <input required type="password">
-    <label for=""></label>
-    <input required type="text">
-    <label for=""></label>
-    <input type="text">
-    <label for=""></label>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    <label for=""></label>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    <label for=""></label>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    <label for=""></label>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+<form action="register_prof.php" method="post">
+    <label for="nom">Prénom et NOM*</label>
+    <input required type="text" name="nom">
+    <label for="username">Nom d'utilisateur* (utilisé uniquement pour la connexion)</label>
+    <input required type="text" name="username">
+    <label for="pwd">Mot de passe*</label>
+    <input required type="password" name="pwd">
+    <label for="mail">Adresse mail*</label>
+    <input required type="mail" name="mail">
+    <label for="photo">Photo</label>
+    <input type="file" name="photo">
+    <label for="bio_fr">Bio en français</label>
+    <textarea name="bio_fr" id="" cols="30" rows="10"></textarea>
+    <label for="bio_en">Bio en anglais</label>
+    <textarea name="bio_en" id="" cols="30" rows="10"></textarea>
+    <label for="matiere">Matière(s) enseignée(s)</label>
+    <!-- <select name="matiere" id="">
+        <option value=""></option>
+    </select> -->
     <label for=""></label>
     <input type="checkbox" name="" id="">
     <input type="checkbox" name="" id="">
     <input type="checkbox" name="" id="">
     <input type="checkbox" name="" id="">
+</form>
+
+<form action="register_projet.php" method="post">
+    <label for="titre">Titre*</label>
+    <input required type="text" name="titre" id="">
+    <label for="synopsis">Résumé ou accroche</label>
+    <textarea name="synopsis" id="" cols="100" rows="20"></textarea>
+    <label for=""></label>
+</form>
+
+<form action="register_temoignage.php" method="post">
+
+</form>
+
+<form action="register_article.php" method="post">
+
+</form>
+
+<form action="register_matiere.php" method="post">
+
 </form>

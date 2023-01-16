@@ -30,15 +30,12 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `article`;
 CREATE TABLE IF NOT EXISTS `article` (
   `id_article` int(4) NOT NULL AUTO_INCREMENT,
-  `nom_article_fr` varchar(100) NOT NULL,
-  `contenu_article_fr` varchar(1000) NOT NULL,
-  `nom_article_en` varchar(100) NOT NULL,
-  `contenu_article_en` varchar(1000) NOT NULL,
-  `synopsis_en` varchar(200) NOT NULL,
+  `nom_article` varchar(100) NOT NULL,
+  `contenu_article` varchar(1000) NOT NULL,
   `date_article` date NOT NULL,
-  `synopsis_fr` varchar(200) NOT NULL,
-  `miniature_article` varchar(50) NOT NULL,
-  `ext_auteur` int(11) NOT NULL,
+  `synopsis` varchar(200) NOT NULL,
+  `miniature_article` varchar(50),
+  `auteur` varchar(40) NOT NULL,
   PRIMARY KEY (`id_article`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -50,11 +47,23 @@ CREATE TABLE IF NOT EXISTS `article` (
 
 DROP TABLE IF EXISTS `matiere`;
 CREATE TABLE IF NOT EXISTS `matiere` (
-  `id_matiere` int(2) NOT NULL,
-  `nom_matiere` int(11) NOT NULL,
+  `id_matiere` int(2) NOT NULL, AUTO_INCREMENT
+  `nom_matiere` varchar(60) NOT NULL,
   `description` text NOT NULL,
-  `ext_projet` int(11) NOT NULL,
-  `ext_utilisateur` int(11) NOT NULL
+  PRIMARY KEY (`id_matiere`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `lien_matiere`
+--
+
+DROP TABLE IF EXISTS `lien_matiere`;
+CREATE TABLE IF NOT EXISTS `lien_matiere` (
+  `id_lien` int(2) NOT NULL, AUTO_INCREMENT
+  `ext_matiere` int(2) NOT NULL,
+  `ext_prof` int(2) NOT NULL,
+  PRIMARY KEY (`id_lien`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -70,10 +79,10 @@ CREATE TABLE IF NOT EXISTS `projet` (
   `etudiants` varchar(100) NOT NULL,
   `date_projet` date NOT NULL,
   `niveau` varchar(10) NOT NULL,
-  `description_fr` varchar(500) NOT NULL,
-  `description_en` varchar(500) NOT NULL,
-  `img_projet` varchar(50) NOT NULL,
-  `lien` varchar(100) NOT NULL,
+  `description` varchar(500) NOT NULL,
+  `img_projet` varchar(50),
+  `iframe_projet` varchar(50),
+  `lien` varchar(100),
   PRIMARY KEY (`id_projet`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -89,8 +98,7 @@ CREATE TABLE IF NOT EXISTS `temoignage` (
   `etudiant` varchar(100) NOT NULL,
   `promo` varchar(15) NOT NULL,
   `nom_temoignage` varchar(50) NOT NULL,
-  `contenu_temoignage_fr` varchar(1000) NOT NULL,
-  `contenu_temoignage_en` varchar(1000) NOT NULL,
+  `contenu_temoignage` varchar(1000) NOT NULL,
   PRIMARY KEY (`id_temoignage`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -107,11 +115,8 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `login` varchar(20) NOT NULL,
   `mdp` varchar(20) NOT NULL,
   `mail` varchar(50) NOT NULL,
-  `url_photo` varchar(70) NOT NULL,
-  `competences_fr` varchar(100) NOT NULL,
-  `competences_en` varchar(100) NOT NULL,
-  `bio_fr` varchar(500) NOT NULL,
-  `bio_en` varchar(500) NOT NULL,
+  `url_photo` varchar(70),
+  `bio` varchar(500),
   `p_articles` tinyint(4) NOT NULL,
   `p_projets` tinyint(4) NOT NULL,
   `p_temoignages` tinyint(4) NOT NULL,
