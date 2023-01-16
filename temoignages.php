@@ -2,15 +2,12 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include '../bootsrapfiles.php'; ?>
+    <?php include 'head.php'; ?>
     <title>Flash' info</title>
 </head>
 
 <body>
-    <?php include '../menu.php'; ?>
+    <?php include 'menu.php'; ?>
     <h1 class='display-3 text-center mt-2 mb-5'>Nos étudiants témoignent</h1>
     <div class="container">
         <div class="row d-flex flex-column justify-content-center align-items-center">
@@ -143,7 +140,7 @@
             </div>
         </div>
     </div>
-    <?php include '../footer.php' ?>
+    <?php include 'footer.php' ?>
 </body>
 
 </html>
