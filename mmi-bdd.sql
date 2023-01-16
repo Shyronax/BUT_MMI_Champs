@@ -117,10 +117,10 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `mail` varchar(50) NOT NULL,
   `url_photo` varchar(70),
   `bio` varchar(500),
-  `p_articles` tinyint(4) NOT NULL,
-  `p_projets` tinyint(4) NOT NULL,
-  `p_temoignages` tinyint(4) NOT NULL,
-  `p_admin` tinyint(4) NOT NULL,
+  `p_articles` varchar(3),
+  `p_projets` varchar(3),
+  `p_temoignages` varchar(3),
+  `p_admin` varchar(3),
   PRIMARY KEY (`id_prof`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 COMMIT;

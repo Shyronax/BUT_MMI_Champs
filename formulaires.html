@@ -11,15 +11,18 @@
     <input type="file" name="photo">
     <label for="bio">Bio</label>
     <textarea name="bio" id="" cols="30" rows="10"></textarea>
-    <label for="matiere">Matière(s) enseignée(s)</label>
-    <!-- <select name="matiere" id="">
-        <option value=""></option>
-    </select> -->
-    <label for=""></label>
-    <input type="checkbox" name="" id="">
-    <input type="checkbox" name="" id="">
-    <input type="checkbox" name="" id="">
-    <input type="checkbox" name="" id="">
+    <fieldset>
+        <legend>Matières enseignées</legend>
+    </fieldset>
+    <fieldset>
+        <legend>Permissions sur les sections du site</legend>
+        <label for="permission_projets">Projets</label>
+        <input type="checkbox" name="permission_projets" id="">
+        <label for="permission_articles">Articles</label>
+        <input type="checkbox" name="permission_articles" id="">
+        <label for="permission_temoignages">Témoignages</label>
+        <input type="checkbox" name="permission_temoignages" id="">
+    </fieldset>
     <input type="submit" value="Envoyer">
 </form>
 
