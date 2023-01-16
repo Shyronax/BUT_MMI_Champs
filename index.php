@@ -28,9 +28,6 @@
         <div class="container vh75 p-0 mb-5 position-relative">
 
 
-
-
-
             <div data-aos="fade-right" data-aos-offset="500" class="row ps-3">
                 <div class="col"><img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt=""></div>
                 <div class="col">
