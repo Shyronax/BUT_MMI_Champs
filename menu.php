@@ -14,8 +14,8 @@
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- 
-                Qu’est-ce que MMI ?
+
+                    Qu’est-ce que MMI ?
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="presentation.php">Présentation MMI</a></li>
@@ -40,7 +40,7 @@
                 <a class="nav-link " href="actu.php">Actualités</a>
             </li>
             <li>
-                <label class="switch">
+                <label class="switch h-100 d-flex flex-column justify-content-center ms-3">
                     <input type="checkbox" id='switch-theme'>
                     <i class="bi bi-brightness-high-fill checkbox-image "></i>
                     <i class="bi bi-moon-stars-fill checkbox-image checked"></i>
