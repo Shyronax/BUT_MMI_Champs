@@ -22,6 +22,14 @@ input[type=checkbox] {
   color: white !important;
 }
 
+[data-bs-theme="dark"] footer ul li a {
+  color: black;
+}
+
+[data-bs-theme="light"] footer ul li a  {
+  color: white;
+}
+
 [data-bs-theme="light"] .navbar .nav-link {
   color: white !important;
 }
@@ -102,6 +110,19 @@ body {
   font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
+}
+
+footer ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
 }
 
 h1 {

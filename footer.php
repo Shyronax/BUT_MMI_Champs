@@ -7,23 +7,25 @@
         <div class='d-flex'>
             <!-- Colonne "A propos" -->
             <div class="col">
-                <h3>A propos</h3>
-                <p>Brève description de votre entreprise</p>
+                <ul>
+                    <li><a href="a-propos.php">À propos</a></li>
+                    <li><a href="mentions.php">Mentions légales</a></li>
+                </ul>
             </div>
             <!-- Colonne "Besoin d'aide" -->
             <div class="col">
                 <h3>Besoin d'aide</h3>
                 <ul>
-                    <li><a class="nextLink  " href="#">Aide en ligne</a></li>
-                    <li><a class="nextLink " href="faq.php">FAQ</a></li>
+                    <li><a href="faq.php">FAQ</a></li>
+                    <li><a href="conseils.php">Nos conseils</a></li>
                 </ul>
             </div>
             <!-- Colonne "Contact" -->
             <div class="col">
                 <h3>Contact</h3>
-                <p>Adresse : 2 Rue Albert Einstein, 77420 Champs-sur-Marne</p>
-                <p>E-mail : mmi-dir.iut@univ-eiffel.fr</p>
-                <p>Téléphone : 01 60 95 85 85</p>
+                <p><b>Adresse</b> : 2 Rue Albert Einstein, 77420 Champs-sur-Marne</p>
+                <p><b>E-mail</b> : mmi-dir.iut@univ-eiffel.fr</p>
+                <p><b>Téléphone</b> : 01 60 95 85 85</p>
             </div>
         </div>
     </div>
