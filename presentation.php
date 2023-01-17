@@ -17,7 +17,7 @@
                 </ol>
             </nav>
             <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center  justify-content-center container vh100'>
-                <h1 class='display-3 text-center '>Qu’est-ce que MMI ?</h1>
+                <h1 class='display-3 text-center '>Présentation MMI</h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
                         <p class='text-center'>
