@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteRule ^projets/? projets.php [NC]
+RewriteRule ^[^/]+/(\d+)$ projets.php?id=$1
+RewriteRule ^actus/? actu.php [NC]
+RewriteRule ^[^/]+/(\d+)$ actu.php?id=$1
+RewriteRule ^faq/? faq.php [NC]
+RewriteRule ^temoignages/? teamoignages.php [NC]
+RewriteRule ^presentation/? presentation.php [NC]
+RewriteRule ^mentions/? mentions.php [NC]
+RewriteRule ^index/? index.php [NC]
+RewriteRule ^back-office/? back-office.php [NC]
+RewriteRule ^enseignants/? enseignants.php [NC]
