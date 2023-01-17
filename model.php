@@ -79,7 +79,7 @@ function addLien($mat1 = null, $mat2 = null, $mat3 = null, $nom)
 function addArticle($nom, $contenu, $synopsis, $miniature)
 {
     $db = dbConnect();
-    $target_dir = '../src/img/article/';
+    $target_dir = 'src/img/article/';
     $target_file = $target_dir . basename($miniature);
     move_uploaded_file($miniature, $target_file);
     $query = "INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article)" . $_SESSION['name'];
@@ -94,7 +94,7 @@ function addArticle($nom, $contenu, $synopsis, $miniature)
 function addProjet($nom_projet, $etudiants, $annee_projet, $niveau, $iframe_projet, $lien_projet, $image_projet, $description)
 {
     $db = dbConnect();
-    $target_dir = '../src/img/projet/';
+    $target_dir = 'src/img/projet/';
     $target_file = $target_dir . basename($image_projet);
     move_uploaded_file($image_projet, $target_file);
     $query = "INSERT INTO projet (nom_projet, etudiants, annee_projet, niveau, iframe_projet, lien_projet, image_projet, description) VALUES (:nom_projet, :etudiants, :annee_projet, :niveau, :iframe_projet, :lien_projet, :image_projet, :description)";
