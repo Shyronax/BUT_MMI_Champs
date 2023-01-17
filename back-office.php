@@ -56,7 +56,7 @@
     <input type="submit" value="Envoyer">
 </form>
 
-<form action="register_projet.php" method="post" enctype="multipart/form-data">
+<!-- <form action="register_projet.php" method="post" enctype="multipart/form-data">
     <label for="nom">Nom*</label>
     <input type="text" name="nom" id="">
     <label for="niveau">Niveau*</label>
@@ -79,7 +79,7 @@
     <input type="url" name="iframe" id="">
     <input type="submit" value="Envoyer">
 
-</form>
+</form> -->
 
 <form action="register_temoignage.php" method="post">
     <label for="titre">Titre*</label>
@@ -93,7 +93,7 @@
     <input type="submit" value="Envoyer">
 </form>
 
-<form action="register_article.php" method="post" enctype="multipart/form-data">
+<!-- <form action="register_article.php" method="post" enctype="multipart/form-data">
     <label for="titre">Titre*</label>
     <input required type="text" name="titre" id="">
     <label for="synopsis">Résumé ou accroche*</label>
@@ -103,7 +103,7 @@
     <label for="miniature">Miniature</label>
     <input type="file" accept ="image/*" name="miniature" id="">
     <input type="submit" value="Envoyer">
-</form>
+</form> -->
 
 <form action="register_matiere.php" method="post">
     <label for="nom">Nom*</label>
