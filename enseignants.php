@@ -10,7 +10,7 @@
     <?php include 'menu.php'; ?>
     <main class='mb-5 container h-100'>
         <div class="container vh100">
-            <div class="row h-100 justify-content-center align-items-center">
+            <div data-aos="fade-down" data-aos-offset="500" class="row h-100 justify-content-center align-items-center">
                 <div class="col-6">
 
                     <h1 class='display-1 inline text-center'>Nos enseigants</h1>
@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <div class="container vh100 justify-content-center align-items-center">
+        <div data-aos="fade-right" data-aos-offset="500" class="container vh100 justify-content-center align-items-center">
             <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
