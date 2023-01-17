@@ -22,7 +22,7 @@
                     <h1 class='display-1 inline text-center'>Nos enseigants</h1>
                     <div class="w-100"></div>
                     <div class=" row col-12 justify-content-end">
-                        <p class=' col-8 pe-3 text-end'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
+                        <p class=' col-8 pe-3 text-end'> Vous voulez savoir avec qui vous allez passer votre formation ? Alors cette page est faite pour vous !</p>
                     </div>
                 </div>
             </div>
@@ -95,8 +95,8 @@
                             <img src="photo-prof1.jpg" alt="photo du professeur">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Nom Prenom</h4>
-                            <p class="card-text">Matière enseignée</p>
+                            <h4 class="card-title">gambette Phillipe</h4>
+                            <p class="card-text">Developpement web</p>
                             <!-- Ajoutez un bouton pour ouvrir la modale -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof1">
                                 Plus de détails
@@ -110,8 +110,8 @@
                             <img src="photo-prof1.jpg" alt="photo du professeur">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Nom Prenom</h4>
-                            <p class="card-text">Matière enseignée</p>
+                            <h4 class="card-title">Eppstein Renaud</h4>
+                            <p class="card-text">Developpement Back</p>
                             <!-- Ajoutez un bouton pour ouvrir la modale -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof1">
                                 Plus de détails
