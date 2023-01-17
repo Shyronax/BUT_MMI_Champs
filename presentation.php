@@ -37,11 +37,11 @@ Alliant la théorie à la pratique, la formation propose de développer des comp
 
 </p>
 <p>
-La formation dure 3 ans et comprend 2600 heures d'enseignement. Lors de la deuxième année, les étudiants pourront s’orienter vers <b>la création numérique </b> ou  <b>le développement web </b>
+La formation dure 3 ans et comprend 2600 heures d'enseignement. Lors de la deuxième année, les étudiants pourront s'orienter vers <b>la création numérique </b> ou  <b>le développement web </b>
 
                         </p>
                         <p>
-                        Le BUT MMI est professionnalisant, il permet de déployer des compétences d’autonomie avec la conduite de nombreux projets individuels ou de groupe.
+                        Le BUT MMI est professionnalisant, il permet de déployer des compétences d'autonomie avec la conduite de nombreux projets individuels ou de groupe.
                         </p>
                     </div>
                     <div class="col-12 col-lg-5">
