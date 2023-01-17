@@ -12,7 +12,7 @@
         <main class='d-flex flex-column justify-conte,t-center'>
             <nav aria-label="breadcrumb" class="mt-5">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">La formation MMI</li>
                 </ol>
             </nav>
@@ -49,7 +49,7 @@
                             <li><b>Stratégie de communication numérique et design d'expérience</b> : expression et communication, théorie de la communication</li>
                         </ul>
                         <br>
-                        <a href="matieres.php" class="btn btn-primary w-25">En savoir plus</a>
+                        <a href="matieres" class="btn btn-primary w-25">En savoir plus</a>
                     </div>
                 </div>
             </div>

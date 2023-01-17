@@ -12,7 +12,7 @@
     <main class='d-flex flex-column justify-content-center'>
     <nav aria-label="breadcrumb" class="mt-5">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item"><a href="index">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Stages & alternances</li>
             </ol>
         </nav>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="international.php">Voir la rubrique internationale ></a></div>
+            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="international">Voir la rubrique internationale ></a></div>
         </main>
     </div>
     <?php include 'footer.php' ?>

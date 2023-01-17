@@ -12,7 +12,7 @@
         <main class='d-flex flex-column justify-content-center'>
             <nav aria-label="breadcrumb" class="mt-5">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Présentation MMI</li>
                 </ol>
             </nav>
@@ -64,7 +64,7 @@
                             <li><b>Stratégie de communication numérique et design d'expérience</b> : expression et communication, théorie de la communication</li>
                         </ul>
                         <br>
-                        <a href="matieres.php" class="btn btn-primary w-25">En savoir plus</a>
+                        <a href="matieres" class="btn btn-primary w-25">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -80,14 +80,14 @@
                             Il est également possible après avoir obtenu son diplôme de rentrer directement dans le monde professionnel en devenant développeur web ou graphiste. Le BUT MMI vous ouvre une porte vers de nombreux métiers, c'est ce qui fait sa richesse.
                         </p>
                         <br>
-                        <a href="debouches.php" class="btn btn-primary w-25 mb-3">En savoir plus</a>
+                        <a href="debouches" class="btn btn-primary w-25 mb-3">En savoir plus</a>
                     </div>
                     <div class="col-12 col-lg-5">
                         <img class="img-fluid" src="src/img/illustration/mmi-apres.webp" alt="">
                     </div>
                 </div>
             </div>
-            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="matieres.php">Voir les matières enseignées en MMI ></a></div>
+            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="matieres">Voir les matières enseignées en MMI ></a></div>
         </main>
     </div>
     <?php include 'footer.php' ?>
