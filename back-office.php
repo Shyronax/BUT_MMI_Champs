@@ -6,6 +6,7 @@
     <title>Back-Office MMI Champs</title>
 </head>
 <body>
+    <div class="mb-3">
 <form action="register_prof.php" method="post">
     <label class='form-label' for="nom">Prénom et NOM*</label>
     <input class='form-control' required type="text" name="nom">
@@ -53,9 +54,10 @@
         <label class='form-label' for="permission_temoignages">Témoignages</label>
         <input class='form-control' type="checkbox" name="permission_temoignages" id="">
     </fieldset>
-    <input class='form-control' type="submit" value="Envoyer">
+    <input class='btn btn-primary' type="submit" value="Envoyer">
 </form>
-
+</div>
+<div class="mb-3">
 <form action="register_projet.php" method="post" enctype="multipart/form-data">
     <label class='form-label' for="nom">Nom*</label>
     <input class='form-control' type="text" name="nom" id="">
@@ -77,10 +79,11 @@
     <input class='form-control' type="url" name="lien" id="">
     <label class='form-label' for="iframe">Iframe (ex: vidéo YouTube)</label>
     <input class='form-control' type="url" name="iframe" id="">
-    <input class='form-control' type="submit" value="Envoyer">
+    <input class='btn btn-primary' type="submit" value="Envoyer">
 
 </form>
-
+    </div>
+    <div class="mb-3">
 <form action="register_temoignage.php" method="post">
     <label class='form-label' for="titre">Titre*</label>
     <input class='form-control' type="text" name="titre" id="">
@@ -90,9 +93,10 @@
     <input class='form-control' type="text" name="etudiant" id="">
     <label class='form-label' for="promo">Promotion de l'étudiant*</label>
     <input class='form-control' type="text" name="promo" id="">
-    <input class='form-control' type="submit" value="Envoyer">
+    <input class='btn btn-primary' type="submit" value="Envoyer">
 </form>
-
+    </div>
+    <div class="mb-3">
 <form action="register_article.php" method="post" enctype="multipart/form-data">
     <label class='form-label' for="titre">Titre*</label>
     <input class='form-control' required type="text" name="titre" id="">
@@ -102,15 +106,17 @@
     <textarea required name="contenu" id="" cols="30" rows="10"></textarea>
     <label class='form-label' for="miniature">Miniature</label>
     <input class='form-control' type="file" accept ="image/*" name="miniature" id="">
-    <input class='form-control' type="submit" value="Envoyer">
+    <input class='btn btn-primary' type="submit" value="Envoyer">
 </form>
-
+    </div>
+    <div class="mb-3">
 <form action="register_matiere.php" method="post">
     <label class='form-label' for="nom">Nom*</label>
     <input class='form-control' type="text" name="nom" id="">
     <label class='form-label' for="description">Description*</label>
     <textarea name="description" id="" cols="30" rows="10"></textarea>
-    <input class='form-control' type="submit" value="Envoyer">
+    <input class='btn btn-primary' type="submit" value="Envoyer">
 </form>
+    </div>
 </body>
 </html>
