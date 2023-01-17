@@ -21,8 +21,8 @@
             </header>
 
             <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
-                <div class="row">
-                    <div class="col-12 col-lg-10 d-flex flex-column justify-content-center bg-body-secondary p-5 rounded-5">
+                <div class="row gap-5">
+                    <div class="col-12 col-lg-9 d-flex flex-column justify-content-center bg-body-secondary p-5 rounded-5">
                         <p>Je suis entrée dans ce DUT afin de devenir Chef de projet e-commerce.
                             Pour des raisons personnelles j'ai rencontré des difficultés, mais l'équipe enseignante m'a aidée à surmonter cette épreuve et j'en suis sortie avec une nouvelle passion l'UX Design !
                             MMI m'a permis de me découvrir de nouveaux talents !
@@ -38,10 +38,10 @@
             <div data-aos="fade-left" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                 <div class="row ">
                     <div class="col-12 col-lg-2 d-flex flex-column justify-content-center">
-                        <img class="img-fluid" src="src/img/temoignage/profil2.png" alt="">
+                        <img class="img-fluid photoTemoignage" src="src/img/temoignage/profil2.png" alt="">
                     </div>
-                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
-                        <h2 class='display-6 '>Ce qu'on apprend</h2>
+                    <div class="col-12 col-lg-9 d-flex flex-column justify-content-center">
+                        <h2 class='display-6'>Ce qu'on apprend</h2>
                         <p>Les compétences acquises lors de ces trois années de formation tournent autour de <b>trois parcours</b> :</p>
                         <ul>
                             <li><b>Développement web et dispositifs interactifs</b> : développement Web, base de données, services sur réseau et gestion de contenu.</li>
