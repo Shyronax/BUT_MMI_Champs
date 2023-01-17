@@ -19,7 +19,8 @@
             <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center container d-flex flex-column align-items-center vh100 justify-content-center'>
                 <h1 class='display-3 text-center mt-2 mb-5'>Nos étudiants témoignent</h1>
             </header>
-            <div class="container">
+
+            <div data-aos="fade-right" data-aos-offset="300" class="container">
                 <div class="row d-flex flex-column justify-content-center align-items-center">
 
 
