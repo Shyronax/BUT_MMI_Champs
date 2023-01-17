@@ -5,7 +5,7 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>Enseignants MMI</title>
+    <title>L'équipe pédagogique - MMI Champs</title>
 </head>
 
 <body>

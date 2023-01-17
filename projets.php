@@ -4,12 +4,18 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>Projets des étudiants</title>
+    <title>Projets étudiant - MMI Champs</title>
 </head>
 
 <body>
     <?php include 'menu.php'; ?>
     <main class='mb-5 container h-100'>
+    <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Les projets</li>
+            </ol>
+        </nav>
         <div class="container vh100">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-8">

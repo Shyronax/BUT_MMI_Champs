@@ -3,7 +3,7 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>Flash' info</title>
+    <title>Actualités - MMI Champs</title>
 </head>
 
 <body>

@@ -3,7 +3,7 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>International</title>
+    <title>International - MMI Champs</title>
 </head>
 
 <body>
