@@ -226,3 +226,9 @@ label {
 .work {
   list-style: none;
 }
+
+@media screen and (max-width:1000px) {
+  .photoTemoignage {
+    display: none;
+  }
+}

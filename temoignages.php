@@ -30,15 +30,15 @@
                         <p><b>LÉA, PROMO 2019</b></p>
                     </div>
                     <div class="col-12 col-lg-2">
-                        <img class="img-fluid" src="src/img/illustration/mmi-formation.webp" alt="">
+                        <img class="img-fluid photoTemoignage" src="src/img/temoignage/profil4.png" alt="">
                     </div>
                 </div>
             </div>
 
             <div data-aos="fade-left" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                 <div class="row ">
-                    <div class="col-12 col-lg-5 d-flex flex-column justify-content-center">
-                        <img class="img-fluid" src="src/img/illustration/mmi-ce-qu-on-apprend.webp" alt="">
+                    <div class="col-12 col-lg-2 d-flex flex-column justify-content-center">
+                        <img class="img-fluid" src="src/img/temoignage/profil2.png" alt="">
                     </div>
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h2 class='display-6 '>Ce qu'on apprend</h2>
