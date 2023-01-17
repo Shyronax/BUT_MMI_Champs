@@ -1,4 +1,4 @@
-<footer class="py-5">
+<footer class="py-5 bg-body-tertiary">
     <div class="container d-flex justify-content-between">
         <div class="w-25">
             <!-- Logo -->
@@ -30,4 +30,35 @@
 </footer>
 <script>
     AOS.init();
+</script>
+<script>
+    let switchTheme = document.getElementById('switch-theme');
+    let logos = document.querySelectorAll(".logo");
+
+    let theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+        switchTheme.checked = true;
+        document.documentElement.setAttribute('data-bs-theme', 'dark');
+        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
+    } else {
+        switchTheme.checked = false;
+        document.documentElement.setAttribute('data-bs-theme', 'light');
+        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
+    }
+
+    switchTheme.addEventListener('change', function() {
+        if (this.checked) {
+            document.documentElement.setAttribute('data-bs-theme', 'dark');
+            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
+            document.body.classList.remove("fadin");
+            document.body.classList.toggle("fadin");
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.documentElement.setAttribute('data-bs-theme', 'light');
+            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
+            document.body.classList.remove("fadin");
+            document.body.classList.toggle("fadin");
+            localStorage.setItem("theme", "light");
+        }
+    });
 </script>
