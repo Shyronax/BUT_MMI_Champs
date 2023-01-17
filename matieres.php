@@ -38,7 +38,7 @@
                     foreach ($result as $matiere) { ?>
                         <div class="col">
                             <div class="card h-100">
-                                <div class="card-body">;
+                                <div class="card-body">
                                     <h5 class="card-title"><?php echo $matiere['nom_matiere']; ?></h5>
                                     <p class="card-text"><?php echo $matiere['description']; ?></p>
                                 </div>
