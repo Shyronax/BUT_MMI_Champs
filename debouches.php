@@ -30,54 +30,54 @@
             <div class="row">
                 <div class="container d-flex justify-content-center my-5 col-lg-10">
                     <div class="row gap-5 d-flex justify-content-center">
-                        <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
-                            <h2 class="text-center doorTitle" data-bs-toggle="modal" data-bs-target="#openModal1">Développeur Web</h2>
+                        <div class="door door2 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal1">
+                            <h2 class="text-center doorTitle">Développeur Web</h2>
                         </div>
-                        <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
-                            <h2 class="text-center doorTitle" data-bs-toggle="modal" data-bs-target="#openModal2">Intégrateur Web</h2>
+                        <div class="door door1 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal2">
+                            <h2 class="text-center doorTitle">Intégrateur Web</h2>
                         </div>
-                        <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
-                            <h2 class="text-center doorTitle" data-bs-toggle="modal" data-bs-target="#openModal3">Designer Web</h2>
+                        <div class="door door2 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal3">
+                            <h2 class="text-center doorTitle">Designer Web</h2>
                         </div>
                     </div>
                 </div>
                 <div class="container d-flex justify-content-center my-5 col-lg-10">
                     <div class="row gap-5 d-flex justify-content-center">
-                    <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
-                            <h2 class="text-center doorTitle"  data-bs-toggle="modal" data-bs-target="#openModal4">Gestionnaire de Réseaux</h2>
+                    <div class="door door1 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal4">
+                            <h2 class="text-center doorTitle" >Gestionnaire de Réseaux</h2>
                         </div>
-                        <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
-                            <h2 class="text-center doorTitle" data-bs-toggle="modal" data-bs-target="#openModal5">Chargé de Com'</h2>
+                        <div class="door door2 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal5">
+                            <h2 class="text-center doorTitle">Chargé de Com'</h2>
                         </div>
-                        <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
-                            <h2 class="text-center doorTitle" data-bs-toggle="modal" data-bs-target="#openModal6">UX Designer</h2>
+                        <div class="door door1 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal6">
+                            <h2 class="text-center doorTitle">UX Designer</h2>
                         </div>
                         
                     </div>
                 </div>
                 <div class="container d-flex justify-content-center my-5 col-lg-10">
                     <div class="row gap-5 d-flex justify-content-center">
-                        <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
-                            <h2 class="text-center doorTitle" data-bs-toggle="modal" data-bs-target="#openModal7">SEO - SEM</h2>
+                        <div class="door door2 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal7">
+                            <h2 class="text-center doorTitle">SEO - SEM</h2>
                         </div>
-                        <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
-                                <h2 class="text-center doorTitle" data-bs-toggle="modal" data-bs-target="#openModal8">Webmaster</h2>
+                        <div class="door door1 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal8">
+                                <h2 class="text-center doorTitle">Webmaster</h2>
                             </div>
-                            <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
-                                <h2 class="text-center doorTitle"  data-bs-toggle="modal" data-bs-target="#openModal9">Assistant Chef de projet</h2>
+                            <div class="door door2 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal9">
+                                <h2 class="text-center doorTitle" >Assistant Chef de projet</h2>
                             </div>
                     </div>
                 </div>
                 <div class="container d-flex justify-content-center my-5 col-lg-10">
                     <div class="row gap-5 d-flex justify-content-center">
-                    <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
-                                <h2 class="text-center doorTitle"  data-bs-toggle="modal" data-bs-target="#openModal10">Veilleur Stratégique</h2>
+                    <div class="door door1 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal10">
+                                <h2 class="text-center doorTitle"  >Veilleur Stratégique</h2>
                     </div>
-                    <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
-                            <h2 class="text-center doorTitle" data-bs-toggle="modal" data-bs-target="#openModal11">Graphiste</h2>
+                    <div class="door door2 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal11">
+                            <h2 class="text-center doorTitle" >Graphiste</h2>
                         </div>
-                            <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
-                                <h2 class="text-center doorTitle"  data-bs-toggle="modal" data-bs-target="#openModal12">Réalisateur Multimédia</h2>
+                            <div class="door door1 d-flex align-items-center justify-content-center col-lg-3"  data-bs-toggle="modal" data-bs-target="#openModal12">
+                                <h2 class="text-center doorTitle"  >Réalisateur Multimédia</h2>
                             </div>
                     </div>
                 </div>
