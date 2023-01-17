@@ -109,17 +109,17 @@ input[type=checkbox] {
 
 }
 
-.nav-pills .nav-link .fake.active,
-.nav-pills .show>.nav-link .fake {
+.nav-pills .fake.active,
+.nav-pills .show>.fake {
   color: white !important;
   background-color: #2A9D8F !important;
 }
 
-button .nav-link .fake:hover {
+.fake:hover {
   color: #2A9D8F !important;
 }
 
-button .nav-link .fake {
+.fake {
   color: #2A9D8F !important;
 }
 
