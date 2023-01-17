@@ -10,13 +10,13 @@
     <?php include 'menu.php'; ?>
     <div class="container mb-5 mt-2">
         <main class='d-flex flex-column justify-conte,t-center'>
-        <nav aria-label="breadcrumb" class="mt-5">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Actualités</li>
-            </ol>
-        </nav>
-            <header class='mb-5 d-flex flex-column align-items-center container'>
+            <nav aria-label="breadcrumb" class="mt-5">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Actualités</li>
+                </ol>
+            </nav>
+            <header data-aos="fade-down" data-aos-offset="300" class='mb-5 d-flex flex-column align-items-center justify-content-center container vh100'>
                 <h1 class='display-3 text-center '>Flash' info!</h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </header>
-            <div class="container mb-5">
+            <div data-aos="fade-right" data-aos-offset="300" class="container mb-5">
                 <div class="card mb-2">
                     <div class="card-header">
                         Title
