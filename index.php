@@ -13,11 +13,11 @@
         <div class="container vh100">
             <div data-aos="fade-down" data-aos-offset="500" class="row h-100 justify-content-center align-items-center">
 
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
 
                     <h1 class='display-2 inline text-center'>BUT MMI CHAMPS</h1>
                     <div class=" row col-12 justify-content-end">
-                        <p class=' col-9 pe-4 text-end'> À la recherche d'une formation ? Un étudiant MMI d'un autre IUT ?
+                        <p class='col-10 col-lg-9 pe-4 text-end'> À la recherche d'une formation ? Un étudiant MMI d'un autre IUT ?
                             Un ancien élève ? Un parent ? Un enseignant ?
                             Peu importe votre statut, venez découvrir le BUT MMI à l'IUT de Champs-sur-Marne !
                             <a class="btn btn-primary mt-3" href="presentation.php">Suivre la visite guidée!</a>
@@ -34,7 +34,7 @@
 
 
             <div data-aos="fade-right" data-aos-offset="500" class="row ps-3">
-                <div class="col"><img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt=""></div>
+                <div class="col-12 col-lg-6"><img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt=""></div>
                 <div class="col">
                     <div class="row h-100 justify-content-center align-items-center">
                         <p class=''> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
@@ -46,7 +46,7 @@
 
         </div>
         </div>
-        <div data-aos="fade-left" data-aos-offset="500" class="container vh50 mb-4">
+        <div data-aos="fade-left" data-aos-offset="500" class="container vh75 mb-4">
             <h2 class="mb-3">MMI en bref :</h2>
             <div class="row row-cols-1 row-cols-md-3 ">
                 <div class="col ">
@@ -90,26 +90,26 @@
         <div data-aos="fade-left" data-aos-offset="500" class="container d-flex flex-column  justify-content-center vh75 mb-4">
             <h3 class="mb-3">MMI en chiffres</h3>
             <div class="p-3 mb-2  rounded">
-                <div class="display-4 d-flex justify-content-between">
-                    <div>
-                        <p class='text-center'> 28 </p>
+                <div class="display-4 d-flex flex-column flex-lg-row  justify-content-lg-between">
+                    <div class="d-flex flex-row flex-lg-column">
+                        <p class='text-lg-center me-2 me-lg-0'> 28 </p>
                         <p class="display-6">ans d'existence</p>
                     </div>
 
 
-                    <div>
+                    <div class="d-flex flex-row flex-lg-column">
 
-                        <p class='text-center'> 1600 </p>
+                        <p class='text-lg-center me-2 me-lg-0'> 1600 </p>
                         <p class="display-6">Diplômés</p>
                     </div>
 
 
-                    <div>
-                        <p class='text-center'> 2500 </p>
+                    <div class="d-flex flex-row flex-lg-column">
+                        <p class='text-lg-center me-2 me-lg-0'> 2500 </p>
                         <p class="display-6">Candidats par an</p>
                     </div>
-                    <div>
-                        <p class='text-center'> 56 </p>
+                    <div class="d-flex flex-row flex-lg-column">
+                        <p class='text-lg-center me-2 me-lg-0'> 56 </p>
                         <p class="display-6">Places</p>
                     </div>
 
@@ -117,7 +117,7 @@
             </div>
 
         </div>
-        <div data-aos="fade-right" data-aos-offset="500" class="container mb-4 ">
+        <div data-aos="fade-right" data-aos-offset="500" class="container mb-4  ">
             <h3 class="mb-3">Projets étudiants :</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <div class="col">
@@ -129,35 +129,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card h-100">
-                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-md-4 g-4 mb-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="col">
                     <div class="card h-100">
                         <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
@@ -176,26 +147,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="button">Button</button>
             </div>
 
+
         </div>
-        <div data-aos="fade-left" data-aos-offset="500" class="container vh75 d-flex flex-column  justify-content-center ">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Button</button>
+        </div>
+
+        </div>
+        <div data-aos="fade-left" data-aos-offset="500" class="container vh100 d-flex flex-column  justify-content-center ">
             <h3 class="mb-3">Témoignages d'étudiants</h3>
 
             <div class="row row-cols-1 row-cols-md-3 g-5">
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="card h-100">
 
                         <div class="card-body">
@@ -209,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="card h-100">
 
                         <div class="card-body">
@@ -221,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="card h100">
 
                         <div class="card-body">
