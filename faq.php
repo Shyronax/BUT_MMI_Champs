@@ -23,11 +23,11 @@
         </main>
         <div class="container mb-2">
             <h2>C'est quoi une journée type en MMI ?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi itaque facere in, voluptatibus beatae, assumenda quod, error aliquam maxime laudantium accusamus ratione obcaecati ut ad doloremque commodi doloribus? Mollitia?</p>
+            <p>Généralement, vous avez cours de 8h15 à 12h30 pour la matinée et de 13h30 à 17h45 l'après midi. Chaque cours dure environ 2h ensuite vous avez une pause de 15 minutes.  </p>
         </div>
         <div class="container mb-2">
-            <h2>Title</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi itaque facere in, voluptatibus beatae, assumenda quod, error aliquam maxime laudantium accusamus ratione obcaecati ut ad doloremque commodi doloribus? Mollitia?</p>
+            <h2>Est-ce qu'on peut arreter la formation au bout de 2 ans ?</h2>
+            <p>Oui, vous pouvez mais vous obtiendrez seulement le niveau de diplome " DUT ".</p>
         </div>
     </div>
     <?php include 'footer.php' ?>
