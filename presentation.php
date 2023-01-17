@@ -55,8 +55,8 @@
                         <p>Les compétences acquises lors de ces trois années de formation tournent autour de <b>trois parcours</b> :</p>
                             <ul>
                                 <li><b>Développement web et dispositifs interactifs</b> : développement Web, base de données, services sur réseau et gestion de contenu.</li>
-                                <li>la <b>création de multimédia</b> : savoir générer du contenu multimédia (son, vidéo, photo, montage et animation 2D/3D) et utilisation des logiciels de la suite adobe ( illustrator, premiere pro, indesign…).</li>
-                                <li>la <b>communication</b> : expression et communication, théorie de la communication</li>
+                                <li><b>Création numérique</b> : savoir générer du contenu multimédia (son, vidéo, photo, montage et animation 2D/3D) et utilisation des logiciels de la suite adobe ( illustrator, premiere pro, indesign…).</li>
+                                <li><b>Stratégie de communication numérique et design d'expérience</b> : expression et communication, théorie de la communication</li>
                             </ul>
                             <br>
                             <a href="matieres.php" class="btn btn-primary w-25">En savoir plus</a>
