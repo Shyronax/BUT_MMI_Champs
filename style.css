@@ -106,11 +106,12 @@ input[type=checkbox] {
 
 .bs-dropdown-link-active-bg {
   background-color: #2A9D8F !important;
+
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-
+  color: white !important;
   background-color: #2A9D8F !important;
 }
 
