@@ -32,7 +32,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="src/img/prof/philippe-gambette.png" alt="photo du professeur" class="img-fluid">
+                            <img src="src/img/prof/gaelle-charpentier.png" alt="photo du professeur" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Charpentier Gaëlle</h4>
@@ -47,7 +47,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof2.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/anne-tasso.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Tasso Anne</h4>
@@ -62,13 +62,13 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/herve-lo.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Lo Hervé</h4>
                             <p class="card-text">Gestion de projet</p>
                             <!-- Ajoutez un bouton pour ouvrir la modale -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof1">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof3">
                                 Plus de détails
                             </button>
                         </div>
@@ -77,7 +77,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/frederic-poisson.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Poisson Frédéric</h4>
@@ -92,7 +92,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/philippe-gambette.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">gambette Phillipe</h4>
@@ -107,7 +107,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/renaud-eppstein.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Eppstein Renaud</h4>
@@ -122,7 +122,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/matthieu-berthet.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">BERTHET Matthieu</h4>
@@ -137,7 +137,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof2.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/florence-bister.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">BISTER Florence</h4>
@@ -152,7 +152,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/lea-bosco.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">BOSCO Léa</h4>
@@ -167,7 +167,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/renaud-eppstein.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">BULTEAU Laurent</h4>
@@ -182,7 +182,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/kpc.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">CHABANE Karim Pierre (aka KPC)</h4>
@@ -210,26 +210,12 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">CHABANE Karim Pierre (aka KPC)</h4>
-                            <p class="card-text">écriture multimédia</p>
-                            <!-- Ajoutez un bouton pour ouvrir la modale -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof1">
-                                Plus de détails
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                
                 
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/?????.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">COURCOUX Titouan</h4>
@@ -244,7 +230,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/sylvie-dallet.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">DALLET Sylvie</h4>
@@ -259,7 +245,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/tony-houziaux.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">HOUZIAUX TONY</h4>
@@ -274,7 +260,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/leyla-jaoued.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">JAOUED-ABASSI Leyla</h4>
@@ -289,7 +275,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/alexandre-leroy.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">LEROY Alexandre</h4>
@@ -304,7 +290,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/odile-niel.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">NIEL Odile</h4>
@@ -319,7 +305,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/lahcen-soussi.png" alt="photo du professeur">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">SOUSSI Lahcen</h4>
