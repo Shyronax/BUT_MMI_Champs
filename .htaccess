@@ -4,7 +4,7 @@ RewriteRule ^[^/]+/(\d+)$ projets.php?id=$1
 RewriteRule ^actus/? actu.php [NC]
 RewriteRule ^[^/]+/(\d+)$ actu.php?id=$1
 RewriteRule ^faq/? faq.php [NC]
-RewriteRule ^temoignages/? teamoignages.php [NC]
+RewriteRule ^temoignages/? temoignages.php [NC]
 RewriteRule ^presentation/? presentation.php [NC]
 RewriteRule ^mentions/? mentions.php [NC]
 RewriteRule ^index/? index.php [NC]
