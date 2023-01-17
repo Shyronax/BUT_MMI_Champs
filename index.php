@@ -124,7 +124,7 @@
                     <div class="card h-100">
                         <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Léa, promo 2019</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                     <div class="card h-100">
                         <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Keïsha-Faty, promo 2021</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                     <div class="card h-100">
                         <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Laurence, promo 2021</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
@@ -164,7 +164,7 @@
                     <div class="card h-100">
 
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Laurence, promo 2021</h5>
 
                             <blockquote class="blockquote mb-0">
                                 <p>A well-known quote, contained in a blockquote element.</p>
@@ -178,7 +178,7 @@
                     <div class="card h-100">
 
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Keïsha-Faty, promo 2021</h5>
                             <blockquote class="blockquote mb-0">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -190,7 +190,7 @@
                     <div class="card h100">
 
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Léa, promo 2019</h5>
                             <blockquote class="blockquote mb-0">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -213,8 +213,8 @@
 
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p>15/15/15</p>
-                        <p>A well-known quote, contained in a blockquote element.</p>
+                        <p>24/11/2022</p>
+                        <p>Les MMI2 sont à Londres ! Ce voyage a été organiser dans un but pédagogique. </p>
                         <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                     </blockquote>
                 </div>
@@ -226,8 +226,8 @@
 
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p>15/15/15</p>
-                        <p>A well-known quote, contained in a blockquote element.</p>
+                        <p>07/09/22</p>
+                        <p>Les MMI2 prépare l'accueil des nouveau MMI1 ! </p>
                         <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                     </blockquote>
                 </div>
