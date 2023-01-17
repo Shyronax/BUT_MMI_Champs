@@ -22,6 +22,7 @@
         <legend>Matières enseignées</legend>
         <label class='form-label' for="matiere_1">Matière 1</label>
         <select name="matiere_1" id="">
+            <option value="">---</option>
         <?php
         foreach(getMatieres() as $matiere){
             echo "<option value=".$matiere['id_matiere'].">{$matiere['nom_matiere']}</option>";
@@ -30,6 +31,7 @@
         </select>
         <label class='form-label' for="matiere_2">Matière 2</label>
         <select name="matiere_2" id="">
+            <option value="">---</option>
         <?php
         foreach(getMatieres() as $matiere){
             echo "<option value=".$matiere['id_matiere'].">{$matiere['nom_matiere']}</option>";
@@ -38,6 +40,7 @@
         <label class='form-label' for="matiere_3">Matière 3</label>
         </select>
         <select name="matiere_3" id="">
+            <option value="">---</option>
         <?php
         foreach(getMatieres() as $matiere){
             echo "<option value=".$matiere['id_matiere'].">{$matiere['nom_matiere']}</option>";

@@ -126,9 +126,9 @@ function addTemoignage($etudiant, $promo, $titre, $contenu_temoignage)
 function addMatiere($nom, $description)
 {
     $db = dbConnect();
-    $query = "INSERT INTO matiere (nom, description) VALUES (:nom, :description)";
+    $query = "INSERT INTO matiere (nom_matiere, description) VALUES (:nom_matiere, :description)";
     $stmt = $db->prepare($query);
-    $stmt->bindValue(":nom", $nom, PDO::PARAM_STR);
+    $stmt->bindValue(":nom_matiere", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":description", $description, PDO::PARAM_STR);
     $stmt->execute();
 }
