@@ -45,7 +45,7 @@ function addUser($name, $login, $pass, $mail, $bio, $mat1, $mat2, $mat3, $art, $
 function addArticle($nom, $contenu, $synopsis, $miniature){
     $db=dbConnect();
     $target_file = 'src/img/proj/' . basename($_FILES['image']);
-    $query="INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article, $_SESSION['name'])";
+    $query="INSERT INTO article(nom_article,contenu_article,date_article,synopsis,miniature_article,auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article, $_SESSION['name'])";
     $target_dir = 'src/img/art/';
     $target_file = $target_dir . basename($miniature);
     move_uploaded_file($miniature, $target_file);
