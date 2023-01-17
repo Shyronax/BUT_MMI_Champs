@@ -108,6 +108,20 @@ input[type=checkbox] {
   background-color: #2A9D8F !important;
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+
+  background-color: #2A9D8F !important;
+}
+
+.nav-link:hover {
+  color: #2A9D8F !important;
+}
+
+.nav-link {
+  color: #2A9D8F !important;
+}
+
 :root {
   --bs-dropdown-link-active-bg: #2A9D8F !important;
   ;
@@ -159,7 +173,7 @@ body {
   color: #2A9D8F;
 }
 
-.nextLink a{
+.nextLink a {
   color: #2A9D8F;
   font-weight: 700;
   font-size: 1.5rem;
