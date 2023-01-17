@@ -16,7 +16,7 @@
                     <h1 class='display-1 inline text-center'>Projets des étudiants</h1>
                     <div class="w-100"></div>
                     <div class=" row col-12 justify-content-center">
-                        <p class=' col-8 pe-0 text-center'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
+                        <p class=' col-8 pe-0 text-center'> Voici quelques projets réaliser par nos étudiants au fil des années. </p>
                     </div>
                 </div>
             </div>

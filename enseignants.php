@@ -1,3 +1,5 @@
+<?php include 'model.php'; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -27,6 +29,9 @@
                 </div>
             </div>
         </div>
+
+
+
         <div data-aos="fade-right" data-aos-offset="500" class="container  justify-content-center align-items-center">
             <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
@@ -209,9 +214,9 @@
                         </div>
                     </div>
                 </div>
-                
-                
-                
+
+
+
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
@@ -234,7 +239,7 @@
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">DALLET Sylvie</h4>
-                            <p class="card-text">culture artistique  et numérique</p>
+                            <p class="card-text">culture artistique et numérique</p>
                             <!-- Ajoutez un bouton pour ouvrir la modale -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof1">
                                 Plus de détails
@@ -317,14 +322,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Ajoutez autant de cartes et modales que nécessaire en répétant le code ci-dessus -->
             </div>
         </div>
 
         <!-- Ajoutez un modale pour chaque professeur, en utilisant des ID uniques pour les associer aux boutons -->
 
-        
+
         <div class="modal fade" id="modal-prof1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -340,9 +345,9 @@
                 </div>
             </div>
         </div>
-        
-       
-        
+
+
+
         <div class="modal fade" id="modal-prof1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -358,7 +363,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof2" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -374,7 +379,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof3" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -390,7 +395,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof4" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -406,7 +411,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof5" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -422,7 +427,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof6" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -438,7 +443,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof7" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -454,7 +459,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof8" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -470,7 +475,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -486,7 +491,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof10" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -502,7 +507,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof12" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -518,7 +523,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof13" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -534,7 +539,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof14" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -550,7 +555,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof15" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -566,7 +571,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof16" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -582,7 +587,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof17" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -598,7 +603,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="modal-prof18" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -614,8 +619,8 @@
                 </div>
             </div>
         </div>
-        
-         <div class="modal fade" id="modal-prof19" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal fade" id="modal-prof19" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
