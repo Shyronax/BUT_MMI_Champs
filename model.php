@@ -22,7 +22,7 @@ function login($login, $pass){
     } else {return false;} 
 }
 
-function addUser($name, $login, $pass, $mail, $bio, $mat1, $mat2, $mat3, $art, $proj, $tem){
+function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem){
     $hash=password_hash($pass, PASSWORD_DEFAULT);
     $db=dbConnect();
     $query="INSERT INTO utilisateur (nom_prof, login_prof, mdp, mail, bio, p_articles, p_projets, p_temoignages) VALUES (:nom_prof, :login_prof, :mdp, :mail, :bio, :p_articles, :p_projets, :p_temoignages)";
@@ -36,15 +36,41 @@ function addUser($name, $login, $pass, $mail, $bio, $mat1, $mat2, $mat3, $art, $
     $stmt->bindValue(":p_projets", $proj, PDO::PARAM_INT);
     $stmt->bindValue(":p_temoignages", $tem, PDO::PARAM_INT);
     $stmt->execute();
-    $query="INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof, :ext_matiere)";
-    $stmt=$db->prepare($query);
-    $stmt->bindValue();
+}
+
+function addLien($mat1=null, $mat2=null, $mat3=null, $nom){
+    $db=dbConnect();
+    $query="SELECT * FROM utilisateur WHERE nom_prof = $nom";
+    $stmt=$db->query($query);
+    $result=$stmt->fetch(PDO::FETCH_ASSOC);
+    $id=$result['id_user'];
+    if (isset($mat1)) {
+        $query="INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof,:ext_matiere)";
+        $stmt=$db->prepare($query);
+        $stmt->bindValue(":ext_prof", $id, PDO::PARAM_INT);
+        $stmt->bindValue(":ext_matiere", $mat1, PDO::PARAM_INT);
+        $stmt->execute();
+    }
+    if (isset($mat2)) {
+        $query="INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof,:ext_matiere)";
+        $stmt=$db->prepare($query);
+        $stmt->bindValue(":ext_prof", $id, PDO::PARAM_INT);
+        $stmt->bindValue(":ext_matiere", $mat2, PDO::PARAM_INT);
+        $stmt->execute();
+    }
+    if (isset($mat3)) {
+        $query="INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof,:ext_matiere)";
+        $stmt=$db->prepare($query);
+        $stmt->bindValue(":ext_prof", $id, PDO::PARAM_INT);
+        $stmt->bindValue(":ext_matiere", $mat3, PDO::PARAM_INT);
+        $stmt->execute();
+    }
 }
 
 
 function addArticle($nom, $contenu, $synopsis, $miniature){
     $db=dbConnect();
-    $target_file = 'src/img/proj/' . basename($_FILES['image']);
+    $target_file = 'src/img/article/' . basename($_FILES['image']);
     $query="INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article)" . $_SESSION['name'];
     $target_dir = 'src/img/art/';
     $target_file = $target_dir . basename($miniature);
@@ -59,7 +85,7 @@ function addArticle($nom, $contenu, $synopsis, $miniature){
 
 function addProjet($nom_projet, $etudiants, $annee_projet, $niveau, $iframe_projet, $lien_projet, $image_projet, $description){
     $db=dbConnect();
-    $target_dir = 'src/img/proj/';
+    $target_dir = 'src/img/projet/';
     $target_file = $target_dir . basename($image_projet);
     move_uploaded_file($image_projet, $target_file);
     $query="INSERT INTO projet (nom_projet, etudiants, annee_projet, niveau, iframe_projet, lien_projet, image_projet, description) VALUES (:nom_projet, :etudiants, :annee_projet, :niveau, :iframe_projet, :lien_projet, :image_projet, :description)";
@@ -171,7 +197,7 @@ function getTemoignages(){
 }
 
 function rmUser($id){
-    if ($_SESSION['admin'] == "1"){
+    if ($_SESSION['admin'] == 1){
         $db=dbConnect();
         $query="DELETE FROM prof WHERE id_prof = :id_prof";
         $stmt=$db->prepare($query);
@@ -213,5 +239,3 @@ function rmArticle($id){
 function logout(){
     session_destroy();
 }
-
-?>
