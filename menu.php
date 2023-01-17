@@ -37,7 +37,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " href="actu">Actualités</a>
+                <a class="nav-link " href="actus">Actualités</a>
             </li>
             <li>
                 <label class="switch h-100 d-flex flex-column justify-content-center ms-3">
