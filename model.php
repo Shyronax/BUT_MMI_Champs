@@ -140,7 +140,7 @@ function getMatieres()
     $stmt = $db->prepare($query);
     $stmt->execute();
     $result = $stmt->fetchall(PDO::FETCH_ASSOC);
-    return;
+    return $result;
 }
 
 function getProjets()
