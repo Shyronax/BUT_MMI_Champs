@@ -17,7 +17,7 @@
         </nav>
         <div class="container vh100">
             <div data-aos="fade-down" data-aos-offset="500" class="row h-100 justify-content-center align-items-center">
-                <div class="col-6">
+                <div class="col-12 col-lg-7">
 
                     <h1 class='display-1 inline text-center'>Nos enseigants</h1>
                     <div class="w-100"></div>
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div data-aos="fade-right" data-aos-offset="500" class="container vh100 justify-content-center align-items-center">
+        <div data-aos="fade-right" data-aos-offset="500" class="container  justify-content-center align-items-center">
             <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
@@ -237,8 +237,8 @@
 
 
         </div>
-</main>
-        <?php include 'footer.php' ?>
+    </main>
+    <?php include 'footer.php' ?>
 </body>
 
 </html>
