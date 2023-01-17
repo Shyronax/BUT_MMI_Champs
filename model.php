@@ -152,6 +152,24 @@ function getProjets()
     $result = $stmt->fetchall(PDO::FETCH_ASSOC);
     return $result;
 }
+function getProjets_year1()
+{
+    $db = dbConnect();
+    $query = "SELECT * FROM projet WHERE niveau = '1'";
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $result = $stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
+function getProjets_year2()
+{
+    $db = dbConnect();
+    $query = "SELECT * FROM projet WHERE niveau = '2'";
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $result = $stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
 
 function getProjet($id)
 {
