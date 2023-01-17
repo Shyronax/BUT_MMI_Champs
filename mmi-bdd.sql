@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le : mar. 17 jan. 2023 à 18:42
--- Version du serveur : 8.0.31
--- Version de PHP : 8.0.26
+-- Hôte : 127.0.0.1:3308
+-- Généré le :  mar. 17 jan. 2023 à 21:06
+-- Version du serveur :  8.0.18
+-- Version de PHP :  7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `mmi-bdd.sql`
+-- Base de données :  `mmi-bdd`
 --
 
 -- --------------------------------------------------------
@@ -29,7 +30,7 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `article`;
 CREATE TABLE IF NOT EXISTS `article` (
-  `id_article` int NOT NULL AUTO_INCREMENT,
+  `id_article` int(11) NOT NULL AUTO_INCREMENT,
   `nom_article` varchar(100) NOT NULL,
   `contenu_article` varchar(1000) NOT NULL,
   `date_article` date NOT NULL,
@@ -47,11 +48,34 @@ CREATE TABLE IF NOT EXISTS `article` (
 
 DROP TABLE IF EXISTS `lien_matiere`;
 CREATE TABLE IF NOT EXISTS `lien_matiere` (
-  `id_lien` int NOT NULL AUTO_INCREMENT,
-  `ext_matiere` int NOT NULL,
-  `ext_prof` int NOT NULL,
+  `id_lien` int(11) NOT NULL AUTO_INCREMENT,
+  `ext_matiere` int(11) NOT NULL,
+  `ext_prof` int(11) NOT NULL,
   PRIMARY KEY (`id_lien`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `lien_matiere`
+--
+
+INSERT INTO `lien_matiere` (`id_lien`, `ext_matiere`, `ext_prof`) VALUES
+(1, 1, 14),
+(2, 2, 2),
+(3, 3, 5),
+(4, 4, 11),
+(5, 5, 7),
+(6, 6, 6),
+(7, 7, 4),
+(8, 8, 13),
+(9, 9, 10),
+(10, 10, 1),
+(11, 11, 3),
+(12, 12, 1),
+(13, 13, 13),
+(14, 14, 15),
+(15, 15, 6),
+(16, 16, 8),
+(17, 4, 12);
 
 -- --------------------------------------------------------
 
@@ -61,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `lien_matiere` (
 
 DROP TABLE IF EXISTS `matiere`;
 CREATE TABLE IF NOT EXISTS `matiere` (
-  `id_matiere` int NOT NULL AUTO_INCREMENT,
+  `id_matiere` int(11) NOT NULL AUTO_INCREMENT,
   `nom_matiere` varchar(60) NOT NULL,
   `description` text NOT NULL,
   PRIMARY KEY (`id_matiere`)
@@ -72,10 +96,10 @@ CREATE TABLE IF NOT EXISTS `matiere` (
 --
 
 INSERT INTO `matiere` (`id_matiere`, `nom_matiere`, `description`) VALUES
-(1, 'Anglais (web + renforcé)', 'Dans le monde actuel, le plurilinguisme est une compétence de plus en plus importante. En plus d’offrir des opportunités d’embauches, être capable de parler anglais aide à établir une connexion réelle avec les personnes et d’en apprendre plus sur les différents lieux, cultures, et façons de vivre. Plus vous maîtrisez l’anglais et mieux vous saurez vous exprimer.\r\nÀ l’IUT de Champs-sur-Marne, on apprend à nous exprimer sur des sujets variés,les bases de la conjugaison et de la grammaire (language boost),à analyser des écrits sur des sujets divers et à en tirer des conclusions,le vocabulaire dédié au domaine du web\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :Publication de nouveautés sur le compte Instagram mmind_mmi, publication d’un teaser de notre projet sur instagram,publication de nouveautés sur le compte Instagram mmind_mmi et un CV Vidéo (doit être fait en anglais)'),
-(2, 'Audiovisuel & Motion Design / Production Audio & Vidéo', 'Omniprésent dans le quotidien et en constante évolution, le motion design se retrouve dans les publicités télévisées, les clips musicaux, les génériques de films, les affichages publicitaires et bien d\'autres. Cette discipline est aussi appliquée sur Internet pour la réalisation des bannières, des vidéos promotionnelles ou institutionnelles, des tutoriels, etc. C’est donc la conception et  la réalisation de contenus associant vidéo, graphisme 2D, son, effets spéciaux, typographie et animation 3D que vous étudierez à l’IUT de Champs .En MMI, on apprend à utiliser le matériel vidéo, les techniques de tournage et à monter sur les logiciels d’Adobe\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : Interview sur un sujet donné, Création d’un motion design pour une institution, un Podcast et un CV Vidéo.'),
-(3, 'Création & Design Interactif / Production Graphique', 'ici à mmi Champs , vous apprenez les bases du design de l’utilisation des logiciels de la suite Adobe, à la création de contenus graphique en passant par la réalisation d’affiches , de bannières , de logo et de mise en pages.\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons à utiliser les logiciels de la suite Adobe, à créer du contenu visuel pertinent et cohérent et respecter les normes et format pour les publications.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : création d’un gif animé, maquettage, campagne de communication institutionnelle.'),
-(4, 'Culture Artistique', 'Cela désigne toutes les activités liées à la création, la production, la distribution ou la consommation dans le domaine de la musique, le théâtre, la danse, les arts visuels ou les programmes de radio et de télévision. c’est un ensemble de matières telles que : la vidéo , l’art et le design. A champs vous apprendrez à utiliser tout le potentiel de votre esprit créatif, laissez libre votre imagination. \r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons à avoir un esprit créatif !\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :Livre des 7 mots, un leporello, un Podcast'),
+(1, 'Anglais (web + renforcé)', 'La pratique de l\'anglais à pour but d\'apprendre à s\'exprimer sur des sujets variés, à revoir les bases de la conjugaison et de la grammaire (language boost),à analyser des écrits sur des sujets divers et à en tirer des conclusion. Quant à l\'anglais web, il permet de développer du vocabulaire dédié au monde du multimédia  \r\n\r\nVoici quelques exemples de projets de cette matière :publication d\'actualités sur le compte Instagram mmind_mmi, publication d’un teaser de notre projet sur Instagram, la voix off et les dialogues du cv vidéo (qui doivent être impérativement fait en anglais)... '),
+(2, 'Audiovisuel & Motion Design / Production Audio & Vidéo', 'Omniprésent dans le quotidien et en constante évolution, le motion design se retrouve dans les publicités télévisées, les clips musicaux, les génériques de films, les affichages publicitaires et bien d\'autres. Cette discipline est aussi appliquée sur Internet pour la réalisation des bannières, des vidéos promotionnelles ou institutionnelles, des tutoriels, etc. C’est donc la conception et  la réalisation de contenus associant vidéo, graphisme 2D, son, effets spéciaux, typographie et animation 3D que vous étudierez à l’IUT de Champs .En MMI, on apprend à utiliser le matériel vidéo, les techniques de tournage et à monter sur les logiciels d’Adobe\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : Interview sur un sujet donné, Création d’un motion design pour une institution, un Podcast et un CV Vidéo..'),
+(3, 'Création & Design Interactif / Production Graphique', 'Cette matière permet d\'aborder l\'apprentissage des logiciels de la suite Adobe, à créer du contenu visuel pertinent et cohérent et respecter les normes et format pour les publications.\r\n\r\nVoici quelques exemples de projets : création d’un gif animé, maquettage, campagne de communication institutionnelle...'),
+(4, 'Culture Artistique', 'La culture artistique est une matière qui permet de déconnecter et de laisser libre court à son imagination et sa créativité \r\nchamps vous apprendrez à utiliser tout le potentiel de votre esprit créatif, laissez libre votre imagination. \r\n\r\nVoici quelques exemples de projets:\r\nLivre des 7 mots, un leporello, affiche...'),
 (5, 'Déploiement de services / Hébergement', 'Un réseau informatique est un ensemble d\'équipements reliés entre eux pour échanger des informations. Grace à de nombreux TP ( travaux pratique) vous apprendrez  à maîtriser la configuration d’un hébergement Web ou d’un réseau local (Webmail, CMS, blog)  ainsi qu’a utiliser différent système d’explotation comme Linux et Windows .\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons :à utiliser l’interface Linux, la gestion d’un réseau, la gestion de contenus.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :un portrait chinois, un site de réservation, la création d’une institution, la refonte du site MMI champs et un portfolio'),
 (6, 'Développement Back / Système d’information', 'À l’IUT de Champs-sur-Marne, nous apprenons :l\'interface de gestion ( back-end ), l\'architecture MVC.\r\n\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : un site de réservation ,la création d\'une institution et la refonte du site mmi Champs.'),
 (7, 'Développement & Intégration', 'Le développement Web désigne de manière générale les tâches associées au développement de sites Web destinés à être hébergés via un intranet ou Internet. Le processus de développement web comprend, entre autres, la conception de sites web, le développement de contenu web, l’élaboration de scripts côté client ou côté serveur et la configuration de la sécurité du réseau. Les langages de programmation que vous apprendrez sont : JavaScript , PHP, HTML et CSS.\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons :à coder en HTML, CSS,PHP et JS, à respecter les règles sémantiques et bien gérer ses fichiers.\r\n\r\n\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : Portrait Chinois en onepage, un Site de réservation “ResaWeb”, un site avec visualisation de données “DataViz”, un portfolio personnel et la refonte du site mmi.'),
@@ -97,7 +121,7 @@ INSERT INTO `matiere` (`id_matiere`, `nom_matiere`, `description`) VALUES
 
 DROP TABLE IF EXISTS `projet`;
 CREATE TABLE IF NOT EXISTS `projet` (
-  `id_projet` int NOT NULL AUTO_INCREMENT,
+  `id_projet` int(11) NOT NULL AUTO_INCREMENT,
   `nom_projet` varchar(50) NOT NULL,
   `etudiants` varchar(100) NOT NULL,
   `date_projet` date NOT NULL,
@@ -130,7 +154,7 @@ INSERT INTO `projet` (`id_projet`, `nom_projet`, `etudiants`, `date_projet`, `ni
 
 DROP TABLE IF EXISTS `temoignage`;
 CREATE TABLE IF NOT EXISTS `temoignage` (
-  `id_temoignage` int NOT NULL AUTO_INCREMENT,
+  `id_temoignage` int(11) NOT NULL AUTO_INCREMENT,
   `etudiant` varchar(100) NOT NULL,
   `promo` varchar(15) NOT NULL,
   `nom_temoignage` varchar(50) NOT NULL,
@@ -154,19 +178,41 @@ INSERT INTO `temoignage` (`id_temoignage`, `etudiant`, `promo`, `nom_temoignage`
 
 DROP TABLE IF EXISTS `utilisateur`;
 CREATE TABLE IF NOT EXISTS `utilisateur` (
-  `id_prof` int NOT NULL AUTO_INCREMENT,
+  `id_prof` int(11) NOT NULL AUTO_INCREMENT,
   `nom_prof` varchar(50) NOT NULL,
   `login` varchar(20) NOT NULL,
   `mdp` varchar(20) NOT NULL,
   `mail` varchar(50) NOT NULL,
   `url_photo` varchar(70) DEFAULT NULL,
   `bio` varchar(500) DEFAULT NULL,
-  `p_articles` tinyint NOT NULL,
-  `p_projets` tinyint NOT NULL,
-  `p_temoignages` tinyint NOT NULL,
-  `p_admin` tinyint NOT NULL,
+  `p_articles` tinyint(4) NOT NULL,
+  `p_projets` tinyint(4) NOT NULL,
+  `p_temoignages` tinyint(4) NOT NULL,
+  `p_admin` tinyint(4) NOT NULL,
   PRIMARY KEY (`id_prof`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `utilisateur`
+--
+
+INSERT INTO `utilisateur` (`id_prof`, `nom_prof`, `login`, `mdp`, `mail`, `url_photo`, `bio`, `p_articles`, `p_projets`, `p_temoignages`, `p_admin`) VALUES
+(1, 'Gaëlle Charpentier', '', '', '', 'gaelle-charpentier.png', NULL, 0, 0, 0, 0),
+(2, 'Anne Tasso', '', '', '', 'anne-tasso.png', NULL, 0, 0, 0, 0),
+(3, 'Hervé Lo', '', '', '', 'herve-lo.png', NULL, 0, 0, 0, 0),
+(4, 'Philippe Gambette', '', '', '', 'philippe-gambette.png', NULL, 0, 0, 0, 0),
+(5, 'Frédéric Poisson', '', '', '', 'frederic-poisson.png', NULL, 0, 0, 0, 0),
+(6, 'Renaud Eppstein', '', '', '', 'renaud-eppstein.png', NULL, 0, 0, 0, 0),
+(7, 'Matthieu Berthet', '', '', '', 'matthieu-berthet.png', NULL, 0, 0, 0, 0),
+(8, 'Florence Bister', '', '', '', 'florence-bister.png', NULL, 0, 0, 0, 0),
+(9, 'Léa Bosco', '', '', '', 'lea-bosco.png', NULL, 0, 0, 0, 0),
+(10, 'Karim Pierre Chabane', '', '', '', 'kpc.png', NULL, 0, 0, 0, 0),
+(11, 'Sylvie Dallet', '', '', '', 'sylvie-dallet.png', NULL, 0, 0, 0, 0),
+(12, 'Tony Houziaux', '', '', '', 'tony-houziaux.png', NULL, 0, 0, 0, 0),
+(13, 'Leyla Jaoued', '', '', '', 'leyla-jaoued.png', NULL, 0, 0, 0, 0),
+(14, 'Alexandre Leroy', '', '', '', 'alexandre-leroy.png', NULL, 0, 0, 0, 0),
+(15, 'Odile Niel', '', '', '', 'odile-niel.png', NULL, 0, 0, 0, 0),
+(16, 'Lahcen Soussi', '', '', '', 'lahcen-soussi.png', NULL, 0, 0, 0, 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
