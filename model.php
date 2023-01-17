@@ -79,11 +79,10 @@ function addLien($mat1 = null, $mat2 = null, $mat3 = null, $nom)
 function addArticle($nom, $contenu, $synopsis, $miniature)
 {
     $db = dbConnect();
-    $target_file = 'src/img/article/' . basename($miniature);
-    $query = "INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article)" . $_SESSION['name'];
-    $target_dir = 'src/img/art/';
+    $target_dir = '../src/img/article/';
     $target_file = $target_dir . basename($miniature);
     move_uploaded_file($miniature, $target_file);
+    $query = "INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article)" . $_SESSION['name'];
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_article", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":contenu_article", $contenu, PDO::PARAM_STR);
@@ -95,7 +94,7 @@ function addArticle($nom, $contenu, $synopsis, $miniature)
 function addProjet($nom_projet, $etudiants, $annee_projet, $niveau, $iframe_projet, $lien_projet, $image_projet, $description)
 {
     $db = dbConnect();
-    $target_dir = 'src/img/projet/';
+    $target_dir = '../src/img/projet/';
     $target_file = $target_dir . basename($image_projet);
     move_uploaded_file($image_projet, $target_file);
     $query = "INSERT INTO projet (nom_projet, etudiants, annee_projet, niveau, iframe_projet, lien_projet, image_projet, description) VALUES (:nom_projet, :etudiants, :annee_projet, :niveau, :iframe_projet, :lien_projet, :image_projet, :description)";
