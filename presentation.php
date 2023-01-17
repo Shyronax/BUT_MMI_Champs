@@ -11,7 +11,9 @@
     <div class="container">
         <main class='d-flex flex-column justify-conte,t-center'>
             <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center  justify-content-center container vh100'>
-                <h1 class='display-3 text-center '>MMI, c'est quoi?</h1>
+                <h1 class='display-3 text-center '> Qu’est ce que MMI ? 
+
+                </h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
                         <p class='align-left'>
@@ -24,8 +26,16 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-7 ">
                         <h2 class='display-6 '>MMI c'est <b> une formation</b></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem voluptates, quia commodi repellat omnis? Ad fugit, deserunt quod tempore consectetur unde modi quis, quisquam officia sint magni repudiandae non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta ipsum adipisci praesentium. Non perspiciatis quos enim hic repellendus maiores, blanditiis quod temporibus distinctio aperiam quisquam veniam eius vel quia incidunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem voluptates, quia commodi repellat omnis? Ad fugit, deserunt quod tempore consectetur unde modi quis, quisquam officia sint magni repudiandae non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta ipsum adipisci praesentium. Non perspiciatis quos enim hic repellendus maiores, blanditiis quod temporibus distinctio aperiam quisquam veniam eius vel quia incidunt.</p>
+                        <p>La formation en BUT MMI (Métiers du Multimédia et de l'Internet)  vise à développer des compétences <b>pluridisciplinaires</b> pour former aux métiers du multimédia. </p>
+<p>
+Alliant la théorie à la pratique, la formation propose de développer des compétences en programmation, graphisme ou encore en communication. Cela permet à l'étudiant  de devenir polyvalent dans la conception, la réalisation et la commercialisation de produits et de services web et multimédia.
+
+
+<p>La formation dure trois ans et comprend 2600 heures d'enseignement. Lors de la deuxième année, les étudiants pourront, s’orienter vers  <b>la création numérique </b>ou  <b>le développement web. </b></p>
+
+<p>Le BUT MMI est professionnalisant, il permet de déployer des compétences d’autonomie avec la conduite de nombreux projets individuels ou de groupe.</p>
+
+
 
                     </div>
                     <div class="col-12 col-lg-5">
