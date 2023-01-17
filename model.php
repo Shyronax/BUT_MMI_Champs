@@ -167,7 +167,7 @@ function getProjet($id)
 function getProfs()
 {
     $db = dbConnect();
-    $query = "SELECT * FROM utilisateur";
+    $query = "SELECT * FROM utilisateur, matiere, lien_matiere WHERE id_prof = ext_prof AND id_matiere = ext_matiere";
     $stmt = $db->prepare($query);
     $stmt->execute();
     $result = $stmt->fetchall(PDO::FETCH_ASSOC);
@@ -177,7 +177,7 @@ function getProfs()
 function getProf($id)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM utilisateur WHERE 'id_prof' = ':id_prof'";
+    $query = "SELECT * FROM utilisateur, matiere, lien_matiere WHERE id_prof = :id_prof AND ext_prof = :id_prof AND id_matiere = ext_matiere";
     $stmt = $db->prepare($query);
     $stmt->bindValue(':id_prof', $id, PDO::PARAM_INT);
     $stmt->execute();
