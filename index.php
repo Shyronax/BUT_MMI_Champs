@@ -37,7 +37,7 @@
                 <div class="col-12 col-lg-6"><img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt=""></div>
                 <div class="col">
                     <div class="row h-100 justify-content-center align-items-center">
-                        <p class=''> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
+                        <p class=''> Le BUT MMI est une formation répondant à l’évolution des usages du numérique omniprésente dans le quotidien !</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                     <div class="card h-100">
                         <div class="card-body ">
                             <h5 class="card-title">Formation en 3 ans</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text">Au cours de sa formation, l’étudiant développe des compétences pluridisciplinaires tant dans le domaine de la programmation que dans le graphisme ou les réseaux. Son atout principal à la fin de la formation est sa polyvalence dans les domaines de la conception, de la réalisation, de la commercialisation de produits et de services web et multimédia.</p>
                             <a href="#" class="btn btn-primary w-50">En savoir plus</a>
                         </div>
                     </div>

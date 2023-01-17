@@ -3,61 +3,76 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>Débouchés post-MMI</title>
+    <title>Débouchés post-MMI - MMI Champs</title>
 </head>
 
 <body>
     <?php include 'menu.php'; ?>
+    <div class="container">
+        <main class='d-flex flex-column justify-content-center mb-5'>
+        <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Les débouchés Post-MMI</li>
+            </ol>
+        </nav>
+            <header class='mb-5 d-flex flex-column align-items-center  justify-content-center container vh75'>
+                <h1 class='display-3 text-center '>Débouchés Post-MMI</h1>
+                <div class="row d-flex justify-content-center ">
+                    <div class="col-12 col-lg-7 ">
+                        <p class='text-center'>
+                            Que signifie le sigle MMI ? Qu'est-ce qu'on apprend dans cette formation ? Que peut-on faire après ? Et qu'en est-il des stages et alternances ?
+                        </p>
+                    </div>
+                </div>
+            </header>
+        <div class="container d-flex justify-content-center">
+            <div class="row gap-1">
+                <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
+                    <h2 class="text-center doorTitle" id="opendoor1">Développeur Web</h2>
+                </div>
+                <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
+                    <h2 class="text-center doorTitle" id="opendoor2">Développeur Web</h2>
+                </div>
+                <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
+                    <h2 class="text-center doorTitle" id="opendoor3">Développeur Web</h2>
+                </div>
+                <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
+                    <h2 class="text-center doorTitle" id="opendoor4">Développeur Web</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center gap-5 my-5">
+            <div class="door door1 d-flex align-items-center justify-content-center">
+                <h2 class="text-center doorTitle" id="opendoor2">Développeur Web</h2>
+            </div>
+            <div class="door door2 d-flex align-items-center justify-content-center">
+                <h2 class="text-center doorTitle" id="opendoor3">Développeur Web</h2>
+            </div>
+            <div class="door door1 d-flex align-items-center justify-content-center">
+                <h2 class="text-center doorTitle" id="opendoor4">Développeur Web</h2>
+            </div>
+            <div class="door door2 d-flex align-items-center flex-column justify-content-center">
+                <h2 class="text-center doorTitle" id="opendoor1">Développeur Web</h2>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center gap-5 my-5">
+            <div class="door door2 d-flex align-items-center flex-column justify-content-center">
+                <h2 class="text-center doorTitle" id="opendoor1">Développeur Web</h2>
+            </div>
+            <div class="door door1 d-flex align-items-center justify-content-center">
+                <h2 class="text-center doorTitle" id="opendoor2">Développeur Web</h2>
+            </div>
+            <div class="door door2 d-flex align-items-center justify-content-center">
+                <h2 class="text-center doorTitle" id="opendoor3">Développeur Web</h2>
+            </div>
+            <div class="door door1 d-flex align-items-center justify-content-center">
+                <h2 class="text-center doorTitle" id="opendoor4">Développeur Web</h2>
+            </div>
+        </div>
+        </main>
+    </div>
+    <?php include 'footer.php' ?>
+</body>
 
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://raw.githubusercontent.com/benfred/venn.js/master/venn.js"></script>
-
-    <!-- Créer un élément svg pour afficher le diagramme -->
-    <svg id="venn"></svg>
-
-    <script>
-        // Définir les données pour les ensembles
-        var sets = [{
-                label: "Ensemble A",
-                size: 28
-            },
-            {
-                label: "Ensemble B",
-                size: 35
-            },
-            {
-                label: "Ensemble C",
-                size: 17
-            },
-            {
-                label: "Ensemble A & B",
-                size: 8
-            },
-            {
-                label: "Ensemble A & C",
-                size: 14
-            },
-            {
-                label: "Ensemble B & C",
-                size: 4
-            },
-            {
-                label: "Ensemble A & B & C",
-                size: 3
-            },
-        ];
-
-        // Définir les dimensions du diagramme
-        var width = 500,
-            height = 500;
-
-        // Créer un objet venn
-        var venn = d3.venn()
-            .width(width)
-            .height(height);
-
-        // Appliquer les données à l'objet venn
-        var vennDiagram = d3.select("#venn")
-            .datum(sets)
-            .call(venn);
-    </script>
+</html>
