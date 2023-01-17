@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le : dim. 15 jan. 2023 à 21:07
--- Version du serveur : 5.7.36
--- Version de PHP : 7.4.26
+-- Hôte : 127.0.0.1
+-- Généré le : lun. 16 jan. 2023 à 17:41
+-- Version du serveur : 10.4.21-MariaDB
+-- Version de PHP : 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `mmi`
+-- Base de données : `mmi-bdd`
 --
 
 -- --------------------------------------------------------
@@ -27,20 +27,27 @@ SET time_zone = "+00:00";
 -- Structure de la table `article`
 --
 
-DROP TABLE IF EXISTS `article`;
-CREATE TABLE IF NOT EXISTS `article` (
-  `id_article` int(4) NOT NULL AUTO_INCREMENT,
-  `nom_article_fr` varchar(100) NOT NULL,
-  `contenu_article_fr` varchar(1000) NOT NULL,
-  `nom_article_en` varchar(100) NOT NULL,
-  `contenu_article_en` varchar(1000) NOT NULL,
-  `synopsis_en` varchar(200) NOT NULL,
+CREATE TABLE `article` (
+  `id_article` int(4) NOT NULL,
+  `nom_article` varchar(100) NOT NULL,
+  `contenu_article` varchar(1000) NOT NULL,
   `date_article` date NOT NULL,
-  `synopsis_fr` varchar(200) NOT NULL,
-  `miniature_article` varchar(50) NOT NULL,
-  `ext_auteur` int(11) NOT NULL,
-  PRIMARY KEY (`id_article`)
+  `synopsis` varchar(200) NOT NULL,
+  `miniature_article` varchar(50) DEFAULT NULL,
+  `auteur` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `lien_matiere`
+--
+
+CREATE TABLE `lien_matiere` (
+  `id_lien` int(2) NOT NULL,
+  `ext_matiere` int(2) NOT NULL,
+  `ext_prof` int(2) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -48,14 +55,33 @@ CREATE TABLE IF NOT EXISTS `article` (
 -- Structure de la table `matiere`
 --
 
-DROP TABLE IF EXISTS `matiere`;
-CREATE TABLE IF NOT EXISTS `matiere` (
+CREATE TABLE `matiere` (
   `id_matiere` int(2) NOT NULL,
-  `nom_matiere` int(11) NOT NULL,
-  `description` text NOT NULL,
-  `ext_projet` int(11) NOT NULL,
-  `ext_utilisateur` int(11) NOT NULL
+  `nom_matiere` varchar(60) NOT NULL,
+  `description` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `matiere`
+--
+
+INSERT INTO `matiere` (`id_matiere`, `nom_matiere`, `description`) VALUES
+(1, 'Anglais (web + renforcé)', 'Dans le monde actuel, le plurilinguisme est une compétence de plus en plus importante. En plus d’offrir des opportunités d’embauches, être capable de parler anglais aide à établir une connexion réelle avec les personnes et d’en apprendre plus sur les différents lieux, cultures, et façons de vivre. Plus vous maîtrisez l’anglais et mieux vous saurez vous exprimer.\r\nÀ l’IUT de Champs-sur-Marne, on apprend à nous exprimer sur des sujets variés,les bases de la conjugaison et de la grammaire (language boost),à analyser des écrits sur des sujets divers et à en tirer des conclusions,le vocabulaire dédié au domaine du web\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :Publication de nouveautés sur le compte Instagram mmind_mmi, publication d’un teaser de notre projet sur instagram,publication de nouveautés sur le compte Instagram mmind_mmi et un CV Vidéo (doit être fait en anglais)'),
+(2, 'Audiovisuel & Motion Design / Production Audio & Vidéo', 'Omniprésent dans le quotidien et en constante évolution, le motion design se retrouve dans les publicités télévisées, les clips musicaux, les génériques de films, les affichages publicitaires et bien d\'autres. Cette discipline est aussi appliquée sur Internet pour la réalisation des bannières, des vidéos promotionnelles ou institutionnelles, des tutoriels, etc. C’est donc la conception et  la réalisation de contenus associant vidéo, graphisme 2D, son, effets spéciaux, typographie et animation 3D que vous étudierez à l’IUT de Champs .En MMI, on apprend à utiliser le matériel vidéo, les techniques de tournage et à monter sur les logiciels d’Adobe\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : Interview sur un sujet donné, Création d’un motion design pour une institution, un Podcast et un CV Vidéo.'),
+(3, 'Création & Design Interactif / Production Graphique', 'ici à mmi Champs , vous apprenez les bases du design de l’utilisation des logiciels de la suite Adobe, à la création de contenus graphique en passant par la réalisation d’affiches , de bannières , de logo et de mise en pages.\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons à utiliser les logiciels de la suite Adobe, à créer du contenu visuel pertinent et cohérent et respecter les normes et format pour les publications.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : création d’un gif animé, maquettage, campagne de communication institutionnelle.'),
+(4, 'Culture Artistique', 'Cela désigne toutes les activités liées à la création, la production, la distribution ou la consommation dans le domaine de la musique, le théâtre, la danse, les arts visuels ou les programmes de radio et de télévision. c’est un ensemble de matières telles que : la vidéo , l’art et le design. A champs vous apprendrez à utiliser tout le potentiel de votre esprit créatif, laissez libre votre imagination. \r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons à avoir un esprit créatif !\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :Livre des 7 mots, un leporello, un Podcast'),
+(5, 'Déploiement de services / Hébergement', 'Un réseau informatique est un ensemble d\'équipements reliés entre eux pour échanger des informations. Grace à de nombreux TP ( travaux pratique) vous apprendrez  à maîtriser la configuration d’un hébergement Web ou d’un réseau local (Webmail, CMS, blog)  ainsi qu’a utiliser différent système d’explotation comme Linux et Windows .\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons :à utiliser l’interface Linux, la gestion d’un réseau, la gestion de contenus.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :un portrait chinois, un site de réservation, la création d’une institution, la refonte du site MMI champs et un portfolio'),
+(6, 'Développement Back / Système d’information', 'À l’IUT de Champs-sur-Marne, nous apprenons :l\'interface de gestion ( back-end ), l\'architecture MVC.\r\n\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : un site de réservation ,la création d\'une institution et la refonte du site mmi Champs.'),
+(7, 'Développement & Intégration', 'Le développement Web désigne de manière générale les tâches associées au développement de sites Web destinés à être hébergés via un intranet ou Internet. Le processus de développement web comprend, entre autres, la conception de sites web, le développement de contenu web, l’élaboration de scripts côté client ou côté serveur et la configuration de la sécurité du réseau. Les langages de programmation que vous apprendrez sont : JavaScript , PHP, HTML et CSS.\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons :à coder en HTML, CSS,PHP et JS, à respecter les règles sémantiques et bien gérer ses fichiers.\r\n\r\n\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : Portrait Chinois en onepage, un Site de réservation “ResaWeb”, un site avec visualisation de données “DataViz”, un portfolio personnel et la refonte du site mmi.'),
+(8, 'Economie & Droit Numérique', 'A champs vous étudierez certains concepts et méthodes de l\'analyse pour comprendre le fonctionnement des marchés numériques et ce qui les distingue de l\'économie traditionnelle. Le but est de comprendre la place et les enjeux de l\'économie numérique dans les économies contemporaines.\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons : à découvrir les aspects spécifiques du droit et de l’économie lorsqu’ils s’appliquent au monde numérique, à comprendre les enjeux juridiques, à maîtriser les droits et obligations des entreprises et des individus, à identifier les moyens de protection des données et des personnes.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : Mentions légales, aspect juridique d’un site internet'),
+(9, 'Ecriture Multimédia et Narration', 'L\'écriture numérique est multimédia, au sens où elle permet d\'associer différentes ressources médias (texte linguistique, image, vidéo, son) sur un même support. Le multimédia ne se contente pas d\'additionner des médias, mais crée de nouvelles formes de messages. \r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons : à comprendre ce que l\'écriture ou les œuvres multimédias numériques ont de nouveau. A réfléchir à l\'écriture multimédia et aux œuvres multimédias.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :une interview, la création d’une association et un scénario pour un podcast'),
+(10, 'Ergonomie & Accessibilité', 'A l’iut de Champs vous apprendrez les bases de l’accessibilité et de l’ergonomie pour favoriser la capacité à répondre aux attentes des utilisateurs en prenant en compte les personnes ayant un handicape.\r\n\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons : à développés de façon à ce que les personnes handicapées puissent utiliser un site web, à apporter une réponse appropriée à un besoin et à garantir un confort et une sécurité d\'utilisation.\r\n\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : un site d’association, un site de réservation, un portfolio et la refonte du site mmi.'),
+(11, 'Gestion de projet', 'C\'est l\'ensemble des moyens humains et matériels pour atteindre un objectif dans un temps défini. A Champs vous apprendrez à appliquer les méthodes, les techniques, et utiliser des outils de gestion spécifiques aux différentes étapes du projet, de l\'évaluation de l\'opportunité jusqu\'à l\'achèvement du projet.\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprennos : à faire des COPILs,à savoir organiser un travail en groupe, à respecter les délais de rendu et la gestion de budget.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :un Product Backlog, l\'organisation de groupe ( copil, backlog, réunion…)et l\'écriture du SFD d’un projet.'),
+(12, 'Intégration', 'La phase d\'intégration va consister à réaliser une maquette définitive du site ou de l\'application web. A partir de la définition des besoins et de l\'identité visuelle du client, l\'intégrateur va donner vie à l\'interface utilisateur de l\'application grâce aux langages HTML5 et CSS3 et au design afin de respecter d\'une part la charte graphique définie, et à faire en sorte que l\'expérience utilisateur soit optimale.\r\n\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons :à utiliser le logiciel Visual Code, gérer ses fichiers,respecter les règles d’accessibilité.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : un Portrait Chinois en one page, un site de réservation “ResaWeb” et un Portfolio.'),
+(13, 'Marketing / Stratégie de Communication', 'Le marketing est un domaine vaste et complexe qui demande une multitude de compétences. Il est composé de plusieurs branches, mais il est tout à fait possible de se spécialiser dans des domaines précis.Cela prépare aux métiers de la communication et de l\'information au sens large. Elle forme des étudiants à l\'analyse et à la compréhension des enjeux et des nouvelles technologies de communication.\r\n\r\n\r\nÀ l’IUT de Champs-sur-Marne, vous apprenons : à connaître le marché, mettre au point une stratégie pour commercialiser ses produits ou services, le MARKETING OPÉRATIONNEL, le MARKETING D\'INFLUENCE, le MARKETING DIRECT, le MARKETING RELATIONNEL.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :la création de la communication d’une institution, la création d’une start-up'),
+(14, 'PPP', 'À l’IUT de Champs-sur-Marne, nous apprenons :la rédaction d’un CV, avoir un profil dans le monde numérique, apprendre à se connaitre / qui suis-je ?\r\n\r\n→ cette liste n’est pas exhaustive, tout comme les cours d’une année à une autre peuvent changer.\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :un compte linkedin, la rédaction d’un cv et plusieurs lettres de motivation.'),
+(15, 'référencement', 'Le référencement, aussi appelé SEO pour Search Engine Optimization, est l’ensemble des efforts effectués pour mieux positionner un site ou une page web dans les résultats sur les moteurs de recherche.\r\n\r\n\r\nÀ l’IUT de Champs-sur-Marne, nous apprenons :à faire de l’optimisation du contenu de la page, à l’optimisation de liens pointant vers la page et les éléments techniques,à réaliser un travail d’audit SEO de référencement\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière :un site de réservation \"résaweb\" et un mini blog en php.'),
+(16, 'Représentation & Traitement de l’Information', 'À l’IUT de Champs-sur-Marne, nous apprenons :à bien gérer les médias ( son,image,vidéo), à étudier un signal sonore analogique,une représentation temporelle,la perception auditive, un spectre sonore et les risques auditifs.\r\n\r\n\r\nVoici quelques exemples de projets qu’il est possible de faire dans cette matière : la gestion des médias ( projet site d’une association), un Podcast, un CV vidéo, la refonte du site mmi et un portfolio.');
 
 -- --------------------------------------------------------
 
@@ -63,19 +89,26 @@ CREATE TABLE IF NOT EXISTS `matiere` (
 -- Structure de la table `projet`
 --
 
-DROP TABLE IF EXISTS `projet`;
-CREATE TABLE IF NOT EXISTS `projet` (
-  `id_projet` int(2) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `projet` (
+  `id_projet` int(2) NOT NULL,
   `nom_projet` varchar(50) NOT NULL,
   `etudiants` varchar(100) NOT NULL,
   `date_projet` date NOT NULL,
   `niveau` varchar(10) NOT NULL,
-  `description_fr` varchar(500) NOT NULL,
-  `description_en` varchar(500) NOT NULL,
-  `img_projet` varchar(50) NOT NULL,
-  `lien` varchar(100) NOT NULL,
-  PRIMARY KEY (`id_projet`)
+  `description` varchar(500) NOT NULL,
+  `img_projet` varchar(50) DEFAULT NULL,
+  `iframe_projet` varchar(50) DEFAULT NULL,
+  `lien` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `projet`
+--
+
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `etudiants`, `date_projet`, `niveau`, `description`, `img_projet`, `iframe_projet`, `lien`) VALUES
+(1, 'DataViz', 'Amel CHABAH', '2022-05-18', 'mmi 1', '', 'src/img/projet/resaweb-amel.jpg', '', 'https://resaweb.chabah.butmmi.o2switch.site/'),
+(2, 'Portrait chinois', 'Clara Many', '2021-12-31', 'mmi 1', '', 'src/img/projet/portrait-chinois-clara.png', NULL, 'https://claramy.github.io/MonPortraitChinois/'),
+(3, 'Portfolio', 'Valentin Bleuse', '2023-01-03', 'mmi 2', '', 'src/img/projet/dataviz.png', NULL, 'https://valentin-bleuse.fr/');
 
 -- --------------------------------------------------------
 
@@ -83,16 +116,21 @@ CREATE TABLE IF NOT EXISTS `projet` (
 -- Structure de la table `temoignage`
 --
 
-DROP TABLE IF EXISTS `temoignage`;
-CREATE TABLE IF NOT EXISTS `temoignage` (
-  `id_temoignage` int(2) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `temoignage` (
+  `id_temoignage` int(2) NOT NULL,
   `etudiant` varchar(100) NOT NULL,
   `promo` varchar(15) NOT NULL,
   `nom_temoignage` varchar(50) NOT NULL,
-  `contenu_temoignage_fr` varchar(1000) NOT NULL,
-  `contenu_temoignage_en` varchar(1000) NOT NULL,
-  PRIMARY KEY (`id_temoignage`)
+  `contenu_temoignage` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `temoignage`
+--
+
+INSERT INTO `temoignage` (`id_temoignage`, `etudiant`, `promo`, `nom_temoignage`, `contenu_temoignage`) VALUES
+(1, 'Laurence', '2021', '', '“J’ai choisi MMI car c\'est une formation qui propose un bon mélange entre technique et artistique. Par son grand nombre de disciplines enseignées, c\'est également une formation qui favorise la découverte de soi (pour les lycéens encore un peu perdus) : les domaines que l\'on préfère, ceux que l\'on aime moins, et ceux sur lesquels on souhaiterait poursuivre.\r\nPour se plaire en MMI, il faut tout d\'abord être intéressé par le web et le multimédia. Savoir être curieux et polyvalent, en toutes circonstances. Les enseignements sont tous de qualité ce qui facilite cette ouverture. L’esprit d’équipe et l’entraide sont également des valeurs selon moi indispensables dans ce cursus, car les projets de groupe y sont nombreux.\r\nUn conseil pour les futurs candidats serait de rester organisé. La charge de travail deviendra progressivement plus importante au cours de ces trois années, et il est important de garder en tête les différentes dates de rendus et partiels à venir pour pouvoir travailler effic'),
+(2, 'Keïsha-Faty', '2021', '', '“J\'ai choisi MMI pour la diversité des enseignements et l\'apprentissage théorique soutenu par beaucoup de pratique. Petit plus pour le cadre de MMI champs avec son matériel et sa verdure à l\'extérieur.\r\nJ\'ai acquis une multitude de compétences, un beau portfolio, une capacité à avoir une vision complète sur le multimédia, une belle expérience humaine.\r\nPour s\'y plaire il faut être déterminé et ne pas hésiter à demander de l\'aide si nécessaire, les professeurs aiment aider et parfois les camarades aussi. Ne pas se limiter et explorer au-delà des idées reçues et préconçues.\r\nJe poursuis mes études en licence professionnelle Création et gestion de projet multimédia en alternance pour ensuite devenir directrice artistique.”\r\n');
 
 -- --------------------------------------------------------
 
@@ -100,24 +138,99 @@ CREATE TABLE IF NOT EXISTS `temoignage` (
 -- Structure de la table `utilisateur`
 --
 
-DROP TABLE IF EXISTS `utilisateur`;
-CREATE TABLE IF NOT EXISTS `utilisateur` (
-  `id_prof` int(3) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `utilisateur` (
+  `id_prof` int(3) NOT NULL,
   `nom_prof` varchar(50) NOT NULL,
   `login` varchar(20) NOT NULL,
   `mdp` varchar(20) NOT NULL,
   `mail` varchar(50) NOT NULL,
-  `url_photo` varchar(70) NOT NULL,
-  `competences_fr` varchar(100) NOT NULL,
-  `competences_en` varchar(100) NOT NULL,
-  `bio_fr` varchar(500) NOT NULL,
-  `bio_en` varchar(500) NOT NULL,
+  `url_photo` varchar(70) DEFAULT NULL,
+  `bio` varchar(500) DEFAULT NULL,
   `p_articles` tinyint(4) NOT NULL,
   `p_projets` tinyint(4) NOT NULL,
   `p_temoignages` tinyint(4) NOT NULL,
-  `p_admin` tinyint(4) NOT NULL,
-  PRIMARY KEY (`id_prof`)
+  `p_admin` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `article`
+--
+ALTER TABLE `article`
+  ADD PRIMARY KEY (`id_article`);
+
+--
+-- Index pour la table `lien_matiere`
+--
+ALTER TABLE `lien_matiere`
+  ADD PRIMARY KEY (`id_lien`);
+
+--
+-- Index pour la table `matiere`
+--
+ALTER TABLE `matiere`
+  ADD PRIMARY KEY (`id_matiere`);
+
+--
+-- Index pour la table `projet`
+--
+ALTER TABLE `projet`
+  ADD PRIMARY KEY (`id_projet`);
+
+--
+-- Index pour la table `temoignage`
+--
+ALTER TABLE `temoignage`
+  ADD PRIMARY KEY (`id_temoignage`);
+
+--
+-- Index pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  ADD PRIMARY KEY (`id_prof`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `article`
+--
+ALTER TABLE `article`
+  MODIFY `id_article` int(4) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `lien_matiere`
+--
+ALTER TABLE `lien_matiere`
+  MODIFY `id_lien` int(2) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `matiere`
+--
+ALTER TABLE `matiere`
+  MODIFY `id_matiere` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT pour la table `projet`
+--
+ALTER TABLE `projet`
+  MODIFY `id_projet` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT pour la table `temoignage`
+--
+ALTER TABLE `temoignage`
+  MODIFY `id_temoignage` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  MODIFY `id_prof` int(3) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -9,6 +9,12 @@
 <body>
     <?php include 'menu.php'; ?>
     <div class="container w-75">
+    <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Stages & alternances</li>
+            </ol>
+        </nav>
     <header class='mb-5 mt-3 d-flex flex-column align-items-center container'>
                 <h1 class='display-3 text-center '>Stages & Alternances</h1>
                 <div class="row d-flex justify-content-center ">

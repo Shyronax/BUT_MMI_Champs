@@ -9,6 +9,12 @@
 <body>
     <?php include 'menu.php'; ?>
     <main class='mb-5 container h-100'>
+        <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">L'équipe enseignante</li>
+            </ol>
+        </nav>
         <div class="container vh100">
             <div data-aos="fade-down" data-aos-offset="500" class="row h-100 justify-content-center align-items-center">
                 <div class="col-6">
@@ -26,7 +32,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <div class="card mb-3">
                         <div class="card-header">
-                            <img src="photo-prof1.jpg" alt="photo du professeur">
+                            <img src="src/img/prof/philippe-gambette.png" alt="photo du professeur" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Nom Prenom</h4>
