@@ -3,7 +3,7 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>Présentation BUT MMI</title>
+    <title>Présentation MMI - MMI Champs</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Présentation MMI</li>
                 </ol>
             </nav>
-            <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center  justify-content-center container vh100'>
+            <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center  justify-content-center container vh75'>
                 <h1 class='display-3 text-center '>Présentation MMI</h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">

@@ -3,7 +3,7 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>BUT MMI</title>
+    <title>Accueil - MMI Champs</title>
 </head>
 
 

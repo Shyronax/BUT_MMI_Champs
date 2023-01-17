@@ -4,7 +4,7 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>Matières</title>
+    <title>Matières - MMI Champs</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Les matières en MMI</li>
                 </ol>
             </nav>
-            <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center container d-flex flex-column align-items-center vh100 justify-content-center'>
+            <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center container d-flex flex-column align-items-center vh75 justify-content-center'>
                 <h1 class='display-3 text-center '>Ce qu'on fait en MMI</h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">

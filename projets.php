@@ -4,7 +4,7 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>Projets des étudiants</title>
+    <title>Projets étudiant - MMI Champs</title>
 </head>
 
 <body>
