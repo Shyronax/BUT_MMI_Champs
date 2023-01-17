@@ -1,4 +1,4 @@
-<footer class="py-5">
+<footer class="py-5 bg-body-tertiary">
     <div class="container d-flex justify-content-between">
         <div class="w-25">
             <!-- Logo -->

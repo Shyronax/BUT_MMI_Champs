@@ -1,4 +1,4 @@
-<nav class=" navbar navbar-expand-lg sticky-top px-4">
+<nav class=" navbar navbar-expand-lg sticky-top px-4 bg-body-tertiary">
 
     <a class="navbar-brand amsterdam" href="index.php">
         <img src="logo/logo-but-mmi-champs.png" alt="Logo" height="45" class="d-inline-block align-text-top logo">

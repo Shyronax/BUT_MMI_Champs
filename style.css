@@ -4,7 +4,8 @@ input[type=checkbox] {
 
 [data-bs-theme=dark] {
   --bs-body-bg: #000000 !important;
-
+  --bs-tertiary-color: #ffffff !important;
+  --bs-secondary-color-rgb: white !important;
   transition: all ease-in-out 2s;
 
 
@@ -45,13 +46,10 @@ body {
   font-size: 100%;
   /* font-family: 'Clash Display', sans-serif; */
   font-family: 'Satoshi', sans-serif;
-  overflow-x: hidden ;
+  overflow-x: hidden;
 
 }
 
-.navbar {
-  border-bottom: #ffffff solid 2px;
-}
 
 .breadcrumb-item a {
   color: #2A9D8F;
