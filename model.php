@@ -22,7 +22,7 @@ function login($login, $pass){
     } else {return false;} 
 }
 
-function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem){
+function addUser($name, $login, $pass, $mail, $bio, $mat1, $mat2, $mat3, $art, $proj, $tem){
     $hash=password_hash($pass, PASSWORD_DEFAULT);
     $db=dbConnect();
     $query="INSERT INTO utilisateur (nom_prof, login_prof, mdp, mail, bio, p_articles, p_projets, p_temoignages) VALUES (:nom_prof, :login_prof, :mdp, :mail, :bio, :p_articles, :p_projets, :p_temoignages)";
@@ -31,11 +31,14 @@ function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem){
     $stmt->bindValue(":login_prof", $login, PDO::PARAM_STR);
     $stmt->bindValue(":mdp", $hash, PDO::PARAM_STR);
     $stmt->bindValue(":mail", $mail, PDO::PARAM_STR);
-    $stmt->bindValue(":bio", $bfr, PDO::PARAM_STR);
+    $stmt->bindValue(":bio", $bio, PDO::PARAM_STR);
     $stmt->bindValue(":p_articles", $art, PDO::PARAM_INT);
     $stmt->bindValue(":p_projets", $proj, PDO::PARAM_INT);
     $stmt->bindValue(":p_temoignages", $tem, PDO::PARAM_INT);
     $stmt->execute();
+    $query="INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof, :ext_matiere)";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue()
 }
 
 
@@ -94,7 +97,7 @@ function addMatiere($nom, $description){
 
 function getMatieres(){
     $db=dbConnect();
-    $query="SELECT * FROM 'matiere'";
+    $query="SELECT * FROM matiere";
     $stmt=$db->prepare($query);
     $stmt->execute();
     $result=$stmt->fetchall(PDO::FETCH_ASSOC);
@@ -103,7 +106,7 @@ function getMatieres(){
 
 function getProjets(){
     $db=dbConnect();
-    $query="SELECT * FROM 'projet'";
+    $query="SELECT * FROM projet";
     $stmt=$db->prepare($query);
     $stmt->execute();
     $result=$stmt->fetchall(PDO::FETCH_ASSOC);
@@ -112,7 +115,7 @@ function getProjets(){
 
 function getProjet($id){
     $db=dbConnect();
-    $query="SELECT * FROM 'projet' WHERE 'id_projet' = ':id_projet'";
+    $query="SELECT * FROM projet WHERE 'id_projet' = ':id_projet'";
     $stmt=$db->prepare($query);
     $stmt->bindValue(':id_projet', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -122,7 +125,7 @@ function getProjet($id){
 
 function getProfs(){
     $db=dbConnect();
-    $query="SELECT * FROM 'prof'";
+    $query="SELECT * FROM utilisateur";
     $stmt=$db->prepare($query);
     $stmt->execute();
     $result=$stmt->fetchall(PDO::FETCH_ASSOC);
@@ -131,7 +134,7 @@ function getProfs(){
 
 function getProf($id){
     $db=dbConnect();
-    $query="SELECT * FROM 'prof' WHERE 'id_prof' = ':id_prof'";
+    $query="SELECT * FROM utilisateur WHERE 'id_prof' = ':id_prof'";
     $stmt=$db->prepare($query);
     $stmt->bindValue(':id_prof', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -141,7 +144,7 @@ function getProf($id){
 
 function getArticles(){
     $db=dbConnect();
-    $query="SELECT * FROM 'article'";
+    $query="SELECT * FROM article";
     $stmt=$db->prepare($query);
     $stmt->execute();
     $result=$stmt->fetchall(PDO::FETCH_ASSOC);
@@ -150,7 +153,7 @@ function getArticles(){
 
 function getArticle($id){
     $db=dbConnect();
-    $query="SELECT * FROM 'article' WHERE 'id_article' = ':id_article'";
+    $query="SELECT * FROM article WHERE 'id_article' = ':id_article'";
     $stmt=$db->prepare($query);
     $stmt->bindValue(':id_article', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -160,14 +163,14 @@ function getArticle($id){
 
 function getTemoignages(){
     $db=dbConnect();
-    $query="SELECT * FROM 'temoignage'";
+    $query="SELECT * FROM temoignage";
     $stmt=$db->prepare($query);
     $stmt->execute();
     $result=$stmt->fetchall(PDO::FETCH_ASSOC);
     return $result;
 }
 
-function rmProf($id){
+function rmUser($id){
     if ($_SESSION['is_admin'] == ){
         $db=dbConnect();
         $query="DELETE FROM prof WHERE id_prof = :id_prof";
