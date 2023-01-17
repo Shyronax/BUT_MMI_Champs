@@ -1,10 +1,8 @@
+<?php include('model.php'); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include('bootstrapfiles.php'); include(' model.php');?>
+    <?php include('head.php');?>
     <title>Back-Office MMI Champs</title>
 </head>
 <body>
@@ -25,7 +23,7 @@
         <select name="matiere_1" id="">
         <?php
         foreach(getMatieres() as $matiere){
-            echo "<option value="$matiere['id_matiere']">$nom_matiere</option>"
+            echo "<option value=".$matiere['id_matiere'].">{$matiere['nom_matiere']}</option>";
         }
         ?>
         </select>
@@ -33,7 +31,7 @@
         <select name="matiere_2" id="">
         <?php
         foreach(getMatieres() as $matiere){
-            echo "<option value="$matiere['id_matiere']">$nom_matiere</option>"
+            echo "<option value=".$matiere['id_matiere'].">{$matiere['nom_matiere']}</option>";
         }
         ?>
         <label for="matiere_3">Matière 3</label>
@@ -41,7 +39,7 @@
         <select name="matiere_3" id="">
         <?php
         foreach(getMatieres() as $matiere){
-            echo "<option value="$matiere['id_matiere']">$nom_matiere</option>"
+            echo "<option value=".$matiere['id_matiere'].">{$matiere['nom_matiere']}</option>";
         }
         ?>
         </select>
