@@ -1,0 +1,2 @@
+RewriteEngine On
+Rewrite ^projets/? projets.php
