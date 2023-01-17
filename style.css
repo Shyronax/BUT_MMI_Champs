@@ -4,12 +4,34 @@ input[type=checkbox] {
 
 [data-bs-theme=dark] {
   --bs-body-bg: #000000 !important;
-  --bs-tertiary-color: #ffffff !important;
-  --bs-secondary-color-rgb: white !important;
+
   transition: all ease-in-out 2s;
-
-
 }
+
+[data-bs-theme="dark"] .bg-body-tertiary {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+[data-bs-theme="dark"] .navbar .nav-link {
+  color: black !important;
+}
+
+[data-bs-theme="light"] .bg-body-tertiary {
+  background-color: black !important;
+  color: white !important;
+}
+
+[data-bs-theme="light"] .navbar .nav-link {
+  color: white !important;
+}
+
+/* [data-bs-theme="light"] {
+  --bs-link-color: #6ea8fe !important;
+  --bs-link-hover-color: #9ec5fe !important;
+  --bs-link-color-rgb: 110, 168, 254 !important;
+  --bs-link-hover-color-rgb: 158, 197, 254 !important;
+} */
 
 .btn-primary {
   --bs-btn-bg: #2A9D8F;
