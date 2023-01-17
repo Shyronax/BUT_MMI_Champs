@@ -51,7 +51,7 @@
                 <div class='content'>
                 <p class='date'>Entre avril et juin</p>
                 <p>
-                    Durant la deuxième année de la formation, vous devrez réaliser un stage de 10 semaines minimum, soit 2 mois et 2 semaines. Ce second stge doit obligatoirement être dans le domaine du multimédia et rémunéré.
+                    Durant la deuxième année de la formation, vous devrez réaliser un stage de 10 semaines minimum, soit 2 mois et 2 semaines. Ce second stage doit obligatoirement être dans le domaine du multimédia et rémunéré.
                 </p>
                 </div>
             </li>
@@ -65,7 +65,7 @@
                 <div class='content'>
                 <p class='date'>À partir de septembre</p>
                 <p>
-                    Etant donné que c'est la première fois qu'il existe uen troisième année en MMI, les modalités de l'alternance en MMI sont toutes nouvelles aussi ! Alors dès que nous aurons davantage d'informations sur le sujet, nous vous les transmettrons.
+                    Etant donné que c'est la première fois qu'il existe une troisième année en MMI, les modalités de l'alternance en MMI sont toutes nouvelles aussi ! Alors dès que nous aurons davantage d'informations sur le sujet, nous vous les transmettrons.
                 </p>
                 </div>
             </li>
