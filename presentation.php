@@ -52,12 +52,11 @@
                     </div>
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h2 class='display-6 '>Ce qu'on apprend</h2>
-                        <p>Les compétences acquises lors de ces trois années de formation tournent autour de quatre axes :</p>
+                        <p>Les compétences acquises lors de ces trois années de formation tournent autour de <b>trois parcours</b> :</p>
                             <ul>
-                                <li>la programmation : développement Web, base de données, services sur réseau et gestion de contenu.</li>
-                                <li>la création de multimédia : savoir générer du contenu multimédia (son, vidéo, photo, montage et animation 2D/3D) et utilisation des logiciels de la suite adobe ( illustrator, premiere pro, indesign…).</li>
-                                <li>la communication : expression et communication, théorie de la communication</li>
-                                <li>l'éco-gestion : environnement juridique, économique et mercatique des organisations</li>
+                                <li><b>Développement web et dispositifs interactifs</b> : développement Web, base de données, services sur réseau et gestion de contenu.</li>
+                                <li>la <b>création de multimédia</b> : savoir générer du contenu multimédia (son, vidéo, photo, montage et animation 2D/3D) et utilisation des logiciels de la suite adobe ( illustrator, premiere pro, indesign…).</li>
+                                <li>la <b>communication</b> : expression et communication, théorie de la communication</li>
                             </ul>
                             <br>
                             <a href="matieres.php" class="btn btn-primary w-25">En savoir plus</a>
