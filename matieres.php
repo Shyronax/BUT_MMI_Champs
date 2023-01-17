@@ -30,7 +30,7 @@
             </header>
 
 
-            < <div data-aos="fade-right" data-aos-offset="500" class="container w-75 ">
+            <div data-aos="fade-right" data-aos-offset="500" class="container w-75 ">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <?php
 
@@ -50,8 +50,8 @@
                     ?>
 
                 </div>
-    </div>
-    </main>
+            </div>
+        </main>
     </div>
     <?php include 'footer.php' ?>
 </body>
