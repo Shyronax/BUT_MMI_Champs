@@ -3,12 +3,22 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>Flash' info</title>
+    <title>Témoignages - MMI Champs</title>
 </head>
 
 <body>
     <?php include 'menu.php'; ?>
+    <div class="container">
+    <main class='d-flex flex-column justify-conte,t-center'>
+    <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">La formation MMI</li>
+            </ol>
+        </nav>
+    <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center container d-flex flex-column align-items-center vh100 justify-content-center'>
     <h1 class='display-3 text-center mt-2 mb-5'>Nos étudiants témoignent</h1>
+</header>
     <div class="container">
         <div class="row d-flex flex-column justify-content-center align-items-center">
 
@@ -140,6 +150,8 @@
             </div>
         </div>
     </div>
+</main>
+</div>
     <?php include 'footer.php' ?>
 </body>
 

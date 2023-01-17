@@ -1,4 +1,4 @@
-<footer class=" pt-3">
+<footer class="py-5">
     <div class="container d-flex justify-content-between">
         <div class="w-25">
             <!-- Logo -->

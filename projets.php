@@ -9,6 +9,12 @@
 <body>
     <?php include 'menu.php'; ?>
     <main class='mb-5 container h-100'>
+    <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Les projets MMI</li>
+            </ol>
+        </nav>
         <div class="container vh100">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-8">
@@ -25,7 +31,7 @@
         <div class="container d-flex flex-column justify-content-center align-items-center">
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist w-100">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tous</button>
+                    <button class="nav-link active btn-primary" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tous</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Année 1</button>

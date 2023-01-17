@@ -12,13 +12,18 @@
     <main class='mb-5 container h-100 '>
         <div class="container vh100">
             <div data-aos="fade-down" data-aos-offset="500" class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-3">
+                    <img src="src/img/prof/gaelle-charpentier.png" class="img-fluid text-center" alt="">
+                </div>
                 <div class="col-7">
 
-                    <h1 class='display-1 inline text-center'>BUT MMI CHAMPS</h1>
-                    <div class="w-100"></div>
-                    <div class=" row col-12 justify-content-end">
-                        <p class=' col-8 pe-0 text-end'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
-                    </div>
+                    <h1 class='display-2 inline highlight'>Bienvenue en MMI !</h1>
+                    <hr>
+                    <!-- <div class=" row col-12 justify-content-end"> -->
+                        <p class=' col-8 pe-0'> À la recherche d'une formation ? Un étudiant MMI d'un autre IUT ? 
+Un ancien élève ? Un parent ? Un enseignant ?
+Peu importe votre statut, venez découvrir le BUT MMI à l'IUT de Champs-sur-Marne !</p>
+                    <!-- </div> -->
                 </div>
 
             </div>
@@ -26,9 +31,6 @@
 
         </div>
         <div class="container vh75 p-0 mb-5 position-relative">
-
-
-
 
 
             <div data-aos="fade-right" data-aos-offset="500" class="row ps-3">

@@ -17,7 +17,7 @@
                     MMI c'est quoi?
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="presentation.php">La formation MMI</a></li>
+                    <li><a class="dropdown-item" href="presentation.php">Présentation MMI</a></li>
                     <li><a class="dropdown-item" href="matieres.php">Les matières enseignées</a></li>
                     <li><a class="dropdown-item" href="enseignants.php">L'équipe enseignante</a></li>
                     <li><a class="dropdown-item" href="debouches.php">Après MMI</a></li>
