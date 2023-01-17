@@ -239,5 +239,3 @@ function rmArticle($id){
 function logout(){
     session_destroy();
 }
-
-?>
