@@ -22,7 +22,7 @@
                 <h1 class='display-3 text-center '>Ce qu'on fait en MMI</h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
-                        <p class='align-left'>
+                        <p class='text-center'>
                             C'est ici que vous découvrirez les matières que l'on enseigne en MMI
                         </p>
                     </div>

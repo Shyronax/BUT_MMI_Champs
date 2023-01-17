@@ -17,7 +17,14 @@
                 </ol>
             </nav>
             <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center container d-flex flex-column align-items-center vh75 justify-content-center'>
-                <h1 class='display-3 text-center mt-2 mb-5'>Nos étudiants témoignent</h1>
+                <h1 class='display-3 text-center mt-2'>Nos étudiants témoignent</h1>
+                <div class="row d-flex justify-content-center ">
+                    <div class="col-12 col-lg-7 ">
+                        <p class='text-center'>
+                            Si vous voulez avoir des avis d'expérience sur la formation MMI à Champs-sur-Marne, c'est ici ! Découvrez les témoignages de nos anciens étudiants.
+                        </p>
+                    </div>
+                </div>
             </header>
 
             <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
