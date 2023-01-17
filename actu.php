@@ -21,7 +21,7 @@
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
                         <p class='align-left'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem nihil dolorum facere quibusdam? Impedit cupiditate qui, voluptate est saepe vitae, eveniet blanditiis magni quo velit, non fugit sunt ratione?
+                            C'est ici que vous retrouvez toutes les actualités de notre IUT de Champs.
                         </p>
                     </div>
                 </div>
@@ -47,9 +47,9 @@
 
                     <div class="card-body">
                         <blockquote class="blockquote mb-0">
-                            <p>15/15/15</p>
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            <p>24/11/2022</p>
+                        <p>Les MMI2 sont à Londres ! Ce voyage a été organiser dans un but pédagogique. </p>
+                            <footer class="blockquote-footer">l'équipe MMI <cite title="Source Title">dans actualité</cite></footer>
                         </blockquote>
                     </div>
                 </div>
@@ -60,9 +60,10 @@
 
                     <div class="card-body">
                         <blockquote class="blockquote mb-0">
-                            <p>15/15/15</p>
-                            <p>A well-known quote, contained in a blockquote element.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            <p>07/09/22</p>
+                        <p>Les MMI2 prépare l'accueil des nouveau MMI1 !
+                        </p>
+                            <footer class="blockquote-footer">l'équipe MMI2 dans <cite title="Source Title">Actualité</cite></footer>
                         </blockquote>
                     </div>
                 </div>
