@@ -28,7 +28,7 @@
             </header>
             <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                 <div class="row">
-                    <div class="col-12 col-lg-7  d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h2 class='display-6 '>La formation MMI</h2>
                         <p>Le BUT <b>M</b>étiers du <b>M</b>ultimédia et de l'<b>I</b>nternet (MMI) vise à développer des compétences pluridisciplinaires pour former aux métiers du multimédia.
 
@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <a href="matieres.php" class="nextLink mb-5">Voir les matières enseignées en MMI</a>
+            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="matieres.php">Voir les matières enseignées en MMI ></a></div>
         </main>
     </div>
     <?php include 'footer.php' ?>
