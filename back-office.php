@@ -31,7 +31,7 @@
         <select name="matiere_2" id="">
         <?php
         foreach(getMatieres() as $matiere){
-            echo "<option value=."$matiere['id_matiere'].">$nom_matiere</option>";
+            echo "<option value=".$matiere['id_matiere'].">$nom_matiere</option>";
         }
         ?>
         <label for="matiere_3">Matière 3</label>
