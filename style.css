@@ -30,34 +30,44 @@ input[type=checkbox] {
   color: black;
 }
 
-[data-bs-theme="light"] footer ul li a  {
+[data-bs-theme="light"] footer ul li a {
   color: white;
 }
 
-[data-bs-theme="light"] .door1 h2, [data-bs-theme="dark"] .door2 h2{
+[data-bs-theme="dark"] footer h3 {
   color: black;
 }
 
-[data-bs-theme="light"] .door2 h2, [data-bs-theme="dark"] .door1 h2 {
+[data-bs-theme="light"] footer h3 {
   color: white;
 }
 
-[data-bs-theme="dark"] .door2{
+[data-bs-theme="light"] .door1 h2,
+[data-bs-theme="dark"] .door2 h2 {
+  color: black;
+}
+
+[data-bs-theme="light"] .door2 h2,
+[data-bs-theme="dark"] .door1 h2 {
+  color: white;
+}
+
+[data-bs-theme="dark"] .door2 {
   background-color: white;
   border: 10px solid #000000;
 }
 
-[data-bs-theme="light"] .door2{
+[data-bs-theme="light"] .door2 {
   background-color: #000000;
   border: 10px solid #ffffff;
 }
 
-[data-bs-theme="dark"] .door1{
+[data-bs-theme="dark"] .door1 {
   background-color: #000000;
   border: 10px solid #ffffff;
 }
 
-[data-bs-theme="light"] .door1{
+[data-bs-theme="light"] .door1 {
   background-color: white;
   border: 10px solid #000000;
 }
