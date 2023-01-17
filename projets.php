@@ -9,12 +9,6 @@
 <body>
     <?php include 'menu.php'; ?>
     <main class='mb-5 container h-100'>
-    <nav aria-label="breadcrumb" class="mt-5">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Les projets MMI</li>
-            </ol>
-        </nav>
         <div class="container vh100">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-8">
@@ -42,7 +36,7 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                    <div class="row row-cols-1 row-cols-md-3 ">
+                    <div class="row row-cols-1 row-cols-md-3 d-flex justify-content-center  ">
                         <div class="card me-3 mt-3" style="width: 18rem;">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">

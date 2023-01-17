@@ -3,7 +3,7 @@
 session_start();
 
 function dbConnect(){
-    $db=new PDO('mysql:host=localhost;dbname=mmichamps;port=3306', 'root', '');
+    $db=new PDO('mysql:host=localhost;dbname=mmi-bdd;port=3306', 'root', '');
     return $db;
 }
 
@@ -71,7 +71,7 @@ function addLien($mat1=null, $mat2=null, $mat3=null, $nom){
 function addArticle($nom, $contenu, $synopsis, $miniature){
     $db=dbConnect();
     $target_file = 'src/img/proj/' . basename($_FILES['image']);
-    $query="INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article, $_SESSION['name'])";
+    $query="INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article)" . $_SESSION['name'];
     $target_dir = 'src/img/art/';
     $target_file = $target_dir . basename($miniature);
     move_uploaded_file($miniature, $target_file);

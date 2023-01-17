@@ -27,7 +27,7 @@
         </div>
         <div class="container mb-2">
             <h2>C'est chaud un peu</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi itaque facere in, voluptatibus beatae, assumenda quod, error aliquam maxime laudantium accusamus ratione obcaecati ut ad doloremque commodi doloribus? Mollitia?</p>
+            <p>Parfois,la charge de travail demandé parait insurmontable et pourtant ce n'est pas le cas! il suffit de bien savoir s'organiser et gérer son temps !</p>
         </div>
     </div>
     <?php include 'footer.php' ?>
