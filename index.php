@@ -19,7 +19,10 @@
                     <div class=" row col-12 justify-content-end">
                         <p class=' col-9 pe-4 text-end'> À la recherche d'une formation ? Un étudiant MMI d'un autre IUT ?
                             Un ancien élève ? Un parent ? Un enseignant ?
-                            Peu importe votre statut, venez découvrir le BUT MMI à l'IUT de Champs-sur-Marne !</p>
+                            Peu importe votre statut, venez découvrir le BUT MMI à l'IUT de Champs-sur-Marne !
+                            <a class="btn btn-primary mt-3" href="presentation.php">Suivre la visite guidée!</a>
+                        </p>
+
                     </div>
                 </div>
 
