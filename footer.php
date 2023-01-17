@@ -14,8 +14,8 @@
             <div class="col">
                 <h3>Besoin d'aide</h3>
                 <ul>
-                    <li><a href="#">Aide en ligne</a></li>
-                    <li><a href="faq.php">FAQ</a></li>
+                    <li><a class="nextLink  " href="#">Aide en ligne</a></li>
+                    <li><a class="nextLink " href="faq.php">FAQ</a></li>
                 </ul>
             </div>
             <!-- Colonne "Contact" -->
@@ -39,23 +39,23 @@
     if (theme === "dark") {
         switchTheme.checked = true;
         document.documentElement.setAttribute('data-bs-theme', 'dark');
-        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
+        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
     } else {
         switchTheme.checked = false;
         document.documentElement.setAttribute('data-bs-theme', 'light');
-        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
+        logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
     }
 
     switchTheme.addEventListener('change', function() {
         if (this.checked) {
             document.documentElement.setAttribute('data-bs-theme', 'dark');
-            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
+            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
             document.body.classList.remove("fadin");
             document.body.classList.toggle("fadin");
             localStorage.setItem("theme", "dark");
         } else {
             document.documentElement.setAttribute('data-bs-theme', 'light');
-            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs.png"));
+            logos.forEach(logo => logo.setAttribute("src", "logo/logo-but-mmi-champs-white.png"));
             document.body.classList.remove("fadin");
             document.body.classList.toggle("fadin");
             localStorage.setItem("theme", "light");
