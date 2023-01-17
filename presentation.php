@@ -26,22 +26,22 @@
                     </div>
                 </div>
             </header>
-            <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center vh75 justify-content-center mb-5">
+            <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                 <div class="row">
                     <div class="col-12 col-lg-7  d-flex flex-column justify-content-center">
                         <h2 class='display-6 '>La formation MMI</h2>
-                        <p>Le BUT <b>M</b>étiers du <b>M</b>ultimédia et de l'<b>I</b>nternet (MMI) vise à développer des compétences pluridisciplinaires pour former aux métiers du multimédia. 
+                        <p>Le BUT <b>M</b>étiers du <b>M</b>ultimédia et de l'<b>I</b>nternet (MMI) vise à développer des compétences pluridisciplinaires pour former aux métiers du multimédia.
 
                         <p>
-Alliant la théorie à la pratique, la formation propose de développer des compétences en programmation, graphisme ou encore en communication. Cela permet à l'étudiant  de devenir polyvalent dans la conception, la réalisation et la commercialisation de produits et de services web et multimédia.
-
-</p>
-<p>
-La formation dure 3 ans et comprend 2600 heures d'enseignement. Lors de la deuxième année, les étudiants pourront s'orienter vers <b>la création numérique </b> ou  <b>le développement web </b>
+                            Alliant la théorie à la pratique, la formation propose de développer des compétences en programmation, graphisme ou encore en communication. Cela permet à l'étudiant de devenir polyvalent dans la conception, la réalisation et la commercialisation de produits et de services web et multimédia.
 
                         </p>
                         <p>
-                        Le BUT MMI est professionnalisant, il permet de déployer des compétences d'autonomie avec la conduite de nombreux projets individuels ou de groupe.
+                            La formation dure 3 ans et comprend 2600 heures d'enseignement. Lors de la deuxième année, les étudiants pourront s'orienter vers <b>la création numérique </b> ou <b>le développement web </b>
+
+                        </p>
+                        <p>
+                            Le BUT MMI est professionnalisant, il permet de déployer des compétences d'autonomie avec la conduite de nombreux projets individuels ou de groupe.
                         </p>
                     </div>
                     <div class="col-12 col-lg-5">
@@ -50,7 +50,7 @@ La formation dure 3 ans et comprend 2600 heures d'enseignement. Lors de la deuxi
                 </div>
             </div>
 
-            <div data-aos="fade-left" data-aos-offset="200" class="container d-flex flex-column align-items-center vh75 justify-content-center mb-5">
+            <div data-aos="fade-left" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                 <div class="row ">
                     <div class="col-12 col-lg-5 d-flex flex-column justify-content-center">
                         <img class="img-fluid" src="src/img/illustration/mmi-ce-qu-on-apprend.webp" alt="">
@@ -69,7 +69,7 @@ La formation dure 3 ans et comprend 2600 heures d'enseignement. Lors de la deuxi
                 </div>
             </div>
 
-            <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center vh75 justify-content-center mb-5">
+            <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                 <div class="row">
                     <div class="col-12 col-lg-7  d-flex flex-column justify-content-center">
                         <h2 class='display-6 '>Après MMI, que faire ?</h2>
@@ -80,7 +80,7 @@ La formation dure 3 ans et comprend 2600 heures d'enseignement. Lors de la deuxi
                             Il est également possible après avoir obtenu son diplôme de rentrer directement dans le monde professionnel en devenant développeur web ou graphiste. Le BUT MMI vous ouvre une porte vers de nombreux métiers, c'est ce qui fait sa richesse.
                         </p>
                         <br>
-                        <a href="debouches.php" class="btn btn-primary w-25">En savoir plus</a>
+                        <a href="debouches.php" class="btn btn-primary w-25 mb-3">En savoir plus</a>
                     </div>
                     <div class="col-12 col-lg-5">
                         <img class="img-fluid" src="src/img/illustration/mmi-apres.webp" alt="">
