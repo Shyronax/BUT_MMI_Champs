@@ -7,6 +7,21 @@ function dbConnect(){
     return $db;
 }
 
+function login($login, $pass){
+    $db=dbConnect();
+    $query="SELECT * FROM utilisateur WHERE login = :login";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue(":login", $login, PDO::PARAM_STR);
+    $result=$stmt->execute();
+    if ($result=$stmt->fetch(PDO::FETCH_ASSOC)){
+        if(password_verify($pass, $result['mdp'])){
+            $_SESSION['name']=$result['nom_prof'];
+            $_SESSION['admin']=$result['p_admin'];
+            return true;
+        } else {return false;}   
+    } else {return false;} 
+}
+
 function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem){
     $hash=password_hash($pass, PASSWORD_DEFAULT);
     $db=dbConnect();
@@ -23,36 +38,27 @@ function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem){
     $stmt->execute();
 }
 
-function login($login, $pass){
-    $db=dbConnect();
-    $query="SELECT * FROM utilisateur WHERE login = :login";
-    $stmt=$db->prepare($query);
-    $stmt->bindValue(":login", $login, PDO::PARAM_STR);
-    $result=$stmt->execute();
-    if ($result=$stmt->fetch(PDO::FETCH_ASSOC)){
-        if(password_verify($pass, $result['mdp'])){
-            $_SESSION['name']=$result['nom_prof'];
-            $_SESSION['admin']=$result['p_admin'];
-            return true;
-        } else {return false;}   
-    } else {return false;} 
-}
 
-function addArticle($nom, $contenu, $synopsis, $url_miniature){
+function addArticle($nom, $contenu, $synopsis, $miniature){
     $db=dbConnect();
     $target_file = 'src/img/proj/' . basename($_FILES['image']);
     $query="INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article, $_SESSION['name'])";
+    $target_dir = 'src/img/art/';
+    $target_file = $target_dir . basename($miniature);
+    move_uploaded_file($miniature, $target_file);
     $stmt=$db->prepare($query);
     $stmt->bindValue(":nom_article", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":contenu_article", $contenu, PDO::PARAM_STR);
     $stmt->bindValue(":synopsis_fr", $synopsis, PDO::PARAM_STR);
-    $stmt->bindValue(":miniature_article", $url_miniature, PDO::PARAM_STR);
+    $stmt->bindValue(":miniature_article", $target_file, PDO::PARAM_STR);
     $stmt->execute();
 }
 
 function addProjet($nom_projet, $etudiants, $annee_projet, $niveau, $iframe_projet, $lien_projet, $image_projet, $description){
     $db=dbConnect();
-    $target_file = 'src/img/proj/' . basename($_FILES['image']);
+    $target_dir = 'src/img/proj/';
+    $target_file = $target_dir . basename($image_projet);
+    move_uploaded_file($image_projet, $target_file);
     $query="INSERT INTO projet (nom_projet, etudiants, annee_projet, niveau, iframe_projet, lien_projet, image_projet, description) VALUES (:nom_projet, :etudiants, :annee_projet, :niveau, :iframe_projet, :lien_projet, :image_projet, :description)";
     $stmt=$db->prepare($query);
     $stmt->bindValue(":nom_projet", $nom_projet, PDO::PARAM_STR);
@@ -61,7 +67,7 @@ function addProjet($nom_projet, $etudiants, $annee_projet, $niveau, $iframe_proj
     $stmt->bindValue(":niveau", $niveau, PDO::PARAM_STR);
     $stmt->bindValue(":iframe_projet", $iframe_projet, PDO::PARAM_STR);
     $stmt->bindValue(":lien_projet", $lien_projet, PDO::PARAM_STR);
-    $stmt->bindValue(":image_projet", $image_projet, PDO::PARAM_STR);
+    $stmt->bindValue(":image_projet", $target_file, PDO::PARAM_STR);
     $stmt->bindValue(":description", $description, PDO::PARAM_STR);
     $stmt->execute();
 }
@@ -74,6 +80,130 @@ function addTemoignage($etudiant, $promo, $titre, $contenu_temoignage){
     $stmt->bindValue(":promo", $promo, PDO::PARAM_STR);
     $stmt->bindValue(":titre", $titre, PDO::PARAM_STR);
     $stmt->bindValue(":contenu_temoignage", $contenu_temoignage, PDO::PARAM_STR);
+    $stmt->execute();
+}
+
+function addMatiere($nom, $description){
+    $db=dbConnect();
+    $query="INSERT INTO matiere (nom, description) VALUES (:nom, :description)";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue(":nom", $nom, PDO::PARAM_STR);
+    $stmt->bindValue(":description", $description, PDO::PARAM_STR);
+    $stmt->execute();
+}
+
+function getMatieres(){
+    $db=dbConnect();
+    $query="SELECT * FROM 'matiere'";
+    $stmt=$db->prepare($query);
+    $stmt->execute();
+    $result=$stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getProjets(){
+    $db=dbConnect();
+    $query="SELECT * FROM 'projet'";
+    $stmt=$db->prepare($query);
+    $stmt->execute();
+    $result=$stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getProjet($id){
+    $db=dbConnect();
+    $query="SELECT * FROM 'projet' WHERE 'id_projet' = ':id_projet'";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue(':id_projet', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $result=$stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getProfs(){
+    $db=dbConnect();
+    $query="SELECT * FROM 'prof'";
+    $stmt=$db->prepare($query);
+    $stmt->execute();
+    $result=$stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getProf($id){
+    $db=dbConnect();
+    $query="SELECT * FROM 'prof' WHERE 'id_prof' = ':id_prof'";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue(':id_prof', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $result=$stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getArticles(){
+    $db=dbConnect();
+    $query="SELECT * FROM 'article'";
+    $stmt=$db->prepare($query);
+    $stmt->execute();
+    $result=$stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getArticle($id){
+    $db=dbConnect();
+    $query="SELECT * FROM 'article' WHERE 'id_article' = ':id_article'";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue(':id_article', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $result=$stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getTemoignages(){
+    $db=dbConnect();
+    $query="SELECT * FROM 'temoignage'";
+    $stmt=$db->prepare($query);
+    $stmt->execute();
+    $result=$stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function rmProf($id){
+    if ($_SESSION['is_admin'] == ){
+        $db=dbConnect();
+        $query="DELETE FROM prof WHERE id_prof = :id_prof";
+        $stmt=$db->prepare($query);
+        $stmt->bindValue(":id_prof", $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } else {
+        return false;
+    }
+}
+function rmMatiere($id){
+    $db=dbConnect();
+    $query="DELETE FROM matiere WHERE id_matiere = :id_matiere";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue(":id_matiere", $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
+function rmProjet($id){
+    $db=dbConnect();
+    $query="DELETE FROM projet WHERE id_projet = :id_projet";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue(":id_projet", $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
+function rmTemoignage($id){
+    $db=dbConnect();
+    $query="DELETE FROM temoignage WHERE id_temoignage = :id_temoignage";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue(":id_temoignage", $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
+function rmArticle($id){
+    $db=dbConnect();
+    $query="DELETE FROM article WHERE id_article = :id_article";
+    $stmt=$db->prepare($query);
+    $stmt->bindValue(":id_article", $id, PDO::PARAM_INT);
     $stmt->execute();
 }
 
