@@ -1,6 +1,6 @@
 <nav class=" navbar navbar-expand-lg sticky-top px-4 bg-body-tertiary">
 
-    <a class="navbar-brand amsterdam" href="index">
+    <a class="navbar-brand amsterdam" href="index"> <span class="visually-hidden">Lien accueil</span>
         <img src="logo/logo-but-mmi-champs-white.png" alt="Logo" height="45" class="d-inline-block align-text-top logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
