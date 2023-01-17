@@ -79,7 +79,7 @@ function addLien($mat1 = null, $mat2 = null, $mat3 = null, $nom)
 function addArticle($nom, $contenu, $synopsis, $miniature)
 {
     $db = dbConnect();
-    $target_file = 'src/img/article/' . basename($_FILES['image']);
+    $target_file = 'src/img/article/' . basename($miniature);
     $query = "INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article)" . $_SESSION['name'];
     $target_dir = 'src/img/art/';
     $target_file = $target_dir . basename($miniature);
@@ -87,7 +87,7 @@ function addArticle($nom, $contenu, $synopsis, $miniature)
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_article", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":contenu_article", $contenu, PDO::PARAM_STR);
-    $stmt->bindValue(":synopsis_fr", $synopsis, PDO::PARAM_STR);
+    $stmt->bindValue(":synopsis", $synopsis, PDO::PARAM_STR);
     $stmt->bindValue(":miniature_article", $target_file, PDO::PARAM_STR);
     $stmt->execute();
 }
