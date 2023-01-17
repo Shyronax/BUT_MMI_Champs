@@ -4,7 +4,7 @@ session_start();
 
 function dbConnect()
 {
-    $db = new PDO('mysql:host=localhost;dbname=mmi-bdd;port=3308', 'root', '');
+    $db = new PDO('mysql:host=localhost;dbname=mmi-bdd;port=3306', 'root', '');
     return $db;
 }
 
@@ -167,7 +167,7 @@ function getProjet($id)
 function getProfs()
 {
     $db = dbConnect();
-    $query = "SELECT * FROM utilisateur, matiere, lien_matiere WHERE id_prof = ext_prof AND id_matiere = ext_matiere";
+    $query = "SELECT * FROM utilisateur";
     $stmt = $db->prepare($query);
     $stmt->execute();
     $result = $stmt->fetchall(PDO::FETCH_ASSOC);
@@ -177,7 +177,7 @@ function getProfs()
 function getProf($id)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM utilisateur, matiere, lien_matiere WHERE id_prof = :id_prof AND ext_prof = :id_prof AND id_matiere = ext_matiere";
+    $query = "SELECT * FROM utilisateur WHERE 'id_prof' = ':id_prof'";
     $stmt = $db->prepare($query);
     $stmt->bindValue(':id_prof', $id, PDO::PARAM_INT);
     $stmt->execute();
