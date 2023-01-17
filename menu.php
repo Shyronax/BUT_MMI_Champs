@@ -1,6 +1,6 @@
 <nav class=" navbar navbar-expand-lg sticky-top px-4 bg-body-tertiary">
 
-    <a class="navbar-brand amsterdam" href="index.php">
+    <a class="navbar-brand amsterdam" href="index">
         <img src="logo/logo-but-mmi-champs-white.png" alt="Logo" height="45" class="d-inline-block align-text-top logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,12 +18,12 @@
                     Qu’est-ce que MMI ?
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="presentation.php">Présentation MMI</a></li>
-                    <li><a class="dropdown-item" href="matieres.php">Les matières enseignées</a></li>
-                    <li><a class="dropdown-item" href="enseignants.php">L'équipe enseignante</a></li>
-                    <li><a class="dropdown-item" href="debouches.php">Après MMI</a></li>
-                    <li><a class="dropdown-item" href="stage-alternance.php">Stages & Alternance</a></li>
-                    <li><a class="dropdown-item" href="international.php">À l'nternational</a></li>
+                    <li><a class="dropdown-item" href="presentation">Présentation MMI</a></li>
+                    <li><a class="dropdown-item" href="matieres">Les matières enseignées</a></li>
+                    <li><a class="dropdown-item" href="enseignants">L'équipe enseignante</a></li>
+                    <li><a class="dropdown-item" href="debouches">Après MMI</a></li>
+                    <li><a class="dropdown-item" href="stage-alternance">Stages & Alternance</a></li>
+                    <li><a class="dropdown-item" href="international">À l'nternational</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -31,13 +31,13 @@
                     MMI c'est qui?
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="projets.php">Projets</a></li>
-                    <li><a class="dropdown-item" href="temoignages.php">Témoignages</a></li>
+                    <li><a class="dropdown-item" href="projets">Projets</a></li>
+                    <li><a class="dropdown-item" href="temoignages">Témoignages</a></li>
                 </ul>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " href="actu.php">Actualités</a>
+                <a class="nav-link " href="actu">Actualités</a>
             </li>
             <li>
                 <label class="switch h-100 d-flex flex-column justify-content-center ms-3">

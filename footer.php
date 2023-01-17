@@ -8,16 +8,16 @@
             <!-- Colonne "A propos" -->
             <div class="col">
                 <ul class="ps-0">
-                    <li><a href="a-propos.php">À propos</a></li>
-                    <li><a href="mentions.php">Mentions légales</a></li>
+                    <li><a href="a-propos">À propos</a></li>
+                    <li><a href="mentions">Mentions légales</a></li>
                 </ul>
             </div>
             <!-- Colonne "Besoin d'aide" -->
             <div class="col">
                 <h3>Besoin d'aide</h3>
                 <ul class="ps-0">
-                    <li><a href="faq.php">FAQ</a></li>
-                    <li><a href="conseils.php">Nos conseils</a></li>
+                    <li><a href="faq">FAQ</a></li>
+                    <li><a href="conseils">Nos conseils</a></li>
                 </ul>
             </div>
             <!-- Colonne "Contact" -->

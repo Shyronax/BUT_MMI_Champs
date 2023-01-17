@@ -12,7 +12,7 @@
         <main class='d-flex flex-column justify-content-center mb-5'>
         <nav aria-label="breadcrumb" class="mt-5">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item"><a href="index">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Les débouchés Post-MMI</li>
             </ol>
         </nav>
