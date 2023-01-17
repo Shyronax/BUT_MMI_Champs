@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le : lun. 16 jan. 2023 à 17:41
--- Version du serveur : 10.4.21-MariaDB
--- Version de PHP : 8.0.12
+-- Hôte : 127.0.0.1:3306
+-- Généré le : mar. 17 jan. 2023 à 17:16
+-- Version du serveur : 8.0.31
+-- Version de PHP : 8.0.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `mmi-bdd`
+-- Base de données : `mmi-bdd.sql`
 --
 
 -- --------------------------------------------------------
@@ -27,15 +27,17 @@ SET time_zone = "+00:00";
 -- Structure de la table `article`
 --
 
-CREATE TABLE `article` (
-  `id_article` int(4) NOT NULL,
+DROP TABLE IF EXISTS `article`;
+CREATE TABLE IF NOT EXISTS `article` (
+  `id_article` int NOT NULL AUTO_INCREMENT,
   `nom_article` varchar(100) NOT NULL,
   `contenu_article` varchar(1000) NOT NULL,
   `date_article` date NOT NULL,
   `synopsis` varchar(200) NOT NULL,
   `miniature_article` varchar(50) DEFAULT NULL,
-  `auteur` varchar(40) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `auteur` varchar(40) NOT NULL,
+  PRIMARY KEY (`id_article`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -43,11 +45,13 @@ CREATE TABLE `article` (
 -- Structure de la table `lien_matiere`
 --
 
-CREATE TABLE `lien_matiere` (
-  `id_lien` int(2) NOT NULL,
-  `ext_matiere` int(2) NOT NULL,
-  `ext_prof` int(2) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+DROP TABLE IF EXISTS `lien_matiere`;
+CREATE TABLE IF NOT EXISTS `lien_matiere` (
+  `id_lien` int NOT NULL AUTO_INCREMENT,
+  `ext_matiere` int NOT NULL,
+  `ext_prof` int NOT NULL,
+  PRIMARY KEY (`id_lien`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -55,11 +59,13 @@ CREATE TABLE `lien_matiere` (
 -- Structure de la table `matiere`
 --
 
-CREATE TABLE `matiere` (
-  `id_matiere` int(2) NOT NULL,
+DROP TABLE IF EXISTS `matiere`;
+CREATE TABLE IF NOT EXISTS `matiere` (
+  `id_matiere` int NOT NULL AUTO_INCREMENT,
   `nom_matiere` varchar(60) NOT NULL,
-  `description` text NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+  `description` text NOT NULL,
+  PRIMARY KEY (`id_matiere`)
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `matiere`
@@ -89,8 +95,9 @@ INSERT INTO `matiere` (`id_matiere`, `nom_matiere`, `description`) VALUES
 -- Structure de la table `projet`
 --
 
-CREATE TABLE `projet` (
-  `id_projet` int(2) NOT NULL,
+DROP TABLE IF EXISTS `projet`;
+CREATE TABLE IF NOT EXISTS `projet` (
+  `id_projet` int NOT NULL AUTO_INCREMENT,
   `nom_projet` varchar(50) NOT NULL,
   `etudiants` varchar(100) NOT NULL,
   `date_projet` date NOT NULL,
@@ -98,17 +105,22 @@ CREATE TABLE `projet` (
   `description` varchar(500) NOT NULL,
   `img_projet` varchar(50) DEFAULT NULL,
   `iframe_projet` varchar(50) DEFAULT NULL,
-  `lien` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `lien` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id_projet`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `projet`
 --
 
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `etudiants`, `date_projet`, `niveau`, `description`, `img_projet`, `iframe_projet`, `lien`) VALUES
-(1, 'DataViz', 'Amel CHABAH', '2022-05-18', 'mmi 1', '', 'src/img/projet/resaweb-amel.jpg', '', 'https://resaweb.chabah.butmmi.o2switch.site/'),
-(2, 'Portrait chinois', 'Clara Many', '2021-12-31', 'mmi 1', '', 'src/img/projet/portrait-chinois-clara.png', NULL, 'https://claramy.github.io/MonPortraitChinois/'),
-(3, 'Portfolio', 'Valentin Bleuse', '2023-01-03', 'mmi 2', '', 'src/img/projet/dataviz.png', NULL, 'https://valentin-bleuse.fr/');
+(1, 'Resaweb ', 'Amel CHABAH', '2022-05-18', 'mmi 1', '', 'src/img/projet/resaweb-amel.jpg', '', 'https://resaweb.chabah.butmmi.o2switch.site/'),
+(2, 'Portrait chinois', 'Clara MANY', '2021-12-31', 'mmi 1', '', 'src/img/projet/portrait-chinois-clara.png', NULL, 'https://claramy.github.io/MonPortraitChinois/'),
+(3, 'Portfolio', 'Valentin BLEUSE', '2023-01-03', 'mmi 2', '', 'src/img/projet/dataviz.png', NULL, 'https://valentin-bleuse.fr/'),
+(4, 'Livre des 7 mots', 'Elise CELADON', '2021-12-06', 'mmi 1', '', 'scr/img/projet/livre-elise.png', NULL, NULL),
+(5, 'CV Vidéo', 'Anastasiya BALAN', '2020-12-30', 'mmi 2', '', 'scr/img/projet/cvideo.png', NULL, 'https://www.youtube.com/watch?v=D02XLtyxyN4'),
+(6, 'Motion design ', 'Valérie LAPEYRE, Samuel ENRIQUEZ-SARANO, Oscar POISSON et Valentin BLEUSE', '2022-06-09', 'mmi 1', '', 'scr/img/projet/motion-design.png', NULL, NULL),
+(7, 'Podcast Eiffel', 'Thomas DEVRED et Fathallah ZOBIR', '2022-12-16', 'mmi 2', '', 'scr/img/projet/podcast-eiffel.png', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -116,13 +128,15 @@ INSERT INTO `projet` (`id_projet`, `nom_projet`, `etudiants`, `date_projet`, `ni
 -- Structure de la table `temoignage`
 --
 
-CREATE TABLE `temoignage` (
-  `id_temoignage` int(2) NOT NULL,
+DROP TABLE IF EXISTS `temoignage`;
+CREATE TABLE IF NOT EXISTS `temoignage` (
+  `id_temoignage` int NOT NULL AUTO_INCREMENT,
   `etudiant` varchar(100) NOT NULL,
   `promo` varchar(15) NOT NULL,
   `nom_temoignage` varchar(50) NOT NULL,
-  `contenu_temoignage` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `contenu_temoignage` varchar(1000) NOT NULL,
+  PRIMARY KEY (`id_temoignage`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `temoignage`
@@ -138,99 +152,21 @@ INSERT INTO `temoignage` (`id_temoignage`, `etudiant`, `promo`, `nom_temoignage`
 -- Structure de la table `utilisateur`
 --
 
-CREATE TABLE `utilisateur` (
-  `id_prof` int(3) NOT NULL,
+DROP TABLE IF EXISTS `utilisateur`;
+CREATE TABLE IF NOT EXISTS `utilisateur` (
+  `id_prof` int NOT NULL AUTO_INCREMENT,
   `nom_prof` varchar(50) NOT NULL,
   `login` varchar(20) NOT NULL,
   `mdp` varchar(20) NOT NULL,
   `mail` varchar(50) NOT NULL,
   `url_photo` varchar(70) DEFAULT NULL,
   `bio` varchar(500) DEFAULT NULL,
-  `p_articles` tinyint(4) NOT NULL,
-  `p_projets` tinyint(4) NOT NULL,
-  `p_temoignages` tinyint(4) NOT NULL,
-  `p_admin` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Index pour les tables déchargées
---
-
---
--- Index pour la table `article`
---
-ALTER TABLE `article`
-  ADD PRIMARY KEY (`id_article`);
-
---
--- Index pour la table `lien_matiere`
---
-ALTER TABLE `lien_matiere`
-  ADD PRIMARY KEY (`id_lien`);
-
---
--- Index pour la table `matiere`
---
-ALTER TABLE `matiere`
-  ADD PRIMARY KEY (`id_matiere`);
-
---
--- Index pour la table `projet`
---
-ALTER TABLE `projet`
-  ADD PRIMARY KEY (`id_projet`);
-
---
--- Index pour la table `temoignage`
---
-ALTER TABLE `temoignage`
-  ADD PRIMARY KEY (`id_temoignage`);
-
---
--- Index pour la table `utilisateur`
---
-ALTER TABLE `utilisateur`
-  ADD PRIMARY KEY (`id_prof`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `article`
---
-ALTER TABLE `article`
-  MODIFY `id_article` int(4) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `lien_matiere`
---
-ALTER TABLE `lien_matiere`
-  MODIFY `id_lien` int(2) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `matiere`
---
-ALTER TABLE `matiere`
-  MODIFY `id_matiere` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- AUTO_INCREMENT pour la table `projet`
---
-ALTER TABLE `projet`
-  MODIFY `id_projet` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT pour la table `temoignage`
---
-ALTER TABLE `temoignage`
-  MODIFY `id_temoignage` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT pour la table `utilisateur`
---
-ALTER TABLE `utilisateur`
-  MODIFY `id_prof` int(3) NOT NULL AUTO_INCREMENT;
+  `p_articles` tinyint NOT NULL,
+  `p_projets` tinyint NOT NULL,
+  `p_temoignages` tinyint NOT NULL,
+  `p_admin` tinyint NOT NULL,
+  PRIMARY KEY (`id_prof`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
