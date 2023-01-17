@@ -16,10 +16,10 @@
             </ol>
         </nav>
     <header class='mb-5 mt-3 d-flex flex-column align-items-center container'>
-                <h1 class='display-3 text-center '>Stages & Alternances</h1>
+                <h1 class='display-3 text-center'>Stages & Alternances</h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
-                        <p class='align-left'>
+                        <p class='text-center'>
                             Ici retrouvez les informations sur les stages et alternance qui pourraient vous attendre si vous rejoindrez l'aventure MMI !
                         </p>
                     </div>

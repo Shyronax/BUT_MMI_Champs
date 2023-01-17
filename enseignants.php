@@ -21,8 +21,8 @@
 
                     <h1 class='display-1 inline text-center'>Nos enseigants</h1>
                     <div class="w-100"></div>
-                    <div class=" row col-12 justify-content-end">
-                        <p class=' col-8 pe-3 text-end'> Vous voulez savoir avec qui vous allez passer votre formation ? Alors cette page est faite pour vous !</p>
+                    <div class=" row col-12 justify-content-center">
+                        <p class=' col-8 pe-3 text-center'> Vous voulez savoir avec qui vous allez passer votre formation ? Alors cette page est faite pour vous !</p>
                     </div>
                 </div>
             </div>

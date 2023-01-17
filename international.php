@@ -20,7 +20,7 @@
                 <h1 class='display-3 text-center '>MMI à l'international </h1>
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
-                        <p class='align-left'>
+                        <p class='text-center'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem nihil dolorum facere quibusdam? Impedit cupiditate qui, voluptate est saepe vitae, eveniet blanditiis magni quo velit, non fugit sunt ratione?
                         </p>
                     </div>
