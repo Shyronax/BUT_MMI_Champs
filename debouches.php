@@ -31,7 +31,7 @@
                 <div class="container d-flex justify-content-center my-5 col-lg-10">
                     <div class="row gap-5 d-flex justify-content-center">
                         <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
-                            <h2 class="text-center doorTitle" id="opendoor1">Développeur Web</h2>
+                            <h2 class="text-center doorTitle" data-bs-toggle="modal" data-bs-target="#openModal1">Développeur Web</h2>
                         </div>
                         <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
                             <h2 class="text-center doorTitle" id="opendoor2">Intégrateur Web</h2>
@@ -91,24 +91,24 @@
   Launch demo modal
 </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="openModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            ...
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+        </div>
     </div>
-  </div>
-</div>
+    </div>
 
     <?php include 'footer.php' ?>
 </body>
