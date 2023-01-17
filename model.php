@@ -171,7 +171,7 @@ function getTemoignages(){
 }
 
 function rmUser($id){
-    if ($_SESSION['is_admin'] == "1"){
+    if ($_SESSION['admin'] == "1"){
         $db=dbConnect();
         $query="DELETE FROM prof WHERE id_prof = :id_prof";
         $stmt=$db->prepare($query);
