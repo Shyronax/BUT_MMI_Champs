@@ -36,7 +36,7 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                    <div class="row row-cols-1 row-cols-md-3 ">
+                    <div class="row row-cols-1 row-cols-md-3 d-flex justify-content-center  ">
                         <div class="card me-3 mt-3" style="width: 18rem;">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
