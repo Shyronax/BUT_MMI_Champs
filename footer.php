@@ -1,13 +1,13 @@
 <footer class="py-5 bg-body-tertiary">
-    <div class="container d-flex justify-content-between">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between">
         <div class="w-25">
             <!-- Logo -->
             <img src="logo/logo-but-mmi-champs.png" class="img-fluid logo" alt="">
         </div>
-        <div class='d-flex'>
+        <div class='d-flex flex-column flex-lg-row'>
             <!-- Colonne "A propos" -->
             <div class="col">
-                <ul>
+                <ul class="ps-0">
                     <li><a href="a-propos.php">À propos</a></li>
                     <li><a href="mentions.php">Mentions légales</a></li>
                 </ul>
@@ -15,7 +15,7 @@
             <!-- Colonne "Besoin d'aide" -->
             <div class="col">
                 <h3>Besoin d'aide</h3>
-                <ul>
+                <ul class="ps-0">
                     <li><a href="faq.php">FAQ</a></li>
                     <li><a href="conseils.php">Nos conseils</a></li>
                 </ul>
