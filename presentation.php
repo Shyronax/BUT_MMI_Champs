@@ -30,13 +30,18 @@
                 <div class="row">
                     <div class="col-12 col-lg-7  d-flex flex-column justify-content-center">
                         <h2 class='display-6 '>La formation MMI</h2>
-                        <p>Le BUT <b>M</b>étiers du <b>M</b>ultimédia et de l'<b>I</b>nternet (MMI) s'appuie sur un Programme Pédagogique National qui garantit un diplôme de valeur nationale et une reconnaissance par les écoles et par les professionnels.
-                            Cette formation vous permet d'acquérir un bagage suffisant pour <b>entrer dans le monde professionnel</b> ou <b>poursuivre vos études en master</b>.
+                        <p>Le BUT <b>M</b>étiers du <b>M</b>ultimédia et de l'<b>I</b>nternet (MMI) vise à développer des compétences pluridisciplinaires pour former aux métiers du multimédia. 
+
+                        <p>
+Alliant la théorie à la pratique, la formation propose de développer des compétences en programmation, graphisme ou encore en communication. Cela permet à l'étudiant  de devenir polyvalent dans la conception, la réalisation et la commercialisation de produits et de services web et multimédia.
+
+</p>
+<p>
+La formation dure 3 ans et comprend 2600 heures d'enseignement. Lors de la deuxième année, les étudiants pourront s’orienter vers <b>la création numérique </b> ou  <b>le développement web </b>
+
                         </p>
                         <p>
-                            Le BUT MMI est une formation répondant à l'évolution des usages du numérique omniprésente dans le quotidien.
-                            Au cours de sa formation, l'étudiant développe des <b>compétences pluridisciplinaires</b> tant dans le domaine de la programmation que dans le graphisme ou les réseaux. Son atout principal à la fin de la formation est sa polyvalence dans les domaines de la <b>conception</b>, de la <b>réalisation</b>, de la <b>commercialisation de produits et de services web et multimédia</b>.
-                            Le BUT MMI compte 2600 heures d'enseignement sur trois ans (soit environ 33h d'enseignement par semaine) partagées entre la communication, les langues, l'informatique, la culture graphique, la culture scientifique et les réseaux.
+                        Le BUT MMI est professionnalisant, il permet de déployer des compétences d’autonomie avec la conduite de nombreux projets individuels ou de groupe.
                         </p>
                     </div>
                     <div class="col-12 col-lg-5">
