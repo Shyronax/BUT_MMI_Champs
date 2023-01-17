@@ -38,7 +38,7 @@ function addUser($name, $login, $pass, $mail, $bio, $mat1, $mat2, $mat3, $art, $
     $stmt->execute();
     $query="INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof, :ext_matiere)";
     $stmt=$db->prepare($query);
-    $stmt->bindValue()
+    $stmt->bindValue();
 }
 
 
