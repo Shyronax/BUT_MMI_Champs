@@ -30,7 +30,7 @@
             </header>
 
 
-            < <div data-aos="fade-right" data-aos-offset="500" class="container w-75 ">
+            <div data-aos="fade-right" data-aos-offset="500" class="container w-75 ">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <?php
 
@@ -38,7 +38,7 @@
                     foreach ($result as $matiere) { ?>
                         <div class="col">
                             <div class="card h-100">
-                                <div class="card-body">;
+                                <div class="card-body">
                                     <h5 class="card-title"><?php echo $matiere['nom_matiere']; ?></h5>
                                     <p class="card-text"><?php echo $matiere['description']; ?></p>
                                 </div>
@@ -50,8 +50,8 @@
                     ?>
 
                 </div>
-    </div>
-    </main>
+            </div>
+        </main>
     </div>
     <?php include 'footer.php' ?>
 </body>
