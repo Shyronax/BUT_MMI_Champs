@@ -21,7 +21,7 @@
                 <div class="row d-flex justify-content-center ">
                     <div class="col-12 col-lg-7 ">
                         <p class='align-left'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem nihil dolorum facere quibusdam? Impedit cupiditate qui, voluptate est saepe vitae, eveniet blanditiis magni quo velit, non fugit sunt ratione?
+                           C'est ici que vous découvrirez les matières que l'on enseigne en MMI
                         </p>
                     </div>
                 </div>

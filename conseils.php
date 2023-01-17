@@ -23,7 +23,7 @@
         </main>
         <div class="container mb-2">
             <h2>Préparez-vous</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi itaque facere in, voluptatibus beatae, assumenda quod, error aliquam maxime laudantium accusamus ratione obcaecati ut ad doloremque commodi doloribus? Mollitia?</p>
+            <p>La formation MMI est pluridisciplinaire, beaucoup de sujets sont traités . Il faut donc savoir être autonome et savoir gérer son temps. En vue des nombreux travaux à faire,il ne faut pas oublier d'avoir un disque dur pour sauvgarder ses données!</p>
         </div>
         <div class="container mb-2">
             <h2>C'est chaud un peu</h2>

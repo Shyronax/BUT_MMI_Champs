@@ -35,8 +35,8 @@
                             <img src="src/img/prof/philippe-gambette.png" alt="photo du professeur" class="img-fluid">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Nom Prenom</h4>
-                            <p class="card-text">Matière enseignée</p>
+                            <h4 class="card-title">Charpentier Gaëlle</h4>
+                            <p class="card-text">Intégration Web</p>
                             <!-- Ajoutez un bouton pour ouvrir la modale -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof1">
                                 Plus de détails
@@ -50,8 +50,8 @@
                             <img src="photo-prof2.jpg" alt="photo du professeur">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Nom Prenom</h4>
-                            <p class="card-text">Matière enseignée</p>
+                            <h4 class="card-title">Tasso Anne</h4>
+                            <p class="card-text">Production audiovisuelle</p>
                             <!-- Ajoutez un bouton pour ouvrir la modale -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof2">
                                 Plus de détails
@@ -65,8 +65,8 @@
                             <img src="photo-prof1.jpg" alt="photo du professeur">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Nom Prenom</h4>
-                            <p class="card-text">Matière enseignée</p>
+                            <h4 class="card-title">Lo Hervé</h4>
+                            <p class="card-text">Gestion de projet</p>
                             <!-- Ajoutez un bouton pour ouvrir la modale -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof1">
                                 Plus de détails
@@ -80,8 +80,8 @@
                             <img src="photo-prof1.jpg" alt="photo du professeur">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Nom Prenom</h4>
-                            <p class="card-text">Matière enseignée</p>
+                            <h4 class="card-title">Poisson Frédéric</h4>
+                            <p class="card-text">Création et Design interactif</p>
                             <!-- Ajoutez un bouton pour ouvrir la modale -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof1">
                                 Plus de détails
