@@ -13,7 +13,7 @@
             <nav aria-label="breadcrumb" class="mt-5">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">La formation MMI</li>
+                    <li class="breadcrumb-item active" aria-current="page">Les témoignages</li>
                 </ol>
             </nav>
             <header data-aos="fade-down" data-aos-offset="500" class='mb-5 d-flex flex-column align-items-center container d-flex flex-column align-items-center vh75 justify-content-center'>
