@@ -37,14 +37,14 @@
                 <?php
                 $result = getProfs();
                 foreach ($result as $prof) { ?>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="card mb-3 h-100">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 mb-5">
+                        <div class="card  h-100">
                             <div class="card-header">
                                 <img src="src/img/prof/<?php echo $prof['url_photo']; ?>" alt="photo du professeur" class="img-fluid">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title"><?php echo $prof['nom_prof']; ?></h4>
-                                <p class="card-text">temp</p>
+                                <p class="card-text"><?php echo $prof['nom_matiere']; ?></p>
                                 <!-- Ajoutez un bouton pour ouvrir la modale -->
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-prof<?php echo $prof['id_prof']; ?>">
                                     Plus de détails
