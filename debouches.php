@@ -32,42 +32,45 @@
                     <h2 class="text-center doorTitle" id="opendoor1">Développeur Web</h2>
                 </div>
                 <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
-                    <h2 class="text-center doorTitle" id="opendoor2">Développeur Web</h2>
+                    <h2 class="text-center doorTitle" id="opendoor2">Intégrateur Web</h2>
                 </div>
                 <div class="door door2 d-flex align-items-center justify-content-center col-lg-3">
-                    <h2 class="text-center doorTitle" id="opendoor3">Développeur Web</h2>
+                    <h2 class="text-center doorTitle" id="opendoor3">Designer Web</h2>
                 </div>
                 <div class="door door1 d-flex align-items-center justify-content-center col-lg-3">
-                    <h2 class="text-center doorTitle" id="opendoor4">Développeur Web</h2>
+                    <h2 class="text-center doorTitle" id="opendoor4">Webmaster</h2>
                 </div>
             </div>
         </div>
         <div class="container d-flex justify-content-center gap-5 my-5">
             <div class="door door1 d-flex align-items-center justify-content-center">
-                <h2 class="text-center doorTitle" id="opendoor2">Développeur Web</h2>
+                <h2 class="text-center doorTitle" id="opendoor2">UX Designer</h2>
             </div>
             <div class="door door2 d-flex align-items-center justify-content-center">
-                <h2 class="text-center doorTitle" id="opendoor3">Développeur Web</h2>
+                <h2 class="text-center doorTitle" id="opendoor3">Graphiste</h2>
             </div>
             <div class="door door1 d-flex align-items-center justify-content-center">
-                <h2 class="text-center doorTitle" id="opendoor4">Développeur Web</h2>
+                <h2 class="text-center doorTitle" id="opendoor4">Community Manager</h2>
             </div>
             <div class="door door2 d-flex align-items-center flex-column justify-content-center">
-                <h2 class="text-center doorTitle" id="opendoor1">Développeur Web</h2>
+                <h2 class="text-center doorTitle" id="opendoor1">Chargé de Communication</h2>
             </div>
         </div>
         <div class="container d-flex justify-content-center gap-5 my-5">
             <div class="door door2 d-flex align-items-center flex-column justify-content-center">
-                <h2 class="text-center doorTitle" id="opendoor1">Développeur Web</h2>
+                <h2 class="text-center doorTitle" id="opendoor1">SEO - SEM</h2>
             </div>
             <div class="door door1 d-flex align-items-center justify-content-center">
-                <h2 class="text-center doorTitle" id="opendoor2">Développeur Web</h2>
+                <h2 class="text-center doorTitle" id="opendoor2">Gestionnaire de Réseaux</h2>
             </div>
             <div class="door door2 d-flex align-items-center justify-content-center">
-                <h2 class="text-center doorTitle" id="opendoor3">Développeur Web</h2>
+                <h2 class="text-center doorTitle" id="opendoor3">Assistant Chef de projet Plurimédia</h2>
             </div>
             <div class="door door1 d-flex align-items-center justify-content-center">
-                <h2 class="text-center doorTitle" id="opendoor4">Développeur Web</h2>
+                <h2 class="text-center doorTitle" id="opendoor4">Veilleur Stratégique</h2>
+            </div>
+            <div class="door door1 d-flex align-items-center justify-content-center">
+                <h2 class="text-center doorTitle" id="opendoor4">Réalisateur Multimédia</h2>
             </div>
         </div>
         </main>
