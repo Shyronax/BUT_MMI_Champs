@@ -11,12 +11,13 @@ function dbConnect()
 function login($login, $pass)
 {
     $db = dbConnect();
+    $hashpass=crypt($pass, '$2a$07$usesomesillystringforsalt$');
     $query = "SELECT * FROM utilisateur WHERE login = :login";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":login", $login, PDO::PARAM_STR);
     $result = $stmt->execute();
     if ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        if (password_verify($pass, $result['mdp'])) {
+        if (hash_equals($hashpass, $result['mdp'])) {
             $_SESSION['name'] = $result['nom_prof'];
             $_SESSION['projets'] = $result['p_projets'];
             $_SESSION['articles'] = $result['p_articles'];
@@ -33,7 +34,7 @@ function login($login, $pass)
 
 function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem)
 {
-    $hash = password_hash($pass, PASSWORD_DEFAULT);
+    $hash = crypt($pass, '$2a$07$usesomesillystringforsalt$');
     $db = dbConnect();
     $query = "INSERT INTO utilisateur (nom_prof, login, mdp, mail, bio, p_articles, p_projets, p_temoignages) VALUES (:nom_prof, :login, :mdp, :mail, :bio, :p_articles, :p_projets, :p_temoignages)";
     $stmt = $db->prepare($query);
