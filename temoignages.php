@@ -1,3 +1,4 @@
+<?php include './model.php'?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -48,7 +49,7 @@
                     </div>
                 <?php
                 }
-                if (x == 0) { ?>
+                if ($x == 0) { ?>
                     <div data-aos="fade-left" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                         <div class="row gap-5">
                             <div class="col-12 col-lg-2 d-flex flex-column justify-content-center">

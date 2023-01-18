@@ -52,7 +52,7 @@ function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem)
 function addLien($mat1 = null, $mat2 = null, $mat3 = null, $nom)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM utilisateur WHERE $nom = nom_prof";
+    $query = "SELECT * FROM utilisateur WHERE nom_prof = $nom";
     $stmt = $db->query($query);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     $id = $result['id_user'];
@@ -188,7 +188,7 @@ function getProjet($id)
 function getProfs()
 {
     $db = dbConnect();
-    $query = "SELECT * FROM utilisateur, matiere, lien_matiere WHERE id_prof = ext_prof AND id_matiere = ext_matiere";
+    $query = "SELECT * FROM utilisateur, matiere, lien_matiere WHERE id_prof = ext_prof AND id_matiere = ext_matiere GROUP BY id_prof";
     $stmt = $db->prepare($query);
     $stmt->execute();
     $result = $stmt->fetchall(PDO::FETCH_ASSOC);

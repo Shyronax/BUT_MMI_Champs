@@ -31,64 +31,56 @@
 
 
         </div>
-        <div class="container vh75 p-0 mb-5 position-relative">
-
-
-            <div data-aos="fade-right" data-aos-offset="300" class="row ps-3">
-                <div class="col-12 col-lg-6"><img class="img-fluid h-100 w-100" src="src/img/accueil/iut-mmi.png" alt=""></div>
-                <div class="col">
-                    <div class="row h-100 justify-content-center align-items-center">
-                        <p class=''>Situé à 15 minutes à pied du rer A</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
+        
         </div>
         <div data-aos="fade-left" data-aos-offset="300" class="container mb-4">
             <h2 class="mb-3 display-5">MMI en bref :</h2>
-            <div class="row row-cols-1 row-cols-md-3 ">
-
-                <div class="col ">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title display-6">Formation pluridisciplinaire</h3>
-                            <p class="card-text">La formation MMI offre une expertise globale sur les métiers du multimédia et de l'Internet.</p>
-                            <a href="/presentation" class="btn btn-primary w-50">En savoir plus sur la formation.</a>
-                        </div>
+             <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5 mt-5">
+                <div class="row">
+                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
+                        <h3 class='display-6 '>La formation MMI</h3>
+                        <p>La formation MMI couvre tous les champs du digital, offrant ainsi une expertise globale sur les métiers du multimédia et de l'Internet. Du développement de sites internet à la production d'affiches en passant par des cours de marketing afin savoir élaborer une stratégie de vente, le BUT MMI donne toutes les clés pour se lancer dans les métiers liés à internet.
+                        </p>
+                        <a href="/presentation" class="btn btn-primary w-50">En savoir plus</a>
                     </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body ">
-                            <h3 class="card-title display-6">Stage/Alternance</h3>
-                            <p class="card-text">MMI est une formation profesionalisante, c'est pourquoi l'étudiant est confronté au mond du travail dès la fin de la première année.</p>
-                            <a href="/stage-alternance" class="btn btn-primary w-50">En savoir plus sur l'alternance</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="card h-100">
-                        <div class="card-body ">
-                            <h3 class="card-title display-6">Après MMI</h3>
-                            <p class="card-text">La formation peut mener à de nombreuses branches différentes, différentes poursuites d'études, différents métiers.</p>
-                            <a href="#" class="btn btn-primary w-50">En savoir plus sur les débouchés.</a>
-                        </div>
+                    <div class="col-12 col-lg-5">
+                        <img class="img-fluid" src="src/img/illustration/accueil-formation.webp" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-        <div data-aos="fade-right" data-aos-offset="500" class="container flex-column  justify-content-center vh75 mb-4">
-            <h3 class="mb-3">Où sommes-nous?</h3>
-            <div class="overflow-hidden">
 
-                <iframe class="rounded" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.6743561309602!2d2.5839759004617586!3d48.837146438660476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sca!4v1673112834622!5m2!1sfr!2sca" width="1500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
 
+
+
+
+
+            <div data-aos="fade-left" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5 mt-5">
+                <div class="row ">
+                    <div class="col-12 col-lg-5 d-flex flex-column justify-content-center">
+                        <img class="img-fluid" src="src/img/illustration/accueil-stage-alternance.webp" alt="">
+                    </div>
+                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
+                        <h3 class='display-6 '>Stage/Alternance</h3>
+                        <p>MMI est une formation profesionalisante, c'est pourquoi l'étudiant est confronté au mond du travail dès la fin de la première année. Tout au long de la formation, le but est de confronté les étudiants au monde du travail le plus possible, que ce soit à travers les travaux ou à travers les stages et alternances qui permettent aux étudiants de faire leurs premiers pas dans les métiers du web. </p>
+                        <a href="/stage-alternance" class="btn btn-primary w-50">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5 mt-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
+                            <h3 class='display-6 '>Après MMI</h3>
+                            <p>La formation peut mener à de nombreuses branches différentes, d'une part à une multitude de poursuites d'études, et d'une autre, MMI ouvre la porte à énormément de métiers en rapport avec le numérique. La formation MMI est recherché dans le monde du travail.
+                            </p>
+                            <a href="/debouches" class="btn btn-primary w-50">En savoir plus</a>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <img class="img-fluid" src="src/img/illustration/accueil-apres-mmi.webp" alt="">
+                        </div>
+                    </div>
+                </div>
         </div>
+        
         <div data-aos="fade-left" data-aos-offset="300" class="container d-flex flex-column  justify-content-center vh75 mb-4">
             <h3 class="mb-3 display-6">MMI en chiffres</h3>
             <div class="p-3 mb-2  rounded">
@@ -126,7 +118,8 @@
                 $result = getProjets();
                 for ($i = 0; $i < 3; $i++) {
                     $row = $result[$i];
-                    echo "<div class='col'>
+                    echo "
+                    <div class='col'>
                         <div class='card h-100'>
                             <img src='" . $row['img_projet'] . "' class='card-img-top' alt='...'>
                             <div class='card-body'>
@@ -142,7 +135,7 @@
 
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2" type="button">Button</button>
+            <a class="btn btn-primary me-md-2" href="/projets">Voir les projets</a>
         </div>
 
         </div>
@@ -159,7 +152,7 @@
                             <div class='card-body'>
                                 <h4 class='card-title'>Témoignage</h4>
                                 <blockquote class='blockquote mb-0'>
-                                    <p>" . $row['contenu_temoignage'] . "</p>
+                                    <p>" . substr($row['contenu_temoignage'], 0, 150) . " ...</p>
                                     <footer class='blockquote-footer'>" . $row['etudiant'] . " <cite title='Source Title'>" . $row['promo'] . "</cite></footer>
                                 </blockquote>
                             </div>
@@ -170,7 +163,7 @@
 
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
-                <button class="btn btn-primary me-md-2" type="button">Button</button>
+                <a class="btn btn-primary me-md-2" href="/temoignages">Voir les témoignages</a>
             </div>
 
         </div>
@@ -197,10 +190,10 @@
             } ?>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
-                <button class="btn btn-primary me-md-2" type="button">Button</button>
+                <a class="btn btn-primary me-md-2" href="/actus">Voir les actualités</a>
             </div>
         </div>
-
+       
 
     </main>
     <?php include 'footer.php' ?>
