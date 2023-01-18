@@ -1,5 +1,5 @@
 <?php
 include('model.php');
-addArticle($_POST['titre'], $_POST['contenu']);
+editMatiere($_POST['id'], $_POST['nom'], $_POST['description']);
 header('Location: back-office.php');
 ?>

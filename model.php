@@ -132,7 +132,7 @@ function addMatiere($nom, $description)
 function editUser($id, $name, $bio, $art=null, $proj=null, $tem=null)
 {
     $db = dbConnect();
-    $query = "UPDATE utilisateur SET nom_prof=':nom_prof', bio=':bio', p_articles=':p_articles', p_projets=':p_projets', p_temoignages=':p_temoignages' WHERE id_prof=:id_prof";
+    $query = "UPDATE utilisateur SET nom_prof=:nom_prof, bio=:bio, p_articles=:p_articles, p_projets=:p_projets, p_temoignages=:p_temoignages WHERE id_prof=:id_prof";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_prof", $name, PDO::PARAM_STR);
     $stmt->bindValue(":bio", $bio, PDO::PARAM_STR);
@@ -177,7 +177,7 @@ function editLien($mat1 = null, $mat2 = null, $mat3 = null, $id)
 function editArticle($id, $nom, $contenu)
 {
     $db = dbConnect();
-    $query = "UPDATE article SET nom_article=':nom_article', contenu_article=':contenu_article' WHERE id_article=:id_article";
+    $query = "UPDATE article SET nom_article=:nom_article, contenu_article=:contenu_article WHERE id_article=:id_article";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_article", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":contenu_article", $contenu, PDO::PARAM_STR);
@@ -188,7 +188,7 @@ function editArticle($id, $nom, $contenu)
 function editProjet($id, $nom_projet, $etudiants, $niveau, $lien, $description)
 {
     $db = dbConnect();
-    $query = "UPDATE projet SET nom_projet=':nom_projet', etudiants=':etudiants', lien=':lien', niveau=':niveau', description=':description' WHERE id_projet=:id_projet";
+    $query = "UPDATE projet SET nom_projet=:nom_projet, etudiants=:etudiants, lien=:lien, niveau=:niveau, description=:description WHERE id_projet=:id_projet";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_projet", $nom_projet, PDO::PARAM_STR);
     $stmt->bindValue(":etudiants", $etudiants, PDO::PARAM_STR);
@@ -202,7 +202,7 @@ function editProjet($id, $nom_projet, $etudiants, $niveau, $lien, $description)
 function editTemoignage($id, $etudiant, $promo, $nom_temoignage, $contenu_temoignage)
 {
     $db = dbConnect();
-    $query = "UPDATE temoignage SET etudiant=':etudiant', promo=':promo', nom_temoignage=':nom_temoignage', contenu_temoignage=':contenu_temoignage' WHERE id_temoignage=:id_temoignage";
+    $query = "UPDATE temoignage SET etudiant=:etudiant, promo=:promo, nom_temoignage=:nom_temoignage, contenu_temoignage=:contenu_temoignage WHERE id_temoignage=:id_temoignage";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":etudiant", $etudiant, PDO::PARAM_STR);
     $stmt->bindValue(":promo", $promo, PDO::PARAM_STR);
@@ -215,7 +215,7 @@ function editTemoignage($id, $etudiant, $promo, $nom_temoignage, $contenu_temoig
 function editMatiere($id, $nom, $description)
 {
     $db = dbConnect();
-    $query = "UPDATE matiere SET nom_matiere=':nom_matiere' description=':description' WHERE id_matiere=:id_matiere";
+    $query = "UPDATE matiere SET nom_matiere=:nom_matiere, description=:description WHERE id_matiere=:id_matiere";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_matiere", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":description", $description, PDO::PARAM_STR);
@@ -230,6 +230,17 @@ function getMatieres()
     $stmt = $db->prepare($query);
     $stmt->execute();
     $result = $stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getMatiere($id)
+{
+    $db = dbConnect();
+    $query = "SELECT * FROM matiere WHERE id_matiere = :id_matiere";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':id_matiere', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result;
 }
 
@@ -264,7 +275,7 @@ function getProjets_year2()
 function getProjet($id)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM projet WHERE 'id_projet' = ':id_projet'";
+    $query = "SELECT * FROM projet WHERE id_projet = :id_projet";
     $stmt = $db->prepare($query);
     $stmt->bindValue(':id_projet', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -306,7 +317,7 @@ function getArticles()
 function getArticle($id)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM article WHERE 'id_article' = ':id_article'";
+    $query = "SELECT * FROM article WHERE id_article = :id_article";
     $stmt = $db->prepare($query);
     $stmt->bindValue(':id_article', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -321,6 +332,17 @@ function getTemoignages()
     $stmt = $db->prepare($query);
     $stmt->execute();
     $result = $stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getTemoignage($id)
+{
+    $db = dbConnect();
+    $query = "SELECT * FROM temoignage WHERE id_temoignage = :id_temoignage";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':id_temoignage', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result;
 }
 
