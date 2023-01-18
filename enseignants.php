@@ -24,7 +24,7 @@
                     <h1 class='display-1 inline text-center'>Nos enseignants</h1>
                     <div class="w-100"></div>
                     <div class=" row col-12 justify-content-center">
-                        <p class=' col-8 pe-3 text-center'> Vous voulez savoir avec qui vous allez passer votre formation ? Alors cette page est faite pour vous !</p>
+                        <p class=' col-8 pe-3 text-center'> Vous voulez en savoir plus sur les enseignants qui vous accompagneront durant la formation? Alors cette page est faite pour vous !</p>
                     </div>
                 </div>
             </div>
