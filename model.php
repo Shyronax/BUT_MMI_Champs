@@ -18,6 +18,9 @@ function login($login, $pass)
     if ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
         if (password_verify($pass, $result['mdp'])) {
             $_SESSION['name'] = $result['nom_prof'];
+            $_SESSION['projets'] = $result['p_projets'];
+            $_SESSION['articles'] = $result['p_articles'];
+            $_SESSION['temoignages'] = $result['p_temoignages'];
             $_SESSION['admin'] = $result['p_admin'];
             return true;
         } else {
@@ -32,10 +35,10 @@ function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem)
 {
     $hash = password_hash($pass, PASSWORD_DEFAULT);
     $db = dbConnect();
-    $query = "INSERT INTO utilisateur (nom_prof, login_prof, mdp, mail, bio, p_articles, p_projets, p_temoignages) VALUES (:nom_prof, :login_prof, :mdp, :mail, :bio, :p_articles, :p_projets, :p_temoignages)";
+    $query = "INSERT INTO utilisateur (nom_prof, login, mdp, mail, bio, p_articles, p_projets, p_temoignages) VALUES (:nom_prof, :login, :mdp, :mail, :bio, :p_articles, :p_projets, :p_temoignages)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_prof", $name, PDO::PARAM_STR);
-    $stmt->bindValue(":login_prof", $login, PDO::PARAM_STR);
+    $stmt->bindValue(":login", $login, PDO::PARAM_STR);
     $stmt->bindValue(":mdp", $hash, PDO::PARAM_STR);
     $stmt->bindValue(":mail", $mail, PDO::PARAM_STR);
     $stmt->bindValue(":bio", $bio, PDO::PARAM_STR);
