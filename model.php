@@ -52,7 +52,7 @@ function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem)
 function addLien($mat1 = null, $mat2 = null, $mat3 = null, $nom)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM utilisateur WHERE nom_prof = $nom";
+    $query = "SELECT * FROM utilisateur WHERE $nom = nom_prof";
     $stmt = $db->query($query);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     $id = $result['id_user'];
