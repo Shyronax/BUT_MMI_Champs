@@ -147,7 +147,7 @@
 </form>';
         }
     }
-    echo "<h2 class="mt-5 mb-2">Les professeurs</h2>";
+    echo '<h2 class="mt-5 mb-2">Les professeurs</h2>';
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {
             echo '<table class="table table-border">';
