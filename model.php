@@ -86,12 +86,13 @@ function addArticle($nom, $contenu, $synopsis, $miniature)
     $target_dir = 'src/img/article/';
     $target_file = $target_dir . basename($miniature);
     move_uploaded_file($miniature, $target_file);
-    $query = "INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article, $_SESSION['name'])";
+    $query = "INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article, :auteur)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_article", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":contenu_article", $contenu, PDO::PARAM_STR);
     $stmt->bindValue(":synopsis", $synopsis, PDO::PARAM_STR);
     $stmt->bindValue(":miniature_article", $target_file, PDO::PARAM_STR);
+    $stmt->bindValue(":auteur", $_SESSION['name'], PDO::PARAM_STR);
     $stmt->execute();
 }
 
