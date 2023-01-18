@@ -82,6 +82,7 @@ J'ai choisi MMI car c'est une formation pluridisciplinaire. Je souhaitais d'abor
                     </div>
                 </div>
             </div>
+            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="actu">Voir l'actualité ></a></div>
         </main>
     </div>
     <?php include 'footer.php' ?>

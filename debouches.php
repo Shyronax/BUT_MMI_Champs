@@ -295,7 +295,7 @@
             </div>
         </div>
     </div>
-
+    <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="projets">Voir les projets des étudiants ></a></div>
     <?php include 'footer.php' ?>
 </body>
 

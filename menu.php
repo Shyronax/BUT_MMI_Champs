@@ -21,8 +21,8 @@
                     <li><a class="dropdown-item" href="presentation">Présentation MMI</a></li>
                     <li><a class="dropdown-item" href="matieres">Les matières enseignées</a></li>
                     <li><a class="dropdown-item" href="enseignants">L'équipe enseignante</a></li>
-                    <li><a class="dropdown-item" href="debouches">Après MMI</a></li>
                     <li><a class="dropdown-item" href="stage-alternance">Stages & Alternance</a></li>
+                    <li><a class="dropdown-item" href="debouches">Après MMI</a></li>
                     <li><a class="dropdown-item" href="international">À l'nternational</a></li>
                 </ul>
             </li>

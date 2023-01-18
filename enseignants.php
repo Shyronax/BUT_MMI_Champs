@@ -21,7 +21,7 @@
             <div data-aos="fade-down" data-aos-offset="500" class="row h-100 justify-content-center align-items-center">
                 <div class="col-12 col-lg-7">
 
-                    <h1 class='display-1 inline text-center'>Nos enseigants</h1>
+                    <h1 class='display-1 inline text-center'>Nos enseignants</h1>
                     <div class="w-100"></div>
                     <div class=" row col-12 justify-content-center">
                         <p class=' col-8 pe-3 text-center'> Vous voulez savoir avec qui vous allez passer votre formation ? Alors cette page est faite pour vous !</p>
@@ -87,6 +87,7 @@
             </div>
         <?php } ?>
         </div>
+        <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="stage-alternance">Voir les stages & alternances en MMI ></a></div>
     </main>
     <?php include 'footer.php' ?>
 </body>
