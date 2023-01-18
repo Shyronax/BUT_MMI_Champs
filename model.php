@@ -32,7 +32,7 @@ function login($login, $pass)
     }
 }
 
-function addUser($name, $login, $pass, $mail, $bio, $art, $proj, $tem)
+function addUser($name, $login, $pass, $mail, $bio, $art=null, $proj=null, $tem=null)
 {
     $hash = crypt($pass, '$2a$07$usesomesillystringforsalt$');
     $db = dbConnect();
