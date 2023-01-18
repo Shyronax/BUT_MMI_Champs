@@ -1,6 +1,7 @@
 <?php include 'model.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
+<meta name="description" content="La formation MMI est conçue pour offrir une expertise globale dans les domaines du multimédia et de l'Internet. Du développement de sites internet à la production d'affiches en passant par des cours de marketing, cette formation vous donne toutes les compétences nécessaires pour réussir dans les métiers liés à internet avec le BUT MMI.">
 
 <head>
     <?php include 'head.php'; ?>
