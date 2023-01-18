@@ -75,7 +75,7 @@
         if ($_SESSION['projets'] == 1) {
             echo '
 <form action="register_projet.php" method="post" enctype="multipart/form-data">
-<div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+<div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25">
     <h2>Ajouter un projet</h2>
     <label class="form-label" for="nom">Nom*</label>
     <input class="form-control" type="text" name="nom" id="">
@@ -107,7 +107,7 @@
         if ($_SESSION['temoignages'] == 1) {
             echo '
 <form action="register_temoignage.php" method="post">
-<div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+<div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25">
     <h2>Ajouter un témoignage</h2>
     <label class="form-label" for="titre">Titre*</label>
     <input class="form-control" type="text" name="titre" id="">
