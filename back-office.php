@@ -1,16 +1,18 @@
 <?php include('model.php'); ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <?php include('head.php');?>
+    <?php include('head.php'); ?>
     <title>Back-Office MMI Champs</title>
 </head>
+
 <body>
     <h1>Back-office</h1>
     <p>Les champs marqués d'un * sont obligatoire</p>
-    <?php if (isset($_SESSION['admin'])){
-        if ($_SESSION['admin'] == 1){
-    echo'
+    <?php if (isset($_SESSION['admin'])) {
+        if ($_SESSION['admin'] == 1) {
+            echo '
 <form action="register_prof.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
     <h2>Ajouter un prof</h2>
@@ -29,31 +31,31 @@
         <label class="form-label" for="matiere_1">Matière 1</label>
         <select name="matiere_1" id="">
             <option value="">---</option>';
-        
-        foreach(getMatieres() as $matiere){
-            echo "<option value=".$matiere['id_matiere'].">{$matiere['nom_matiere']}</option>";
-        }
-        
-        echo '</select>
+
+            foreach (getMatieres() as $matiere) {
+                echo "<option value=" . $matiere['id_matiere'] . ">{$matiere['nom_matiere']}</option>";
+            }
+
+            echo '</select> <br>
         <label class="form-label" for="matiere_2">Matière 2</label>
         <select name="matiere_2" id="">
             <option value="">---</option>';
-        
-        foreach(getMatieres() as $matiere){
-            echo "<option value=".$matiere['id_matiere'].">{$matiere['nom_matiere']}</option>";
-        }
-        
-        echo '</select>
+
+            foreach (getMatieres() as $matiere) {
+                echo "<option value=" . $matiere['id_matiere'] . ">{$matiere['nom_matiere']}</option>";
+            }
+
+            echo '</select><br>
         <label class="form-label" for="matiere_3">Matière 3</label>
         
         <select name="matiere_3" id="">
             <option value="">---</option>';
-        
-        foreach(getMatieres() as $matiere){
-            echo "<option value=".$matiere['id_matiere'].">{$matiere['nom_matiere']}</option>";
-        }
-        echo'
-        </select>
+
+            foreach (getMatieres() as $matiere) {
+                echo "<option value=" . $matiere['id_matiere'] . ">{$matiere['nom_matiere']}</option>";
+            }
+            echo '
+        </select><br>
     </fieldset>
     <fieldset>
         <legend>Permissions sur les sections du site</legend>
@@ -67,10 +69,11 @@
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
     </div>
 </form>';
-    }}
- if (isset($_SESSION['projets'])){
-        if ($_SESSION['projets'] == 1){
-    echo'
+        }
+    }
+    if (isset($_SESSION['projets'])) {
+        if ($_SESSION['projets'] == 1) {
+            echo '
 <form action="register_projet.php" method="post" enctype="multipart/form-data">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
     <h2>Ajouter un projet</h2>
@@ -97,11 +100,12 @@
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
     </div>
 </form>';
-        }}
+        }
+    }
 
- if (isset($_SESSION['temoignages'])){
-        if ($_SESSION['temoignages'] == 1){
-    echo'
+    if (isset($_SESSION['temoignages'])) {
+        if ($_SESSION['temoignages'] == 1) {
+            echo '
 <form action="register_temoignage.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
     <h2>Ajouter un témoignage</h2>
@@ -116,10 +120,11 @@
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
 </div>
 </form>';
-        }}
- if (isset($_SESSION['articles'])){
-        if ($_SESSION['articles'] == 1){
-    echo'
+        }
+    }
+    if (isset($_SESSION['articles'])) {
+        if ($_SESSION['articles'] == 1) {
+            echo '
 <form action="register_article.php" method="post" enctype="multipart/form-data">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
     <h2>Ajouter un article</h2>
@@ -134,10 +139,11 @@
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
 </div>
 </form>';
-        }}
-     if (isset($_SESSION['admin'])){
-        if ($_SESSION['admin'] == 1){
-    echo'
+        }
+    }
+    if (isset($_SESSION['admin'])) {
+        if ($_SESSION['admin'] == 1) {
+            echo '
 <form action="register_matiere.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
     <h2>Ajouter une matière</h2>
@@ -148,7 +154,9 @@
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
 </div>
 </form>';
-        }}
+        }
+    }
     ?>
 </body>
+
 </html>
