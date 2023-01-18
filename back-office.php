@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Back-office</h1>
+    <p>Les champs marqués d'un * sont obligatoire</p>
     <?php if (isset($_SESSION['admin'])){
         if ($_SESSION['admin'] == 1){
     echo'
