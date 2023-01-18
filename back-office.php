@@ -22,8 +22,6 @@
     <input class="form-control" required type="text" name="username">
     <label class="form-label" for="pwd">Mot de passe*</label>
     <input class="form-control" required type="password" name="pwd">
-    <label class="form-label" for="mail">Adresse mail*</label>
-    <input class="form-control" required type="mail" name="mail">
     <label class="form-label" for="bio">Bio</label>
     <textarea name="bio" id="" cols="30" rows="10"></textarea>
     <fieldset>
@@ -85,8 +83,6 @@
         <option value="BUT 2">BUT 2</option>
         <option value="BUT 3">BUT 3</option>
     </select>
-    <label class="form-label" for="annee">Année de réalisation*</label>
-    <input class="form-control" type="text" name="annee" id="">
     <label class="form-label" for="etudiants">Étudiants*</label>
     <input class="form-control" type="text" name="etudiants" id="">
     <label class="form-label" for="description">Description*</label>
@@ -95,8 +91,6 @@
     <input class="form-control" type="file" accept ="image/*" name="image" id="">
     <label class="form-label" for="lien">Lien</label>
     <input class="form-control" type="url" name="lien" id="">
-    <label class="form-label" for="iframe">Iframe (ex: vidéo YouTube)</label>
-    <input class="form-control" type="url" name="iframe" id="">
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
     </div>
 </form>';
@@ -130,12 +124,8 @@
     <h2>Ajouter un article</h2>
     <label class="form-label" for="titre">Titre*</label>
     <input class="form-control" required type="text" name="titre" id="">
-    <label class="form-label" for="synopsis">Résumé ou accroche*</label>
-    <textarea name="synopsis" id="" cols="100" rows="20"></textarea>
     <label class="form-label" for="contenu">Contenu*</label>
     <textarea required name="contenu" id="" cols="30" rows="10"></textarea>
-    <label class="form-label" for="miniature">Miniature</label>
-    <input class="form-control" type="file" accept ="image/*" name="miniature" id="">
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
 </div>
 </form>';
