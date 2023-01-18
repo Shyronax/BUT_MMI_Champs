@@ -62,11 +62,11 @@ nav input[type=checkbox] {
   color: white;
 }
 
-[data-bs-theme="dark"] footer .bi {
+[data-bs-theme="dark"] footer a {
   color: black;
 }
 
-[data-bs-theme="light"] footer .bi {
+[data-bs-theme="light"] footer a {
   color: white;
 }
 
