@@ -94,6 +94,7 @@
                 </div>
             </div>
     </div>
+    <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="international">Voir les partenariats possibles ></a></div>
     </main>
     <?php include 'footer.php' ?>
 </body>

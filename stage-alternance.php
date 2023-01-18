@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="international">Voir la rubrique internationale ></a></div>
+            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="debouches">Voir les débouchés de MMI ></a></div>
         </main>
     </div>
     <?php include 'footer.php' ?>
