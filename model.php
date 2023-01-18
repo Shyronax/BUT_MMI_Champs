@@ -234,7 +234,7 @@ function rmUser($id)
 {
     if ($_SESSION['admin'] == 1) {
         $db = dbConnect();
-        $query = "DELETE FROM prof WHERE id_prof = :id_prof";
+        $query = "DELETE FROM prof, lien_matiere WHERE :id_prof IN (id_prof, ext_prof)";
         $stmt = $db->prepare($query);
         $stmt->bindValue(":id_prof", $id, PDO::PARAM_INT);
         $stmt->execute();
@@ -244,36 +244,52 @@ function rmUser($id)
 }
 function rmMatiere($id)
 {
-    $db = dbConnect();
-    $query = "DELETE FROM matiere WHERE id_matiere = :id_matiere";
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(":id_matiere", $id, PDO::PARAM_INT);
-    $stmt->execute();
+    if ($_SESSION['admin'] == 1) {
+        $db = dbConnect();
+        $query = "DELETE FROM matiere, lien_matiere WHERE :id_matiere IN (id_matiere, ext_matiere)";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":id_matiere", $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } else {
+        return false;
+    }
 }
 function rmProjet($id)
 {
-    $db = dbConnect();
-    $query = "DELETE FROM projet WHERE id_projet = :id_projet";
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(":id_projet", $id, PDO::PARAM_INT);
-    $stmt->execute();
+    if ($_SESSION['projets'] == 1) {
+        $db = dbConnect();
+        $query = "DELETE FROM projet WHERE id_projet = :id_projet";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":id_projet", $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } else {
+        return false;
+    }
 }
 function rmTemoignage($id)
 {
-    $db = dbConnect();
-    $query = "DELETE FROM temoignage WHERE id_temoignage = :id_temoignage";
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(":id_temoignage", $id, PDO::PARAM_INT);
-    $stmt->execute();
+    if ($_SESSION['temoignages'] == 1) {
+        $db = dbConnect();
+        $query = "DELETE FROM temoignage WHERE id_temoignage = :id_temoignage";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":id_temoignage", $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } else {
+        return false;
+    }
 }
 function rmArticle($id)
 {
-    $db = dbConnect();
-    $query = "DELETE FROM article WHERE id_article = :id_article";
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(":id_article", $id, PDO::PARAM_INT);
-    $stmt->execute();
-}
+    if ($_SESSION['articles'] == 1) {
+        $db = dbConnect();
+        $query = "DELETE FROM article WHERE id_article = :id_article";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":id_article", $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } else {
+        return false;
+    }
+    }
 
 function logout()
 {
