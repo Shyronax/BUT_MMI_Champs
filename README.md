@@ -1,5 +1,10 @@
 # Site MMI Champs
 
+## Le site du BUT MMI de Champs-sur-Marne
+Suite à la réforme passant d'une formation de DUT en 2 années à une formation en 3 ans, appelée BUT; le site de la formation MMI de l'IUT de Champs-sur-Marne avait besoin d'une mise à jour.
+C'est pourquoi nous avons fait la refonte du site actuel.
+http://www.dut-mmi-champs.fr/
+
 ## Comment installer le site but-mmi-champs.fr en local:
 
 ### Récupération des fichiers
@@ -49,8 +54,9 @@ function dbConnect()
 ```
 ### Visiter le site
 
-Vous pouvez maintenant visiter le site web en local avec cette URL : http://localhost/BUT_MMI_Champs
+Vous pouvez maintenant visiter le site web en local avec cette URL : http://localhost/BUT_MMI_Champs.
 
-
-
-
+## Besoin d'aide ?
+Si vous avez un problème, n'hésitez pas à contacter l'IUT de Champs-sur-Marne aux coordonnées suivantes : 
+- E-mail : mmi-dir.iut@univ-eiffel.fr
+- Téléphone : 01 60 95 85 85
