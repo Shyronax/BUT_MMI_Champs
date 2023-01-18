@@ -8,6 +8,8 @@ nav input[type=checkbox] {
   display: none;
 }
 
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -71,6 +73,14 @@ nav input[type=checkbox] {
 }
 
 [data-bs-theme="light"] footer h3 {
+  color: white;
+}
+
+[data-bs-theme="dark"] footer .bi {
+  color: black;
+}
+
+[data-bs-theme="light"] footer .bi {
   color: white;
 }
 
