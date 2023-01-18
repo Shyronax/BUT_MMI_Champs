@@ -104,7 +104,9 @@ nav input[type=checkbox] {
   transform: scale(0.8);
 }
 
-
+.link {
+  color: #17534c;
+}
 
 /* [data-bs-theme="light"] {
   --bs-link-color: #6ea8fe !important;
@@ -143,7 +145,6 @@ nav input[type=checkbox] {
 
 :root {
   --bs-dropdown-link-active-bg: #227D72 !important;
-  ;
 }
 
 [data-bs-theme="dark"] .navbar {
