@@ -1,4 +1,4 @@
-include 'model.php';
+<?php include 'model.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 
