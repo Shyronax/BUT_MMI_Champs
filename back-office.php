@@ -14,7 +14,7 @@
         if ($_SESSION['admin'] == 1) {
             echo '
 <form action="register_prof.php" method="post">
-<div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+<div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25">
     <h2>Ajouter un prof</h2>
     <label class="form-label" for="nom">Prénom et NOM*</label>
     <input class="form-control" required type="text" name="nom">
