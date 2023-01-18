@@ -55,7 +55,7 @@ function addLien($mat1 = null, $mat2 = null, $mat3 = null, $nom)
     $query = "SELECT * FROM utilisateur WHERE nom_prof = '$nom'";
     $stmt = $db->query($query);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    $id = $result['id_user'];
+    $id = $result['id_prof'];
     if (isset($mat1)) {
         $query = "INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof,:ext_matiere)";
         $stmt = $db->prepare($query);
