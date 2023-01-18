@@ -149,7 +149,7 @@
 }
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {  
-    echo '<table>';
+    echo '<table class="table table-border">';
     foreach (getProfs() as $prof) {
         echo "
         <tr>
@@ -161,7 +161,7 @@
 }
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {  
-    echo '<table>';
+    echo '<table class="table table-border">';
     foreach (getMatieres() as $matiere) {
         echo "
         <tr>
@@ -173,7 +173,7 @@
 }
     if (isset($_SESSION['projets'])) {
         if ($_SESSION['projets'] == 1) {  
-    echo '<table>';
+    echo '<table class="table table-border">';
     foreach (getProjets() as $projet) {
         echo "
         <tr>
@@ -185,7 +185,7 @@
 }
     if (isset($_SESSION['temoignages'])) {
         if ($_SESSION['temoignages'] == 1) {  
-    echo '<table>';
+    echo '<table class="table table-border">';
     foreach (getTemoignages() as $temoignage) {
         echo "
         <tr>
@@ -197,7 +197,7 @@
 }
     if (isset($_SESSION['articles'])) {
         if ($_SESSION['articles'] == 1) {  
-    echo '<table>';
+    echo '<table class="table table-border">';
     foreach (getArticles() as $article) {
         echo "
         <tr>
