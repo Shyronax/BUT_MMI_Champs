@@ -16,7 +16,7 @@
             echo '
 <form action="register_prof.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
-    <h2>Ajouter un prof</h2>
+    <h2 class="mt-5 mb-2">Ajouter un prof</h2>
     <label class="form-label" for="nom">Prénom et NOM*</label>
     <input class="form-control" required type="text" name="nom">
     <label class="form-label" for="username">Nom d\'utilisateur* (utilisé uniquement pour la connexion)</label>
@@ -75,7 +75,7 @@
             echo '
 <form action="register_projet.php" method="post" enctype="multipart/form-data">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
-    <h2>Ajouter un projet</h2>
+    <h2 class="mt-5 mb-2">Ajouter un projet</h2>
     <label class="form-label" for="nom">Nom*</label>
     <input class="form-control" type="text" name="nom" id="">
     <label class="form-label" for="niveau">Niveau*</label>
@@ -103,7 +103,7 @@
             echo '
 <form action="register_temoignage.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
-    <h2>Ajouter un témoignage</h2>
+    <h2 class="mt-5 mb-2">Ajouter un témoignage</h2>
     <label class="form-label" for="titre">Titre*</label>
     <input class="form-control" type="text" name="titre" id="">
     <label class="form-label" for="contenu">Contenu du témoignage*</label>
@@ -122,7 +122,7 @@
             echo '
 <form action="register_article.php" method="post" enctype="multipart/form-data">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
-    <h2>Ajouter un article</h2>
+    <h2 class="mt-5 mb-2">Ajouter un article</h2>
     <label class="form-label" for="titre">Titre*</label>
     <input class="form-control" required type="text" name="titre" id="">
     <label class="form-label" for="contenu">Contenu*</label>
@@ -137,7 +137,7 @@
             echo '
 <form action="register_matiere.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
-    <h2>Ajouter une matière</h2>
+    <h2 class="mt-5 mb-2">Ajouter une matière</h2>
     <label class="form-label" for="nom">Nom*</label>
     <input class="form-control" type="text" name="nom" id="">
     <label class="form-label" for="description">Description*</label>
@@ -147,7 +147,7 @@
 </form>';
         }
     }
-    echo "<h2>Les professeurs</h2>";
+    echo "<h2 class="mt-5 mb-2">Les professeurs</h2>";
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {
             echo '<table class="table table-border">';
@@ -160,7 +160,7 @@
             echo '</table>';
         }
     }
-    echo "<h2>Les matières</h2>";
+    echo "<h2 class="mt-5 mb-2">Les matières</h2>";
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {
             echo '<table class="table table-border">';
@@ -173,7 +173,7 @@
             echo '</table>';
         }
     }
-    echo "<h2>Les projets</h2>";
+    echo "<h2 class="mt-5 mb-2">Les projets</h2>";
     if (isset($_SESSION['projets'])) {
         if ($_SESSION['projets'] == 1) {
             echo '<table class="table table-border">';
@@ -186,7 +186,7 @@
             echo '</table>';
         }
     }
-    echo "<h2>Les témoignages</h2>";
+    echo "<h2 class="mt-5 mb-2">Les témoignages</h2>";
     if (isset($_SESSION['temoignages'])) {
         if ($_SESSION['temoignages'] == 1) {
             echo '<table class="table table-border">';
@@ -199,7 +199,7 @@
             echo '</table>';
         }
     }
-    echo "<h2>Les articles</h2>";
+    echo "<h2 class="mt-5 mb-2">Les articles</h2>";
     if (isset($_SESSION['articles'])) {
         if ($_SESSION['articles'] == 1) {
             echo '<table class="table table-border">';
