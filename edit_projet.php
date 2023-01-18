@@ -26,7 +26,7 @@ $projet = getProjet($_GET['id']);
     <textarea name="description" id="" cols="30" rows="10"><?php echo(htmlspecialchars($projet['description'])); ?></textarea>
     <label class="form-label" for="lien">Lien</label>
     <input class="form-control" type="url" name="lien" id="" value="<?php echo($projet['lien']); ?>">
-    <input type="checkbox" name="id" id="" value="<?php echo($_GET['id']) ?>" style="display: none;">
+    <input type="number" name="id" id="" value=<?php echo($_GET['id']) ?> style="display: none;">
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
     </div>
 </form>
