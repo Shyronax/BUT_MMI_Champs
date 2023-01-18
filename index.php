@@ -173,34 +173,28 @@
             </div>
 
         </div>
-        <div data-aos="fade-right" data-aos-offset="500" class="container  flex-column  justify-content-center vh75 ">
+        <div data-aos="fade-right" data-aos-offset="500" class="container  flex-column  justify-content-center ">
             <h3 class="mb-3 display-6">Actualités MMI</h3>
-            <div class="card mb-3">
-                <div class="card-header">
-                    Title
-                </div>
 
-                <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                        <p>15/15/15</p>
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            <?php $result = getArticles();
+            for ($i = 0; $i < 3; $i++) {
+                $row = $result[$i];
+                echo "
+            <div class='card mb-3'>
+                <div class='card-header'>" .
+                    $row['nom_article'] .
+                    "</div>
+
+                <div class='card-body'>
+                    <blockquote class='blockquote mb-0'>
+                        <p>" . $row['date_article'] . "</p>
+                        <p>" . $row['contenu_article'] . "</p>
+                        <footer class='blockquote-footer'>" . $row['auteur'] . "</footer>
                     </blockquote>
                 </div>
-            </div>
-            <div class="card ">
-                <div class="card-header">
-                    Title
-                </div>
+            </div>";
+            } ?>
 
-                <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                        <p>15/15/15</p>
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    </blockquote>
-                </div>
-            </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
                 <button class="btn btn-primary me-md-2" type="button">Button</button>
             </div>
