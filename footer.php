@@ -29,6 +29,9 @@
             </div>
         </div>
     </div>
+    <div class="container d-flex flex-column flex-lg-row justify-content-center pt-5">
+        © 2023 - BUT MÉTIERS DU MULTIMÉDIA ET DE L'INTERNET, CHAMPS-SUR-MARNE
+    </div>
 </footer>
 <script>
     AOS.init();
