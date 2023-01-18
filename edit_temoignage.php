@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <?php incude('head.php'); ?>
-    <title>Modifications - Temoignage</title>
+    <title>Modifications - Témoignage</title>
 </head>
 <?php 
 $temoignage = getTemoignage($_GET['id']);
@@ -11,7 +11,7 @@ $temoignage = getTemoignage($_GET['id']);
 <body>
 <form action="script_edit_temoignage.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25 mb-5 mt-5">
-    <h2 class="mt-5 mb-2">Ajouter un témoignage</h2>
+    <h2 class="mt-5 mb-2">Modifier un témoignage</h2>
     <label class="form-label" for="titre">Titre*</label>
     <input class="form-control" type="text" name="titre" id="" value="<?php echo(htmlspecialchars($temoignage['nom_temoignage'])); ?>">
     <label class="form-label" for="contenu">Contenu du témoignage*</label>
