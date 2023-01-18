@@ -129,6 +129,11 @@ nav input[type=checkbox] {
 
 }
 
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #227D72 !important;
+}
+
+
 .nav-pills .fake.active,
 .nav-pills .show>.fake {
   color: white !important;
