@@ -147,7 +147,7 @@
 </form>';
         }
     }
-    echo '<h2 class="mt-5 mb-2 text-center">Les professeurs</h2>';
+    echo '<div class="w-80"><h2 class="mt-5 mb-2 text-center">Les professeurs</h2>';
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {
             echo '<table class="table table-bordered table-striped px-5 w-80">';
@@ -157,10 +157,10 @@
             <th>{$prof['nom_prof']}</th><th><a href='edit_user.php?{$prof['id_prof']}'>Modifier</a></th><th><a href='remove_user.php?{$prof['id_prof']}'>Supprimer</a></th>
         </tr>";
             }
-            echo '</table>';
+            echo '</table></div>';
         }
     }
-    echo '<h2 class="mt-5 mb-2 text-center">Les matières</h2>';
+    echo '<div class="w-80"><h2 class="mt-5 mb-2 text-center">Les matières</h2>';
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {
             echo '<table class="table table-bordered table-striped px-5 w-80">';
@@ -170,10 +170,10 @@
             <th>{$matiere['nom_matiere']}</th><th><a href='edit_matiere.php?{$matiere['id_matiere']}'>Modifier</a></th><th><a href='remove_matiere.php?{$matiere['id_matiere']}'>Supprimer</a></th>
         </tr>";
             }
-            echo '</table>';
+            echo '</table></div>';
         }
     }
-    echo '<h2 class="mt-5 mb-2 text-center">Les projets</h2>';
+    echo '<div class="w-80"><h2 class="mt-5 mb-2 text-center">Les projets</h2>';
     if (isset($_SESSION['projets'])) {
         if ($_SESSION['projets'] == 1) {
             echo '<table class="table table-bordered table-striped px-5 w-80">';
@@ -183,10 +183,10 @@
             <th>{$projet['nom_projet']}</th><th>{$projet['description']}</th><th><a href='edit_projet.php?{$projet['id_projet']}'>Modifier</a></th><th><a href='remove_projet.php?{$projet['id_projet']}'>Supprimer</a></th>
         </tr>";
             }
-            echo '</table>';
+            echo '</table></div>';
         }
     }
-    echo '<h2 class="mt-5 mb-2 text-center">Les témoignages</h2>';
+    echo '<div class="w-80"><h2 class="mt-5 mb-2 text-center">Les témoignages</h2>';
     if (isset($_SESSION['temoignages'])) {
         if ($_SESSION['temoignages'] == 1) {
             echo '<table class="table table-bordered table-striped px-5 w-80">';
@@ -196,10 +196,10 @@
             <th>{$temoignage['nom_temoignage']}</th><th>{$temoignage['contenu_temoignage']}</th><th><a href='edit_temoignage.php?{$temoignage['id_temoignage']}'>Modifier</a></th><th><a href='remove_temoignage.php?{$temoignage['id_temoignage']}'>Supprimer</a></th>
         </tr>";
             }
-            echo '</table>';
+            echo '</table></div>';
         }
     }
-    echo '<h2 class="mt-5 mb-2 text-center">Les articles</h2>';
+    echo '<div class="w-80"><h2 class="mt-5 mb-2 text-center">Les articles</h2>';
     if (isset($_SESSION['articles'])) {
         if ($_SESSION['articles'] == 1) {
             echo '<table class="table table-bordered table-striped px-5 w-80">';
@@ -209,7 +209,7 @@
             <th>{$article['nom_article']}</th><th>{$article['contenu_article']}</th><th><a href='edit_article.php?{$article['id_article']}'>Modifier</a></th><th><a href='remove_article.php?{$article['id_article']}'>Supprimer</a></th>
         </tr>";
             }
-            echo '</table>';
+            echo '</table></div>';
         }
     }
 
