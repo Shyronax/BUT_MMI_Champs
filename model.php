@@ -32,16 +32,15 @@ function login($login, $pass)
     }
 }
 
-function addUser($name, $login, $pass, $mail, $bio, $art=null, $proj=null, $tem=null)
+function addUser($name, $login, $pass, $bio, $art=null, $proj=null, $tem=null)
 {
     $hash = crypt($pass, '$2a$07$usesomesillystringforsalt$');
     $db = dbConnect();
-    $query = "INSERT INTO utilisateur (nom_prof, login, mdp, mail, bio, p_articles, p_projets, p_temoignages) VALUES (:nom_prof, :login, :mdp, :mail, :bio, :p_articles, :p_projets, :p_temoignages)";
+    $query = "INSERT INTO utilisateur (nom_prof, login, mdp, bio, p_articles, p_projets, p_temoignages) VALUES (:nom_prof, :login, :mdp, :bio, :p_articles, :p_projets, :p_temoignages)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_prof", $name, PDO::PARAM_STR);
     $stmt->bindValue(":login", $login, PDO::PARAM_STR);
     $stmt->bindValue(":mdp", $hash, PDO::PARAM_STR);
-    $stmt->bindValue(":mail", $mail, PDO::PARAM_STR);
     $stmt->bindValue(":bio", $bio, PDO::PARAM_STR);
     $stmt->bindValue(":p_articles", $art, PDO::PARAM_INT);
     $stmt->bindValue(":p_projets", $proj, PDO::PARAM_INT);
