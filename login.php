@@ -12,7 +12,7 @@
 
 <body>
     <form action="traite_login.php" method="post">
-        <div class="mb-3 container h-100 d-flex flex-column justify-content-center align-items-center w-25">
+        <div class="mb-3 container vh-100 d-flex flex-column justify-content-center align-items-center w-25">
             <h1>Connexion</h1>
             <?php if (isset($_GET['err'])) {
                 if ($_GET['err'] == 'login') {
