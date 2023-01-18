@@ -1,6 +1,5 @@
 # Site MMI Champs
 
-## Le site du BUT MMI de Champs-sur-Marne
 Suite à la réforme passant d'une formation de DUT en 2 années à une formation en 3 ans, appelée BUT; le site de la formation MMI de l'IUT de Champs-sur-Marne avait besoin d'une mise à jour.
 C'est pourquoi nous avons fait la refonte du site actuel.
 http://www.dut-mmi-champs.fr/
