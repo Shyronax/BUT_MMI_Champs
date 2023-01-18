@@ -18,7 +18,7 @@ $temoignage = getTemoignage($_GET['id']);
     <textarea name="contenu" id="" cols="30" rows="10"><?php echo(htmlspecialchars($temoignage['contenu_temoignage'])); ?></textarea>
     <label class="form-label" for="etudiant">Étudiant*</label>
     <input class="form-control" type="text" name="etudiant" id="" value="<?php echo(htmlspecialchars($temoignage['etudiant'])); ?>">
-    <label class="form-label" for="promo">Promotion de l\'étudiant*</label>
+    <label class="form-label" for="promo">Promotion de l'étudiant*</label>
     <input class="form-control" type="text" name="promo" id="" value="<?php echo(htmlspecialchars($temoignage['promo'])); ?>">
     <input type="checkbox" name="id" id="" value="<?php echo($_GET['id']) ?>" style="display: none;">
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
