@@ -4,7 +4,7 @@ session_start();
 
 function dbConnect()
 {
-    $db = new PDO('mysql:host=localhost;dbname=mmi-bdd;port=3308', 'root', '');
+    $db = new PDO('mysql:host=localhost;dbname=u380906830_mmi;charset=UTF8;port=3308', 'u380906830_mmi', 'tU>!7t4AcJ25');
     return $db;
 }
 
