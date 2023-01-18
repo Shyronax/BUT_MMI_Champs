@@ -59,7 +59,7 @@
         <label class='form-check-label' for="permission_temoignages">Témoignages</label>
         <input class='form-check-input' type="checkbox" name="permission_temoignages" id="">
     </fieldset>
-    <input class='btn btn-primary' type="submit" value="Envoyer">
+    <input class='btn btn-primary my-4' type="submit" value="Envoyer">
     </div>
 </form>
 
@@ -86,7 +86,7 @@
     <input class='form-control' type="url" name="lien" id="">
     <label class='form-label' for="iframe">Iframe (ex: vidéo YouTube)</label>
     <input class='form-control' type="url" name="iframe" id="">
-    <input class='btn btn-primary' type="submit" value="Envoyer">
+    <input class='btn btn-primary my-4' type="submit" value="Envoyer">
     </div>
 </form>
     
@@ -101,7 +101,7 @@
     <input class='form-control' type="text" name="etudiant" id="">
     <label class='form-label' for="promo">Promotion de l'étudiant*</label>
     <input class='form-control' type="text" name="promo" id="">
-    <input class='btn btn-primary' type="submit" value="Envoyer">
+    <input class='btn btn-primary my-4' type="submit" value="Envoyer">
 </div>
 </form>
     
@@ -116,7 +116,7 @@
     <textarea required name="contenu" id="" cols="30" rows="10"></textarea>
     <label class='form-label' for="miniature">Miniature</label>
     <input class='form-control' type="file" accept ="image/*" name="miniature" id="">
-    <input class='btn btn-primary' type="submit" value="Envoyer">
+    <input class='btn btn-primary my-4' type="submit" value="Envoyer">
 </div>
 </form>
     
@@ -127,7 +127,7 @@
     <input class='form-control' type="text" name="nom" id="">
     <label class='form-label' for="description">Description*</label>
     <textarea name="description" id="" cols="30" rows="10"></textarea>
-    <input class='btn btn-primary' type="submit" value="Envoyer">
+    <input class='btn btn-primary my-4' type="submit" value="Envoyer">
 </div>
 </form>
     

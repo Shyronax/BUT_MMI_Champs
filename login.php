@@ -13,14 +13,14 @@
     <h1>Connexion</h1>
     <?php if(isset($_GET['err'])){
         if ($_GET['err'] == 'login'){
-            echo '<p class="text-danger">Vos identifiants sont incorrects, veuilez réessayer.</p>';
+            echo '<p class="text-danger">Vos identifiants sont incorrects, veuillez réessayer.</p>';
         }
     } ?>
     <label class='form-label' for="username">Nom d'utilisateur</label>
     <input class='form-control' type="text" name="nom" id="">
     <label class='form-label' for="mdp">Mot de passe</label>
     <input class='form-control' type="password" name="mdp" id="">
-    <input class='btn btn-primary' type="submit" value="Se connecter">
+    <input class='btn btn-primary my-4' type="submit" value="Se connecter">
 </div>
 </form>
 </body>
