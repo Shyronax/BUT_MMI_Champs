@@ -129,6 +129,100 @@ function addMatiere($nom, $description)
     $stmt->execute();
 }
 
+function editUser($id, $name, $bio, $art=null, $proj=null, $tem=null)
+{
+    $db = dbConnect();
+    $query = "UPDATE utilisateur SET nom_prof=':nom_prof', bio=':bio', p_articles=':p_articles', p_projets=':p_projets', p_temoignages=':p_temoignages' WHERE id_prof=:id_prof";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(":nom_prof", $name, PDO::PARAM_STR);
+    $stmt->bindValue(":bio", $bio, PDO::PARAM_STR);
+    $stmt->bindValue(":p_articles", $art, PDO::PARAM_INT);
+    $stmt->bindValue(":p_projets", $proj, PDO::PARAM_INT);
+    $stmt->bindValue(":p_temoignages", $tem, PDO::PARAM_INT);
+    $stmt->bindValue(":id_prof", $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
+
+function editLien($mat1 = null, $mat2 = null, $mat3 = null, $id)
+{
+    $db = dbConnect();
+    $query = "DELETE FROM lien_matiere WHERE :id_prof IN (ext_prof)";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(":id_prof", $id, PDO::PARAM_INT);
+    $stmt->execute();
+    if (isset($mat1)) {
+        $query = "INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof,:ext_matiere)";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":ext_prof", $id, PDO::PARAM_INT);
+        $stmt->bindValue(":ext_matiere", $mat1, PDO::PARAM_INT);
+        $stmt->execute();
+    }
+    if (isset($mat2)) {
+        $query = "INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof,:ext_matiere)";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":ext_prof", $id, PDO::PARAM_INT);
+        $stmt->bindValue(":ext_matiere", $mat2, PDO::PARAM_INT);
+        $stmt->execute();
+    }
+    if (isset($mat3)) {
+        $query = "INSERT INTO lien_matiere (ext_prof, ext_matiere) VALUES (:ext_prof,:ext_matiere)";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":ext_prof", $id, PDO::PARAM_INT);
+        $stmt->bindValue(":ext_matiere", $mat3, PDO::PARAM_INT);
+        $stmt->execute();
+    }
+}
+
+
+function editArticle($id, $nom, $contenu)
+{
+    $db = dbConnect();
+    $query = "UPDATE article SET nom_article=':nom_article', contenu_article=':contenu_article' WHERE id_article=:id_article";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(":nom_article", $nom, PDO::PARAM_STR);
+    $stmt->bindValue(":contenu_article", $contenu, PDO::PARAM_STR);
+    $stmt->bindValue(":id_article", $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
+
+function editProjet($id, $nom_projet, $etudiants, $niveau, $lien, $description)
+{
+    $db = dbConnect();
+    $query = "UPDATE projet SET nom_projet=':nom_projet', etudiants=':etudiants', lien=':lien', niveau=':niveau', description=':description' WHERE id_projet=:id_projet";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(":nom_projet", $nom_projet, PDO::PARAM_STR);
+    $stmt->bindValue(":etudiants", $etudiants, PDO::PARAM_STR);
+    $stmt->bindValue(":niveau", $niveau, PDO::PARAM_STR);
+    $stmt->bindValue(":lien", $lien, PDO::PARAM_STR);
+    $stmt->bindValue(":description", $description, PDO::PARAM_STR);
+    $stmt->bindValue(":id_projet", $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
+
+function editTemoignage($id, $etudiant, $promo, $nom_temoignage, $contenu_temoignage)
+{
+    $db = dbConnect();
+    $query = "UPDATE temoignage SET etudiant=':etudiant', promo=':promo', nom_temoignage=':nom_temoignage', contenu_temoignage=':contenu_temoignage' WHERE id_temoignage=:id_temoignage";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(":etudiant", $etudiant, PDO::PARAM_STR);
+    $stmt->bindValue(":promo", $promo, PDO::PARAM_STR);
+    $stmt->bindValue(":nom_temoignage", $nom_temoignage, PDO::PARAM_STR);
+    $stmt->bindValue(":contenu_temoignage", $contenu_temoignage, PDO::PARAM_STR);
+    $stmt->bindValue(":id_temoignage", $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
+
+function editMatiere($id, $nom, $description)
+{
+    $db = dbConnect();
+    $query = "UPDATE matiere SET nom_matiere=':nom_matiere' description=':description' WHERE id_matiere=:id_matiere";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(":nom_matiere", $nom, PDO::PARAM_STR);
+    $stmt->bindValue(":description", $description, PDO::PARAM_STR);
+    $stmt->bindValue(":id_matiere", $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
+
 function getMatieres()
 {
     $db = dbConnect();
