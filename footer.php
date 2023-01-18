@@ -26,7 +26,8 @@
                 <p><b>Adresse</b> : 2 Rue Albert Einstein, 77420 Champs-sur-Marne</p>
                 <p><b>E-mail</b> : mmi-dir.iut@univ-eiffel.fr</p>
                 <p><b>Téléphone</b> : 01 60 95 85 85</p>
-                <a href="https://www.instagram.com/mmi_champs/"><span class="visually-hidden">lien page instagram</span><i class="bi bi-instagram"></i> @mmi_champs</a>
+                <p><a href="https://www.instagram.com/mmi_champs/"><span class="visually-hidden">lien page instagram</span><i class="bi bi-instagram"></i> @mmi_champs</a></p>
+                <p><a href="https://twitter.com/MMI_Champs"><span class="visually-hidden">lien page twitter</span><i class="bi bi-twitter"></i>@MMI_Champs</a></p>
             </div>
         </div>
     </div>
