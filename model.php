@@ -236,7 +236,7 @@ function getMatieres()
 function getMatiere($id)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM matiere WHERE 'id_matiere' = ':id_matiere'";
+    $query = "SELECT * FROM matiere WHERE 'id_matiere' = :id_matiere";
     $stmt = $db->prepare($query);
     $stmt->bindValue(':id_matiere', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -275,7 +275,7 @@ function getProjets_year2()
 function getProjet($id)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM projet WHERE 'id_projet' = ':id_projet'";
+    $query = "SELECT * FROM projet WHERE 'id_projet' = :id_projet";
     $stmt = $db->prepare($query);
     $stmt->bindValue(':id_projet', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -317,7 +317,7 @@ function getArticles()
 function getArticle($id)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM article WHERE 'id_article' = ':id_article'";
+    $query = "SELECT * FROM article WHERE 'id_article' = :id_article";
     $stmt = $db->prepare($query);
     $stmt->bindValue(':id_article', $id, PDO::PARAM_INT);
     $stmt->execute();
@@ -338,7 +338,7 @@ function getTemoignages()
 function getTemoignage($id)
 {
     $db = dbConnect();
-    $query = "SELECT * FROM temoignage WHERE 'id_temoignage' = ':id_temoignage'";
+    $query = "SELECT * FROM temoignage WHERE 'id_temoignage' = :id_temoignage";
     $stmt = $db->prepare($query);
     $stmt->bindValue(':id_temoignage', $id, PDO::PARAM_INT);
     $stmt->execute();
