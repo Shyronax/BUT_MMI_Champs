@@ -11,6 +11,11 @@
 <form action="traite_login.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
     <h1>Connexion</h1>
+    <?php if(isset($_GET['err'])){
+        if ($_GET['err'] == 'login'){
+            echo '<p class="text-danger">Vos identifiants sont incorrects, veuilez réessayer.</p>';
+        }
+    } ?>
     <label class='form-label' for="username">Nom d'utilisateur</label>
     <input class='form-control' type="text" name="nom" id="">
     <label class='form-label' for="mdp">Mot de passe</label>
