@@ -61,7 +61,7 @@
                         <ul>
                             <li><b>Développement web et dispositifs interactifs</b> : développement Web, base de données, services sur réseau et gestion de contenu.</li>
                             <li><b>Création numérique</b> : savoir générer du contenu multimédia (son, vidéo, photo, montage et animation 2D/3D) et utilisation des logiciels de la suite adobe ( illustrator, premiere pro, indesign…).</li>
-                            <li><b>Stratégie de communication numérique et design d'expérience</b> : expression et communication, théorie de la communication</li>
+
                         </ul>
                         <br>
                         <a href="matieres" class="btn btn-primary w-25">En savoir plus</a>

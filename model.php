@@ -11,7 +11,7 @@ function dbConnect()
 function login($login, $pass)
 {
     $db = dbConnect();
-    $hashpass=crypt($pass, '$2a$07$usesomesillystringforsalt$');
+    $hashpass = crypt($pass, '$2a$07$usesomesillystringforsalt$');
     $query = "SELECT * FROM utilisateur WHERE login = :login";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":login", $login, PDO::PARAM_STR);
