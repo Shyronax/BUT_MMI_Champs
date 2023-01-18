@@ -91,13 +91,13 @@ function addArticle($nom, $contenu, $synopsis, $miniature)
     $stmt->execute();
 }
 
-function addProjet($nom_projet, $etudiants, $date_projet, $niveau, $iframe_projet, $lien, $image_projet, $description)
+function addProjet($nom_projet, $etudiants, $date_projet, $niveau, $iframe_projet, $lien, $img_projet, $description)
 {
     $db = dbConnect();
     $target_dir = 'src/img/projet/';
     $target_file = $target_dir . basename($image_projet);
     move_uploaded_file($image_projet, $target_file);
-    $query = "INSERT INTO projet (nom_projet, etudiants, date_projet, niveau, iframe_projet, lien, image_projet, description) VALUES (:nom_projet, :etudiants, :date_projet, :niveau, :iframe_projet, :lien, :image_projet, :description)";
+    $query = "INSERT INTO projet (nom_projet, etudiants, date_projet, niveau, iframe_projet, lien, img_projet, description) VALUES (:nom_projet, :etudiants, :date_projet, :niveau, :iframe_projet, :lien, :img_projet, :description)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_projet", $nom_projet, PDO::PARAM_STR);
     $stmt->bindValue(":etudiants", $etudiants, PDO::PARAM_STR);
@@ -105,7 +105,7 @@ function addProjet($nom_projet, $etudiants, $date_projet, $niveau, $iframe_proje
     $stmt->bindValue(":niveau", $niveau, PDO::PARAM_STR);
     $stmt->bindValue(":iframe_projet", $iframe_projet, PDO::PARAM_STR);
     $stmt->bindValue(":lien", $lien, PDO::PARAM_STR);
-    $stmt->bindValue(":image_projet", $target_file, PDO::PARAM_STR);
+    $stmt->bindValue(":img_projet", $target_file, PDO::PARAM_STR);
     $stmt->bindValue(":description", $description, PDO::PARAM_STR);
     $stmt->execute();
 }
