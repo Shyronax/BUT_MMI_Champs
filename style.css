@@ -46,6 +46,20 @@ nav input[type=checkbox] {
   color: white !important;
 }
 
+[data-bs-theme="dark"] .nextLink a {
+  color: rgb(255, 255, 255) !important;
+}
+
+[data-bs-theme="light"] .nextLink a {
+  color: #227D72 !important;
+}
+
+.nextLink a {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 [data-bs-theme="dark"] footer ul li a {
   color: black;
 }
@@ -208,12 +222,7 @@ body {
   color: #227D72;
 }
 
-.nextLink a {
-  color: #227D72;
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-align: center;
-}
+
 
 
 
