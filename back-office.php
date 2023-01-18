@@ -160,7 +160,7 @@
             echo '</table>';
         }
     }
-    echo "<h2 class="mt-5 mb-2">Les matières</h2>";
+    echo '<h2 class="mt-5 mb-2">Les matières</h2>';
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {
             echo '<table class="table table-border">';
@@ -173,7 +173,7 @@
             echo '</table>';
         }
     }
-    echo "<h2 class="mt-5 mb-2">Les projets</h2>";
+    echo '<h2 class="mt-5 mb-2">Les projets</h2>';
     if (isset($_SESSION['projets'])) {
         if ($_SESSION['projets'] == 1) {
             echo '<table class="table table-border">';
@@ -186,7 +186,7 @@
             echo '</table>';
         }
     }
-    echo "<h2 class="mt-5 mb-2">Les témoignages</h2>";
+    echo '<h2 class="mt-5 mb-2">Les témoignages</h2>';
     if (isset($_SESSION['temoignages'])) {
         if ($_SESSION['temoignages'] == 1) {
             echo '<table class="table table-border">';
@@ -199,7 +199,7 @@
             echo '</table>';
         }
     }
-    echo "<h2 class="mt-5 mb-2">Les articles</h2>";
+    echo '<h2 class="mt-5 mb-2">Les articles</h2>';
     if (isset($_SESSION['articles'])) {
         if ($_SESSION['articles'] == 1) {
             echo '<table class="table table-border">';
