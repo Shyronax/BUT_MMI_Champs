@@ -17,7 +17,7 @@
         }
     } ?>
     <label class='form-label' for="username">Nom d'utilisateur</label>
-    <input class='form-control' type="text" name="nom" id="">
+    <input class='form-control' type="text" name="username" id="">
     <label class='form-label' for="mdp">Mot de passe</label>
     <input class='form-control' type="password" name="mdp" id="">
     <input class='btn btn-primary my-4' type="submit" value="Se connecter">
