@@ -35,14 +35,13 @@
 
         </div>
         <div data-aos="fade-left" data-aos-offset="300" class="container mb-4">
-            <h2 class="mb-3 display-5">MMI en bref :</h2>
             <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5 mt-5">
                 <div class="row">
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h3 class='display-6 '>La formation MMI</h3>
                         <p>La formation MMI couvre tous les champs du digital, offrant ainsi une expertise globale sur les métiers du multimédia et de l'Internet. Du développement de sites internet à la production d'affiches en passant par des cours de marketing afin savoir élaborer une stratégie de vente, le BUT MMI donne toutes les clés pour se lancer dans les métiers liés à internet.
                         </p>
-                        <a href="/presentation" class="btn btn-primary w-50">En savoir plus</a>
+                        <a href="/presentation" class="btn btn-primary w-25">En savoir plus</a>
                     </div>
                     <div class="col-12 col-lg-5">
                         <img class="img-fluid" src="src/img/illustration/accueil-formation.webp" alt="">
@@ -63,7 +62,7 @@
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h3 class='display-6 '>Stage/Alternance</h3>
                         <p>MMI est une formation profesionalisante, c'est pourquoi l'étudiant est confronté au mond du travail dès la fin de la première année. Tout au long de la formation, le but est de confronté les étudiants au monde du travail le plus possible, que ce soit à travers les travaux ou à travers les stages et alternances qui permettent aux étudiants de faire leurs premiers pas dans les métiers du web. </p>
-                        <a href="/stage-alternance" class="btn btn-primary w-50">En savoir plus</a>
+                        <a href="/stage-alternance" class="btn btn-primary w-25">En savoir plus</a>
                     </div>
                 </div>
 
@@ -73,7 +72,7 @@
                             <h3 class='display-6 '>Après MMI</h3>
                             <p>La formation peut mener à de nombreuses branches différentes, d'une part à une multitude de poursuites d'études, et d'une autre, MMI ouvre la porte à énormément de métiers en rapport avec le numérique. La formation MMI est recherché dans le monde du travail.
                             </p>
-                            <a href="/debouches" class="btn btn-primary w-50">En savoir plus</a>
+                            <a href="/debouches" class="btn btn-primary w-25">En savoir plus</a>
                         </div>
                         <div class="col-12 col-lg-5">
                             <img class="img-fluid" src="src/img/illustration/accueil-apres-mmi.webp" alt="">
