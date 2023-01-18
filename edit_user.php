@@ -60,7 +60,7 @@ $prof = getProf($_GET['id']);
         <input class="form-check-input" type="checkbox" name="permission_temoignages" id="" value=1
         <?php if(isset($prof['p_temoignages'])){echo'checked';}?>>
     </fieldset>
-    <input type="checkbox" name="id" id="" value="<?php echo($_GET['id']) ?>" style="display: hidden;">
+    <input type="checkbox" name="id" id="" value="<?php echo($_GET['id']) ?>" style="display: none;">
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
     </div>
 </form>

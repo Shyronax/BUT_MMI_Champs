@@ -20,7 +20,7 @@ $temoignage = getTemoignage($_GET['id']);
     <input class="form-control" type="text" name="etudiant" id="" value="<?php echo(htmlspecialchars($temoignage['etudiant'])); ?>">
     <label class="form-label" for="promo">Promotion de l\'étudiant*</label>
     <input class="form-control" type="text" name="promo" id="" value="<?php echo(htmlspecialchars($temoignage['promo'])); ?>">
-    <input type="checkbox" name="id" id="" value="<?php echo($_GET['id']) ?>" style="display: hidden;">
+    <input type="checkbox" name="id" id="" value="<?php echo($_GET['id']) ?>" style="display: none;">
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
 </div>
 </form>
