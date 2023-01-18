@@ -91,7 +91,7 @@ function addArticle($nom, $contenu, $synopsis, $miniature)
     $stmt->execute();
 }
 
-function addProjet($nom_projet, $etudiants, $date_projet, $niveau, $iframe_projet, $lien, $img_projet, $description)
+function addProjet($nom_projet, $etudiants, $date_projet, $niveau, $iframe_projet, $lien, $image_projet, $description)
 {
     $db = dbConnect();
     $target_dir = 'src/img/projet/';
