@@ -114,14 +114,14 @@ function addProjet($nom_projet, $etudiants, $date_projet, $niveau, $iframe_proje
     $stmt->execute();
 }
 
-function addTemoignage($etudiant, $promo, $titre, $contenu_temoignage)
+function addTemoignage($etudiant, $promo, $nom_temoignage, $contenu_temoignage)
 {
     $db = dbConnect();
-    $query = "INSERT INTO temoignage (etudiant, promo, titre, contenu_temoignage) VALUES (:etudiant, :promo, :titre, :contenu_temoignage)";
+    $query = "INSERT INTO temoignage (etudiant, promo, nom_temoignage, contenu_temoignage) VALUES (:etudiant, :promo, :nom_temoignage, :contenu_temoignage)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":etudiant", $etudiant, PDO::PARAM_STR);
     $stmt->bindValue(":promo", $promo, PDO::PARAM_STR);
-    $stmt->bindValue(":titre", $titre, PDO::PARAM_STR);
+    $stmt->bindValue(":nom_temoignage", $nom_temoignage, PDO::PARAM_STR);
     $stmt->bindValue(":contenu_temoignage", $contenu_temoignage, PDO::PARAM_STR);
     $stmt->execute();
 }
