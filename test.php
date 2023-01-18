@@ -1,1 +1,0 @@
-<?php echo(crypt('toto01', '$2a$07$usesomesillystringforsalt$'));?>

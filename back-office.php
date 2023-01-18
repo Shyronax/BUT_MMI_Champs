@@ -10,6 +10,7 @@
 <body>
     <h1>Back-office</h1>
     <p>Les champs marqués d'un * sont obligatoire</p>
+    <a href="logout.php">Se déconnecter</a>
     <?php if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {
             echo '
