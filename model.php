@@ -233,6 +233,17 @@ function getMatieres()
     return $result;
 }
 
+function getMatiere($id)
+{
+    $db = dbConnect();
+    $query = "SELECT * FROM matiere WHERE 'id_matiere' = ':id_matiere'";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':id_matiere', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+}
+
 function getProjets()
 {
     $db = dbConnect();
@@ -321,6 +332,17 @@ function getTemoignages()
     $stmt = $db->prepare($query);
     $stmt->execute();
     $result = $stmt->fetchall(PDO::FETCH_ASSOC);
+    return $result;
+}
+
+function getTemoignage($id)
+{
+    $db = dbConnect();
+    $query = "SELECT * FROM temoignage WHERE 'id_temoignage' = ':id_temoignage'";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':id_temoignage', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
     return $result;
 }
 
