@@ -126,7 +126,7 @@
         if ($_SESSION['articles'] == 1) {
             echo '
 <form action="register_article.php" method="post" enctype="multipart/form-data">
-<div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+<div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25">
     <h2>Ajouter un article</h2>
     <label class="form-label" for="titre">Titre*</label>
     <input class="form-control" required type="text" name="titre" id="">
@@ -145,7 +145,7 @@
         if ($_SESSION['admin'] == 1) {
             echo '
 <form action="register_matiere.php" method="post">
-<div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+<div class="mb-3 container d-flex flex-column justify-content-center align-items-center w-25">
     <h2>Ajouter une matière</h2>
     <label class="form-label" for="nom">Nom*</label>
     <input class="form-control" type="text" name="nom" id="">
