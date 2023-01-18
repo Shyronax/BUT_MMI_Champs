@@ -185,19 +185,15 @@ function editArticle($id, $nom, $contenu)
     $stmt->execute();
 }
 
-function editProjet($id, $nom_projet, $etudiants, $niveau, $lien, $image_projet, $description)
+function editProjet($id, $nom_projet, $etudiants, $niveau, $lien, $description)
 {
     $db = dbConnect();
-    // $target_dir = 'src/img/projet/';
-    // $target_file = $target_dir . basename($image_projet);
-    // move_uploaded_file($image_projet, $target_file);
     $query = "UPDATE projet SET nom_projet=':nom_projet', etudiants=':etudiants', lien=':lien', niveau=':niveau', description=':description' WHERE id_projet=:id_projet";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_projet", $nom_projet, PDO::PARAM_STR);
     $stmt->bindValue(":etudiants", $etudiants, PDO::PARAM_STR);
     $stmt->bindValue(":niveau", $niveau, PDO::PARAM_STR);
     $stmt->bindValue(":lien", $lien, PDO::PARAM_STR);
-    // $stmt->bindValue(":img_projet", $target_file, PDO::PARAM_STR);
     $stmt->bindValue(":description", $description, PDO::PARAM_STR);
     $stmt->bindValue(":id_projet", $id, PDO::PARAM_INT);
     $stmt->execute();
