@@ -1,3 +1,4 @@
+<?php include 'model.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -34,10 +35,10 @@
 
 
             <div data-aos="fade-right" data-aos-offset="500" class="row ps-3">
-                <div class="col-12 col-lg-6"><img class="img-fluid h-100 w-100" src="https://planetagracza.pl/wp-content/uploads/2022/01/fortnite-the-rock-dwayne-johnson.jpg" alt=""></div>
+                <div class="col-12 col-lg-6"><img class="img-fluid h-100 w-100" src="src/img/accueil/iut-mmi.png" alt=""></div>
                 <div class="col">
                     <div class="row h-100 justify-content-center align-items-center">
-                        <p class=''> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestias ipsa architecto officia earum? Quasi maiores consequuntur debitis eligendi neque provident accusantium assumenda, nihil, adipisci incidunt vitae, exercitationem officiis sequi?</p>
+                        <p class=''>Situé à 15 minutes à pied du rer A</p>
                     </div>
                 </div>
             </div>
@@ -120,33 +121,21 @@
         <div data-aos="fade-right" data-aos-offset="500" class="container mb-4  ">
             <h3 class="mb-3 display-6">Projets étudiants :</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <?php
+                $result = getProjets();
+                for ($i = 0; $i < 3; $i++) {
+                    $row = $result[$i];
+                    echo "<div class='col'>
+                        <div class='card h-100'>
+                            <img src='" . $row['img_projet'] . "' class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                                <h4 class='card-title'>" . $row['nom_projet'] . "</h4>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
+                    </div>";
+                }
+                ?>
+
             </div>
 
 
@@ -160,44 +149,24 @@
             <h3 class="mb-3 display-6">Témoignages d'étudiants</h3>
 
             <div class="row row-cols-1 row-cols-md-3 g-5">
-                <div class="col-12 col-lg-3">
-                    <div class="card h-100">
 
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-
-                            <blockquote class="blockquote mb-0">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-
+                <?php $result = getTemoignages();
+                for ($i = 0; $i < 3; $i++) {
+                    $row = $result[$i];
+                    echo "<div class='col'>
+                        <div class='card h-100'>
+                            <div class='card-body'>
+                                <h4 class='card-title'>Témoignage</h4>
+                                <blockquote class='blockquote mb-0'>
+                                    <p>" . $row['contenu_temoignage'] . "</p>
+                                    <footer class='blockquote-footer'>" . $row['etudiant'] . " <cite title='Source Title'>" . $row['promo'] . "</cite></footer>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <div class="card h-100">
+                    ";
+                } ?>
 
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <blockquote class="blockquote mb-0">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <div class="card h100">
-
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <blockquote class="blockquote mb-0">
-                                <p>A well-known quote, contained in a blockquote element.</p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
                 <button class="btn btn-primary me-md-2" type="button">Button</button>
