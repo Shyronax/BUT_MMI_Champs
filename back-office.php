@@ -150,7 +150,7 @@
     echo '<h2 class="mt-5 mb-2">Les professeurs</h2>';
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {
-            echo '<table class="table table-border">';
+            echo '<table class="table table-border mx-5">';
             foreach (getProfs() as $prof) {
                 echo "
         <tr>
@@ -163,7 +163,7 @@
     echo '<h2 class="mt-5 mb-2">Les matières</h2>';
     if (isset($_SESSION['admin'])) {
         if ($_SESSION['admin'] == 1) {
-            echo '<table class="table table-border">';
+            echo '<table class="table table-border mx-5">';
             foreach (getMatieres() as $matiere) {
                 echo "
         <tr>
@@ -176,7 +176,7 @@
     echo '<h2 class="mt-5 mb-2">Les projets</h2>';
     if (isset($_SESSION['projets'])) {
         if ($_SESSION['projets'] == 1) {
-            echo '<table class="table table-border">';
+            echo '<table class="table table-border mx-5">';
             foreach (getProjets() as $projet) {
                 echo "
         <tr>
@@ -189,7 +189,7 @@
     echo '<h2 class="mt-5 mb-2">Les témoignages</h2>';
     if (isset($_SESSION['temoignages'])) {
         if ($_SESSION['temoignages'] == 1) {
-            echo '<table class="table table-border">';
+            echo '<table class="table table-border mx-5">';
             foreach (getTemoignages() as $temoignage) {
                 echo "
         <tr>
@@ -202,7 +202,7 @@
     echo '<h2 class="mt-5 mb-2">Les articles</h2>';
     if (isset($_SESSION['articles'])) {
         if ($_SESSION['articles'] == 1) {
-            echo '<table class="table table-border">';
+            echo '<table class="table table-border mx-5">';
             foreach (getArticles() as $article) {
                 echo "
         <tr>
