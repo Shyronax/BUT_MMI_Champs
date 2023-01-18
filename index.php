@@ -47,12 +47,12 @@
         </div>
         </div>
         <div data-aos="fade-left" data-aos-offset="500" class="container vh75 mb-4">
-            <h2 class="mb-3">MMI en bref :</h2>
+            <h2 class="mb-3 display-5">MMI en bref :</h2>
             <div class="row row-cols-1 row-cols-md-3 ">
                 <div class="col ">
                     <div class="card h-100">
                         <div class="card-body ">
-                            <h5 class="card-title">Formation en 3 ans</h5>
+                            <h3 class="card-title display-6">Formation en 3 ans</h3>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                             <a href="#" class="btn btn-primary w-50">En savoir plus</a>
                         </div>
@@ -61,7 +61,7 @@
                 <div class="col ">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Formation pluridisciplinaire</h5>
+                            <h3 class="card-title display-6">Formation pluridisciplinaire</h3>
                             <p class="card-text">La formation MMI couvre tous les champs du digital, offrant ainsi une expertise globale sur les métiers du multimédia et de l'Internet...</p>
                             <a href="#" class="btn btn-primary w-50">En savoir plus</a>
                         </div>
@@ -71,7 +71,7 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-body ">
-                            <h5 class="card-title">Stage/Alternance</h5>
+                            <h3 class="card-title display-6">Stage/Alternance</h3>
                             <p class="card-text">MMI est une formation profesionalisante, c'est pourquoi l'étudiant est confronté au mond du travail dès la fin de la première année...</p>
                             <a href="#" class="btn btn-primary w-50">En savoir plus</a>
                         </div>
@@ -88,7 +88,7 @@
 
         </div>
         <div data-aos="fade-left" data-aos-offset="500" class="container d-flex flex-column  justify-content-center vh75 mb-4">
-            <h3 class="mb-3">MMI en chiffres</h3>
+            <h3 class="mb-3 display-6">MMI en chiffres</h3>
             <div class="p-3 mb-2  rounded">
                 <div class="display-4 d-flex flex-column flex-lg-row  justify-content-lg-between">
                     <div class="d-flex flex-row flex-lg-column">
@@ -118,13 +118,13 @@
 
         </div>
         <div data-aos="fade-right" data-aos-offset="500" class="container mb-4  ">
-            <h3 class="mb-3">Projets étudiants :</h3>
+            <h3 class="mb-3 display-6">Projets étudiants :</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <div class="col">
                     <div class="card h-100">
                         <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h4 class="card-title">Card title</h4>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                     <div class="card h-100">
                         <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h4 class="card-title">Card title</h4>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                     <div class="card h-100">
                         <img src="https://media.wired.com/photos/5ad104ba578c70604aed6747/master/w_2560%2Cc_limit/RampageReview.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h4 class="card-title">Card title</h4>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
@@ -157,14 +157,14 @@
 
         </div>
         <div data-aos="fade-left" data-aos-offset="500" class="container vh100 d-flex flex-column  justify-content-center ">
-            <h3 class="mb-3">Témoignages d'étudiants</h3>
+            <h3 class="mb-3 display-6">Témoignages d'étudiants</h3>
 
             <div class="row row-cols-1 row-cols-md-3 g-5">
                 <div class="col-12 col-lg-3">
                     <div class="card h-100">
 
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h4 class="card-title">Card title</h4>
 
                             <blockquote class="blockquote mb-0">
                                 <p>A well-known quote, contained in a blockquote element.</p>
@@ -178,7 +178,7 @@
                     <div class="card h-100">
 
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h4 class="card-title">Card title</h4>
                             <blockquote class="blockquote mb-0">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -190,7 +190,7 @@
                     <div class="card h100">
 
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h4 class="card-title">Card title</h4>
                             <blockquote class="blockquote mb-0">
                                 <p>A well-known quote, contained in a blockquote element.</p>
                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -205,7 +205,7 @@
 
         </div>
         <div data-aos="fade-right" data-aos-offset="500" class="container  flex-column  justify-content-center vh75 ">
-            <h3 class="mb-3">Actualités MMI</h3>
+            <h3 class="mb-3 display-6">Actualités MMI</h3>
             <div class="card mb-3">
                 <div class="card-header">
                     Title

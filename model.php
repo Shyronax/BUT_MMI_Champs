@@ -79,34 +79,33 @@ function addLien($mat1 = null, $mat2 = null, $mat3 = null, $nom)
 function addArticle($nom, $contenu, $synopsis, $miniature)
 {
     $db = dbConnect();
-    $target_file = 'src/img/article/' . basename($_FILES['image']);
-    $query = "INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article)" . $_SESSION['name'];
-    $target_dir = 'src/img/art/';
+    $target_dir = 'src/img/article/';
     $target_file = $target_dir . basename($miniature);
     move_uploaded_file($miniature, $target_file);
+    $query = "INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article)" . $_SESSION['name'];
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_article", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":contenu_article", $contenu, PDO::PARAM_STR);
-    $stmt->bindValue(":synopsis_fr", $synopsis, PDO::PARAM_STR);
+    $stmt->bindValue(":synopsis", $synopsis, PDO::PARAM_STR);
     $stmt->bindValue(":miniature_article", $target_file, PDO::PARAM_STR);
     $stmt->execute();
 }
 
-function addProjet($nom_projet, $etudiants, $annee_projet, $niveau, $iframe_projet, $lien_projet, $image_projet, $description)
+function addProjet($nom_projet, $etudiants, $date_projet, $niveau, $iframe_projet, $lien, $image_projet, $description)
 {
     $db = dbConnect();
     $target_dir = 'src/img/projet/';
     $target_file = $target_dir . basename($image_projet);
     move_uploaded_file($image_projet, $target_file);
-    $query = "INSERT INTO projet (nom_projet, etudiants, annee_projet, niveau, iframe_projet, lien_projet, image_projet, description) VALUES (:nom_projet, :etudiants, :annee_projet, :niveau, :iframe_projet, :lien_projet, :image_projet, :description)";
+    $query = "INSERT INTO projet (nom_projet, etudiants, date_projet, niveau, iframe_projet, lien, img_projet, description) VALUES (:nom_projet, :etudiants, :date_projet, :niveau, :iframe_projet, :lien, :img_projet, :description)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_projet", $nom_projet, PDO::PARAM_STR);
     $stmt->bindValue(":etudiants", $etudiants, PDO::PARAM_STR);
-    $stmt->bindValue(":annee_projet", $annee_projet, PDO::PARAM_STR);
+    $stmt->bindValue(":date_projet", $date_projet, PDO::PARAM_STR);
     $stmt->bindValue(":niveau", $niveau, PDO::PARAM_STR);
     $stmt->bindValue(":iframe_projet", $iframe_projet, PDO::PARAM_STR);
-    $stmt->bindValue(":lien_projet", $lien_projet, PDO::PARAM_STR);
-    $stmt->bindValue(":image_projet", $target_file, PDO::PARAM_STR);
+    $stmt->bindValue(":lien", $lien, PDO::PARAM_STR);
+    $stmt->bindValue(":img_projet", $target_file, PDO::PARAM_STR);
     $stmt->bindValue(":description", $description, PDO::PARAM_STR);
     $stmt->execute();
 }

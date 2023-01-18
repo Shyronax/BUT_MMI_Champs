@@ -71,7 +71,7 @@
         <option value="BUT 3">BUT 3</option>
     </select>
     <label class='form-label' for="annee">Année de réalisation*</label>
-    <input class='form-control' type="month" name="anne" id="">
+    <input class='form-control' type="text" name="annee" id="">
     <label class='form-label' for="etudiants">Étudiants*</label>
     <input class='form-control' type="text" name="etudiants" id="">
     <label class='form-label' for="description">Description*</label>

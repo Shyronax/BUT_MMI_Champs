@@ -114,35 +114,35 @@ nav input[type=checkbox] {
 } */
 
 .btn-primary {
-  --bs-btn-bg: #2A9D8F;
-  --bs-btn-border-color: #2A9D8F;
-  --bs-btn-hover-bg: #22877c;
-  --bs-btn-hover-border-color: #22877c;
-  --bs-btn-active-bg: #1f766c;
-  --bs-btn-active-border-color: #1f766c;
+  --bs-btn-bg: #227D72;
+  --bs-btn-border-color: #227D72;
+  --bs-btn-hover-bg: #17534c;
+  --bs-btn-hover-border-color: #227D72;
+  --bs-btn-active-bg: #13433e;
+  --bs-btn-active-border-color: #227D72;
 }
 
 .bs-dropdown-link-active-bg {
-  background-color: #2A9D8F !important;
+  background-color: #227D72 !important;
 
 }
 
 .nav-pills .fake.active,
 .nav-pills .show>.fake {
   color: white !important;
-  background-color: #2A9D8F !important;
+  background-color: #227D72 !important;
 }
 
 .fake:hover {
-  color: #2A9D8F !important;
+  color: #227D72 !important;
 }
 
 .fake {
-  color: #2A9D8F !important;
+  color: #227D72 !important;
 }
 
 :root {
-  --bs-dropdown-link-active-bg: #2A9D8F !important;
+  --bs-dropdown-link-active-bg: #227D72 !important;
   ;
 }
 
@@ -189,11 +189,11 @@ body {
 
 
 .breadcrumb-item a {
-  color: #2A9D8F;
+  color: #227D72;
 }
 
 .nextLink a {
-  color: #2A9D8F;
+  color: #227D72;
   font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
@@ -244,7 +244,7 @@ h2 {
 }
 
 hr {
-  border: 5px solid #2A9D8F;
+  border: 5px solid #227D72;
   opacity: 1;
 }
 
