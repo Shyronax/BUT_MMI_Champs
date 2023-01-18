@@ -215,7 +215,7 @@ function editTemoignage($id, $etudiant, $promo, $nom_temoignage, $contenu_temoig
 function editMatiere($id, $nom, $description)
 {
     $db = dbConnect();
-    $query = "UPDATE matiere SET nom_matiere=:nom_matiere description=:description WHERE id_matiere=:id_matiere";
+    $query = "UPDATE matiere SET nom_matiere=:nom_matiere, description=:description WHERE id_matiere=:id_matiere";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_matiere", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":description", $description, PDO::PARAM_STR);
