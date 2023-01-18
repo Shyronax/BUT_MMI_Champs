@@ -145,9 +145,76 @@
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
 </div>
 </form>';
-        }
+}
+}
+    if (isset($_SESSION['admin'])) {
+        if ($_SESSION['admin'] == 1) {  
+    echo '<table class="table table-border">';
+    foreach (getProfs() as $prof) {
+        echo "
+        <tr>
+            <th>{$prof['nom_prof']}</th><th><a href='edit_user.php?{$prof['id_prof']}'>Modifier</a></th><th><a href='remove_user.php?{$prof['id_prof']}'>Supprimer</a></th>
+        </tr>";
     }
-    ?>
+    echo '</table>';
+    }
+}
+    if (isset($_SESSION['admin'])) {
+        if ($_SESSION['admin'] == 1) {  
+    echo '<table class="table table-border">';
+    foreach (getMatieres() as $matiere) {
+        echo "
+        <tr>
+            <th>{$matiere['nom_matiere']}</th><th><a href='edit_matiere.php?{$matiere['id_matiere']}'>Modifier</a></th><th><a href='remove_matiere.php?{$matiere['id_matiere']}'>Supprimer</a></th>
+        </tr>";
+    }
+    echo '</table>';
+    }
+}
+    if (isset($_SESSION['projets'])) {
+        if ($_SESSION['projets'] == 1) {  
+    echo '<table class="table table-border">';
+    foreach (getProjets() as $projet) {
+        echo "
+        <tr>
+            <th>{$projet['nom_projet']}</th><th>{$projet['description']}</th><th><a href='edit_projet.php?{$projet['id_projet']}'>Modifier</a></th><th><a href='remove_projet.php?{$projet['id_projet']}'>Supprimer</a></th>
+        </tr>";
+    }
+    echo '</table>';
+    }
+}
+    if (isset($_SESSION['temoignages'])) {
+        if ($_SESSION['temoignages'] == 1) {  
+    echo '<table class="table table-border">';
+    foreach (getTemoignages() as $temoignage) {
+        echo "
+        <tr>
+            <th>{$temoignage['nom_temoignage']}</th><th>{$temoignage['contenu_temoignage']}</th><th><a href='edit_temoignage.php?{$temoignage['id_temoignage']}'>Modifier</a></th><th><a href='remove_temoignage.php?{$temoignage['id_temoignage']}'>Supprimer</a></th>
+        </tr>";
+    }
+    echo '</table>';
+    }
+}
+    if (isset($_SESSION['articles'])) {
+        if ($_SESSION['articles'] == 1) {  
+    echo '<table class="table table-border">';
+    foreach (getArticles() as $article) {
+        echo "
+        <tr>
+            <th>{$article['nom_article']}</th><th>{$article['contenu_article']}</th><th><a href='edit_article.php?{$article['id_article']}'>Modifier</a></th><th><a href='remove_article.php?{$article['id_article']}'>Supprimer</a></th>
+        </tr>";
+    }
+    echo '</table>';
+    }
+}
+
+
+
+
+
+
+
+?>
 </body>
 
 </html>
