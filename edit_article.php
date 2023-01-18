@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php incude('head.php'); ?>
+    <?php include('head.php'); ?>
     <title>Modifications - Article</title>
 </head>
 <?php 
