@@ -12,7 +12,7 @@
     <?php include 'menu.php'; ?>
     <main class='mb-5 container h-100 '>
         <div class="container vh100">
-            <div data-aos="fade-down" data-aos-offset="500" class="row h-100 justify-content-center align-items-center">
+            <div data-aos="fade-down" data-aos-offset="300" class="row h-100 justify-content-center align-items-center">
 
                 <div class="col-12 col-lg-7">
 
@@ -34,7 +34,7 @@
         <div class="container vh75 p-0 mb-5 position-relative">
 
 
-            <div data-aos="fade-right" data-aos-offset="500" class="row ps-3">
+            <div data-aos="fade-right" data-aos-offset="300" class="row ps-3">
                 <div class="col-12 col-lg-6"><img class="img-fluid h-100 w-100" src="src/img/accueil/iut-mmi.png" alt=""></div>
                 <div class="col">
                     <div class="row h-100 justify-content-center align-items-center">
@@ -47,24 +47,16 @@
 
         </div>
         </div>
-        <div data-aos="fade-left" data-aos-offset="500" class="container vh75 mb-4">
+        <div data-aos="fade-left" data-aos-offset="300" class="container mb-4">
             <h2 class="mb-3 display-5">MMI en bref :</h2>
             <div class="row row-cols-1 row-cols-md-3 ">
-                <div class="col ">
-                    <div class="card h-100">
-                        <div class="card-body ">
-                            <h3 class="card-title display-6">Formation en 3 ans</h3>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col ">
                     <div class="card h-100">
                         <div class="card-body">
                             <h3 class="card-title display-6">Formation pluridisciplinaire</h3>
-                            <p class="card-text">La formation MMI couvre tous les champs du digital, offrant ainsi une expertise globale sur les métiers du multimédia et de l'Internet...</p>
-                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
+                            <p class="card-text">La formation MMI offre une expertise globale sur les métiers du multimédia et de l'Internet.</p>
+                            <a href="/presentation" class="btn btn-primary w-50">En savoir plus sur la formation.</a>
                         </div>
                     </div>
                 </div>
@@ -73,8 +65,17 @@
                     <div class="card h-100">
                         <div class="card-body ">
                             <h3 class="card-title display-6">Stage/Alternance</h3>
-                            <p class="card-text">MMI est une formation profesionalisante, c'est pourquoi l'étudiant est confronté au mond du travail dès la fin de la première année...</p>
-                            <a href="#" class="btn btn-primary w-50">En savoir plus</a>
+                            <p class="card-text">MMI est une formation profesionalisante, c'est pourquoi l'étudiant est confronté au mond du travail dès la fin de la première année.</p>
+                            <a href="/stage-alternance" class="btn btn-primary w-50">En savoir plus sur l'alternance</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card h-100">
+                        <div class="card-body ">
+                            <h3 class="card-title display-6">Après MMI</h3>
+                            <p class="card-text">La formation peut mener à de nombreuses branches différentes, différentes poursuites d'études, différents métiers.</p>
+                            <a href="#" class="btn btn-primary w-50">En savoir plus sur les débouchés.</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
             </div>
 
         </div>
-        <div data-aos="fade-left" data-aos-offset="500" class="container d-flex flex-column  justify-content-center vh75 mb-4">
+        <div data-aos="fade-left" data-aos-offset="300" class="container d-flex flex-column  justify-content-center vh75 mb-4">
             <h3 class="mb-3 display-6">MMI en chiffres</h3>
             <div class="p-3 mb-2  rounded">
                 <div class="display-4 d-flex flex-column flex-lg-row  justify-content-lg-between">
@@ -118,7 +119,7 @@
             </div>
 
         </div>
-        <div data-aos="fade-right" data-aos-offset="500" class="container mb-4  ">
+        <div data-aos="fade-right" data-aos-offset="300" class="container mb-4  ">
             <h3 class="mb-3 display-6">Projets étudiants :</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                 <?php
@@ -145,7 +146,7 @@
         </div>
 
         </div>
-        <div data-aos="fade-left" data-aos-offset="500" class="container vh100 d-flex flex-column  justify-content-center ">
+        <div data-aos="fade-left" data-aos-offset="300" class="container vh100 d-flex flex-column  justify-content-center ">
             <h3 class="mb-3 display-6">Témoignages d'étudiants</h3>
 
             <div class="row row-cols-1 row-cols-md-3 g-5">
@@ -173,7 +174,7 @@
             </div>
 
         </div>
-        <div data-aos="fade-right" data-aos-offset="500" class="container  flex-column  justify-content-center ">
+        <div data-aos="fade-right" data-aos-offset="300" class="container  flex-column  justify-content-center ">
             <h3 class="mb-3 display-6">Actualités MMI</h3>
 
             <?php $result = getArticles();
