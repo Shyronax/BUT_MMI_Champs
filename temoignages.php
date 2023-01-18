@@ -1,4 +1,4 @@
-<?php include './model.php'?>
+<?php include './model.php' ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -68,7 +68,7 @@
                 $x++;
             }
             ?>
-            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="actu">Voir l'actualité ></a></div>
+            <div class="nextLink d-flex justify-content-center m-5 p-5"><a href="actus">Voir l'actualité ></a></div>
         </main>
     </div>
     <?php include 'footer.php' ?>

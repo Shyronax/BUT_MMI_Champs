@@ -32,16 +32,15 @@ function login($login, $pass)
     }
 }
 
-function addUser($name, $login, $pass, $mail, $bio, $art=null, $proj=null, $tem=null)
+function addUser($name, $login, $pass, $bio, $art=null, $proj=null, $tem=null)
 {
     $hash = crypt($pass, '$2a$07$usesomesillystringforsalt$');
     $db = dbConnect();
-    $query = "INSERT INTO utilisateur (nom_prof, login, mdp, mail, bio, p_articles, p_projets, p_temoignages) VALUES (:nom_prof, :login, :mdp, :mail, :bio, :p_articles, :p_projets, :p_temoignages)";
+    $query = "INSERT INTO utilisateur (nom_prof, login, mdp, bio, p_articles, p_projets, p_temoignages) VALUES (:nom_prof, :login, :mdp, :bio, :p_articles, :p_projets, :p_temoignages)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_prof", $name, PDO::PARAM_STR);
     $stmt->bindValue(":login", $login, PDO::PARAM_STR);
     $stmt->bindValue(":mdp", $hash, PDO::PARAM_STR);
-    $stmt->bindValue(":mail", $mail, PDO::PARAM_STR);
     $stmt->bindValue(":bio", $bio, PDO::PARAM_STR);
     $stmt->bindValue(":p_articles", $art, PDO::PARAM_INT);
     $stmt->bindValue(":p_projets", $proj, PDO::PARAM_INT);
@@ -80,35 +79,28 @@ function addLien($mat1 = null, $mat2 = null, $mat3 = null, $nom)
 }
 
 
-function addArticle($nom, $contenu, $synopsis, $miniature)
+function addArticle($nom, $contenu)
 {
     $db = dbConnect();
-    $target_dir = 'src/img/article/';
-    $target_file = $target_dir . basename($miniature);
-    move_uploaded_file($miniature, $target_file);
-    $query = "INSERT INTO article (nom_article, contenu_article, date_article, synopsis, miniature_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :synopsis, :miniature_article, :auteur)";
+    $query = "INSERT INTO article (nom_article, contenu_article, date_article, auteur) VALUES (:nom_article, :contenu_article, NOW(), :auteur)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_article", $nom, PDO::PARAM_STR);
     $stmt->bindValue(":contenu_article", $contenu, PDO::PARAM_STR);
-    $stmt->bindValue(":synopsis", $synopsis, PDO::PARAM_STR);
-    $stmt->bindValue(":miniature_article", $target_file, PDO::PARAM_STR);
     $stmt->bindValue(":auteur", $_SESSION['name'], PDO::PARAM_STR);
     $stmt->execute();
 }
 
-function addProjet($nom_projet, $etudiants, $date_projet, $niveau, $iframe_projet, $lien, $image_projet, $description)
+function addProjet($nom_projet, $etudiants, $niveau, $lien, $image_projet, $description)
 {
     $db = dbConnect();
     $target_dir = 'src/img/projet/';
     $target_file = $target_dir . basename($image_projet);
     move_uploaded_file($image_projet, $target_file);
-    $query = "INSERT INTO projet (nom_projet, etudiants, date_projet, niveau, iframe_projet, lien, img_projet, description) VALUES (:nom_projet, :etudiants, :date_projet, :niveau, :iframe_projet, :lien, :img_projet, :description)";
+    $query = "INSERT INTO projet (nom_projet, etudiants, niveau, lien, img_projet, description) VALUES (:nom_projet, :etudiants, :niveau, :lien, :img_projet, :description)";
     $stmt = $db->prepare($query);
     $stmt->bindValue(":nom_projet", $nom_projet, PDO::PARAM_STR);
     $stmt->bindValue(":etudiants", $etudiants, PDO::PARAM_STR);
-    $stmt->bindValue(":date_projet", $date_projet, PDO::PARAM_STR);
     $stmt->bindValue(":niveau", $niveau, PDO::PARAM_STR);
-    $stmt->bindValue(":iframe_projet", $iframe_projet, PDO::PARAM_STR);
     $stmt->bindValue(":lien", $lien, PDO::PARAM_STR);
     $stmt->bindValue(":img_projet", $target_file, PDO::PARAM_STR);
     $stmt->bindValue(":description", $description, PDO::PARAM_STR);
@@ -242,7 +234,7 @@ function rmUser($id)
 {
     if ($_SESSION['admin'] == 1) {
         $db = dbConnect();
-        $query = "DELETE FROM prof WHERE id_prof = :id_prof";
+        $query = "DELETE FROM prof, lien_matiere WHERE :id_prof IN (id_prof, ext_prof)";
         $stmt = $db->prepare($query);
         $stmt->bindValue(":id_prof", $id, PDO::PARAM_INT);
         $stmt->execute();
@@ -252,36 +244,52 @@ function rmUser($id)
 }
 function rmMatiere($id)
 {
-    $db = dbConnect();
-    $query = "DELETE FROM matiere WHERE id_matiere = :id_matiere";
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(":id_matiere", $id, PDO::PARAM_INT);
-    $stmt->execute();
+    if ($_SESSION['admin'] == 1) {
+        $db = dbConnect();
+        $query = "DELETE FROM matiere, lien_matiere WHERE :id_matiere IN (id_matiere, ext_matiere)";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":id_matiere", $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } else {
+        return false;
+    }
 }
 function rmProjet($id)
 {
-    $db = dbConnect();
-    $query = "DELETE FROM projet WHERE id_projet = :id_projet";
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(":id_projet", $id, PDO::PARAM_INT);
-    $stmt->execute();
+    if ($_SESSION['projets'] == 1) {
+        $db = dbConnect();
+        $query = "DELETE FROM projet WHERE id_projet = :id_projet";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":id_projet", $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } else {
+        return false;
+    }
 }
 function rmTemoignage($id)
 {
-    $db = dbConnect();
-    $query = "DELETE FROM temoignage WHERE id_temoignage = :id_temoignage";
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(":id_temoignage", $id, PDO::PARAM_INT);
-    $stmt->execute();
+    if ($_SESSION['temoignages'] == 1) {
+        $db = dbConnect();
+        $query = "DELETE FROM temoignage WHERE id_temoignage = :id_temoignage";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":id_temoignage", $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } else {
+        return false;
+    }
 }
 function rmArticle($id)
 {
-    $db = dbConnect();
-    $query = "DELETE FROM article WHERE id_article = :id_article";
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(":id_article", $id, PDO::PARAM_INT);
-    $stmt->execute();
-}
+    if ($_SESSION['articles'] == 1) {
+        $db = dbConnect();
+        $query = "DELETE FROM article WHERE id_article = :id_article";
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(":id_article", $id, PDO::PARAM_INT);
+        $stmt->execute();
+    } else {
+        return false;
+    }
+    }
 
 function logout()
 {
