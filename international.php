@@ -31,11 +31,11 @@
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h2 class='display-6 '>The programme</h2>
                         <p>The Multimedia and Internet Professions Techincal Bachelor (BUT MMI) is a 3-year programme that aims to develop multidisciplinary skills to train for multimedia jobs.
-                        This course is given in Champs sur Marne near Paris.
-                        Combining theory and practice, the course offers to develop skills in programming, graphics and communication. 
-                        The course lasts offers 2600 hours of teaching over its duration.  During the second year, students can choose to focus on digital creation or web development.
+                            This course is given in Champs sur Marne near Paris.
+                            Combining theory and practice, the course offers to develop skills in programming, graphics and communication.
+                            The course lasts offers 2600 hours of teaching over its duration. During the second year, students can choose to focus on digital creation or web development.
                         </p>
-                        <a href="https://www.univ-gustave-eiffel.fr/en/international/international-students" class="link">Find out more about the admission requirements here</a> 
+                        <a href="https://www.univ-gustave-eiffel.fr/en/international/international-students" class="nextLink">Find out more about the admission requirements here</a>
                     </div>
                     <div class="col-12 col-lg-5">
                         <img class="img-fluid" src="src/img/illustration/mmi-formation.webp" alt="">
@@ -45,20 +45,20 @@
 
             <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                 <div class="row">
-                <div class="col-12 col-lg-5">
+                    <div class="col-12 col-lg-5">
                         <img class="img-fluid" src="src/img/illustration/mmi-international.webp" alt="">
                     </div>
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h2 class='display-6 '>Partnerships</h2>
-                        <p>During the fourth semester of the second year, the programme offers some students the opportunity to go to Canada. 
-                        For the digital creation course, students can study at the UQAC university in Chicoutimi. 
-                        As for students following the web development course, the university offers to study at the Cégep de Sainte-Foy in Quebec.
+                        <p>During the fourth semester of the second year, the programme offers some students the opportunity to go to Canada.
+                            For the digital creation course, students can study at the UQAC university in Chicoutimi.
+                            As for students following the web development course, the university offers to study at the Cégep de Sainte-Foy in Quebec.
                         </p>
                     </div>
                 </div>
             </div>
         </main>
-</div>
+    </div>
     <?php include 'footer.php' ?>
 </body>
 
