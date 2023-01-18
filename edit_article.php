@@ -16,7 +16,7 @@ $article = getArticle($_GET['id']);
     <input class="form-control" required type="text" name="titre" id="" value="<?php echo(($article['nom_article'])); ?>">
     <label class="form-label" for="contenu">Contenu*</label>
     <textarea required name="contenu" id="" cols="30" rows="10"><?php echo(($article['contenu_article'])); ?></textarea>
-    <input type="text" name="id" id="" value="<?php echo($_GET['id']) ?>" style="display: none;">
+    <input type="checkbox" name="id" id="" value=<?php echo($_GET['id']) ?> style="display: none;">
     <input class="btn btn-primary my-4" type="submit" value="Envoyer">
 </div>
 </form>
