@@ -150,7 +150,7 @@
                     echo "<div class='col'>
                         <div class='card h-100'>
                             <div class='card-body'>
-                                <h4 class='card-title'>Témoignage</h4>
+
                                 <blockquote class='blockquote mb-0'>
                                     <p>" . substr($row['contenu_temoignage'], 0, 150) . " ...</p>
                                     <footer class='blockquote-footer'>" . $row['etudiant'] . " <cite title='Source Title'>" . $row['promo'] . "</cite></footer>
