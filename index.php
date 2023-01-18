@@ -31,11 +31,11 @@
 
 
         </div>
-        
+
         </div>
         <div data-aos="fade-left" data-aos-offset="300" class="container mb-4">
             <h2 class="mb-3 display-5">MMI en bref :</h2>
-             <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5 mt-5">
+            <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5 mt-5">
                 <div class="row">
                     <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
                         <h3 class='display-6 '>La formation MMI</h3>
@@ -79,46 +79,46 @@
                         </div>
                     </div>
                 </div>
-        </div>
-        
-        <div data-aos="fade-left" data-aos-offset="300" class="container d-flex flex-column  justify-content-center vh75 mb-4">
-            <h3 class="mb-3 display-6">MMI en chiffres</h3>
-            <div class="p-3 mb-2  rounded">
-                <div class="display-4 d-flex flex-column flex-lg-row  justify-content-lg-between">
-                    <div class="d-flex flex-row flex-lg-column">
-                        <p class='text-lg-center me-2 me-lg-0'> 28 </p>
-                        <p class="display-6">ans d'existence</p>
-                    </div>
-
-
-                    <div class="d-flex flex-row flex-lg-column">
-
-                        <p class='text-lg-center me-2 me-lg-0'> 1600 </p>
-                        <p class="display-6">Diplômés</p>
-                    </div>
-
-
-                    <div class="d-flex flex-row flex-lg-column">
-                        <p class='text-lg-center me-2 me-lg-0'> 2500 </p>
-                        <p class="display-6">Candidats par an</p>
-                    </div>
-                    <div class="d-flex flex-row flex-lg-column">
-                        <p class='text-lg-center me-2 me-lg-0'> 56 </p>
-                        <p class="display-6">Places</p>
-                    </div>
-
-                </div>
             </div>
 
-        </div>
-        <div data-aos="fade-right" data-aos-offset="300" class="container mb-4  ">
-            <h3 class="mb-3 display-6">Projets étudiants :</h3>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-                <?php
-                $result = getProjets();
-                for ($i = 0; $i < 3; $i++) {
-                    $row = $result[$i];
-                    echo "
+            <div data-aos="fade-left" data-aos-offset="300" class="container d-flex flex-column  justify-content-center vh75 mb-4">
+                <h3 class="mb-3 display-6">MMI en chiffres</h3>
+                <div class="p-3 mb-2  rounded">
+                    <div class="display-4 d-flex flex-column flex-lg-row  justify-content-lg-between">
+                        <div class="d-flex flex-row flex-lg-column">
+                            <p class='text-lg-center me-2 me-lg-0'> 28 </p>
+                            <p class="display-6">ans d'existence</p>
+                        </div>
+
+
+                        <div class="d-flex flex-row flex-lg-column">
+
+                            <p class='text-lg-center me-2 me-lg-0'> 1600 </p>
+                            <p class="display-6">Diplômés</p>
+                        </div>
+
+
+                        <div class="d-flex flex-row flex-lg-column">
+                            <p class='text-lg-center me-2 me-lg-0'> 2500 </p>
+                            <p class="display-6">Candidats par an</p>
+                        </div>
+                        <div class="d-flex flex-row flex-lg-column">
+                            <p class='text-lg-center me-2 me-lg-0'> 56 </p>
+                            <p class="display-6">Places</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-aos="fade-right" data-aos-offset="300" class="container mb-4  ">
+                <h3 class="mb-3 display-6">Projets étudiants :</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                    <?php
+                    $result = getProjets();
+                    for ($i = 0; $i < 3; $i++) {
+                        $row = $result[$i];
+                        echo "
                     <div class='col'>
                         <div class='card h-100'>
                             <img src='" . $row['img_projet'] . "' class='card-img-top' alt='...'>
@@ -127,16 +127,16 @@
                             </div>
                         </div>
                     </div>";
-                }
-                ?>
+                    }
+                    ?>
+
+                </div>
+
 
             </div>
-
-
-        </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a class="btn btn-primary me-md-2" href="/projets">Voir les projets</a>
-        </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a class="btn btn-primary me-md-2" href="/projets">Voir les projets</a>
+            </div>
 
         </div>
         <div data-aos="fade-left" data-aos-offset="300" class="container vh100 d-flex flex-column  justify-content-center ">
@@ -193,7 +193,7 @@
                 <a class="btn btn-primary me-md-2" href="/actus">Voir les actualités</a>
             </div>
         </div>
-       
+
 
     </main>
     <?php include 'footer.php' ?>
