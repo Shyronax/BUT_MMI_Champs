@@ -6,9 +6,10 @@
     <title>Back-Office MMI Champs</title>
 </head>
 <body>
-    
+    <h1>Back-office</h1>
 <form action="register_prof.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+    <h2>Ajouter un prof</h2>
     <label class='form-label' for="nom">Prénom et NOM*</label>
     <input class='form-control' required type="text" name="nom">
     <label class='form-label' for="username">Nom d'utilisateur* (utilisé uniquement pour la connexion)</label>
@@ -64,6 +65,7 @@
 
 <form action="register_projet.php" method="post" enctype="multipart/form-data">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+    <h2>Ajouter un projet</h2>
     <label class='form-label' for="nom">Nom*</label>
     <input class='form-control' type="text" name="nom" id="">
     <label class='form-label' for="niveau">Niveau*</label>
@@ -90,6 +92,7 @@
     
 <form action="register_temoignage.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+    <h2>Ajouter un témoignage</h2>
     <label class='form-label' for="titre">Titre*</label>
     <input class='form-control' type="text" name="titre" id="">
     <label class='form-label' for="contenu">Contenu du témoignage*</label>
@@ -104,6 +107,7 @@
     
 <form action="register_article.php" method="post" enctype="multipart/form-data">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+    <h2>Ajouter un article</h2>
     <label class='form-label' for="titre">Titre*</label>
     <input class='form-control' required type="text" name="titre" id="">
     <label class='form-label' for="synopsis">Résumé ou accroche*</label>
@@ -118,6 +122,7 @@
     
 <form action="register_matiere.php" method="post">
 <div class="mb-3 container d-flex flex-column justify-content-center align-items-center">
+    <h2>Ajouter une matière</h2>
     <label class='form-label' for="nom">Nom*</label>
     <input class='form-control' type="text" name="nom" id="">
     <label class='form-label' for="description">Description*</label>
