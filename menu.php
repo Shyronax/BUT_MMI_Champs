@@ -23,7 +23,6 @@
                     <li><a class="dropdown-item" href="enseignants">L'équipe enseignante</a></li>
                     <li><a class="dropdown-item" href="stage-alternance">Stages & Alternance</a></li>
                     <li><a class="dropdown-item" href="debouches">Après MMI</a></li>
-                    <li><a class="dropdown-item" href="international">À l'nternational</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -39,6 +38,9 @@
             <li class="nav-item">
                 <a class="nav-link " href="actus">Actualités</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="international">À l'nternational</a>
+            </li>
             <li>
                 <label class="switch h-100 d-flex flex-column justify-content-center ms-3">
                     <input type="checkbox" id='switch-theme'>
@@ -47,6 +49,7 @@
                     <span class="slider round"></span>
                 </label>
             </li>
+            
         </ul>
         </li>
 
