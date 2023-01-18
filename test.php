@@ -1,1 +1,1 @@
-<?php echo(password_hash('toto01', PASSWORD_BCRYPT));?>
+<?php echo(crypt('toto01', '$2a$07$usesomesillystringforsalt$'));?>
