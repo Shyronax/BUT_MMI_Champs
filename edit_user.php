@@ -24,7 +24,7 @@ $prof = getProf($_GET['id']);
 
             <?php
             foreach (getMatieres() as $matiere) {
-                echo "<option value=" . $matiere['id_matiere'] . ">{$matiere['nom_matiere']}</option>";
+                echo "<option value=" . $matiere['id_matiere'] . "required>{$matiere['nom_matiere']}</option>";
             }
 
             echo '</select> <br>
@@ -33,7 +33,7 @@ $prof = getProf($_GET['id']);
             <option value="">---</option>';
 
             foreach (getMatieres() as $matiere) {
-                echo "<option value=" . $matiere['id_matiere'] . ">{$matiere['nom_matiere']}</option>";
+                echo "<option value=" . $matiere['id_matiere'] . " >{$matiere['nom_matiere']}</option>";
             }
 
             echo '</select><br>
