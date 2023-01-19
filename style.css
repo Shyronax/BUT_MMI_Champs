@@ -8,6 +8,10 @@ nav input[type=checkbox] {
   display: none;
 }
 
+body {
+  overflow: hidden !important;
+}
+
 
 
 .visually-hidden {
