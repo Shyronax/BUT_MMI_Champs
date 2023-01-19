@@ -58,7 +58,7 @@
                             <div class="col-12 col-lg-9 d-flex flex-column justify-content-center bg-body-secondary p-5 rounded-5">
                                 <p><?php echo $temoignage['contenu_temoignage']; ?>
                                 </p>
-                                <p><?php echo $temoignage['etudiant']; ?>, PROMO <?php echo $temoignage['promo']; ?></b></p>
+                                <p><b><?php echo $temoignage['etudiant']; ?>, PROMO <?php echo $temoignage['promo']; ?></b></p>
                             </div>
                         </div>
                     </div>
