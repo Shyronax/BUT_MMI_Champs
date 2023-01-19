@@ -187,7 +187,7 @@
             echo '</table></div>';
         }
     } else {
-        echo '<p>Vous ne pouvez pas modifier ou supprimer cette catégorie. Pour cela adressez-vous à l\'administrateur pour qu\'il vous donne accès.</p>';
+        echo '<p class="text-center">Vous ne pouvez pas modifier ou supprimer cette catégorie. Pour cela adressez-vous à l\'administrateur pour qu\'il vous donne accès.</p>';
     }
     echo '<div class="w-75 m-auto"><h2 class="mt-5 mb-2 text-center">Les témoignages</h2>';
     if (isset($_SESSION['temoignages'])) {
@@ -202,7 +202,7 @@
             echo '</table></div>';
         }
     } else {
-        echo '<p>Vous ne pouvez pas modifier ou supprimer cette catégorie. Pour cela adressez-vous à l\'administrateur pour qu\'il vous donne accès.</p>';
+        echo '<p class="text-center">Vous ne pouvez pas modifier ou supprimer cette catégorie. Pour cela adressez-vous à l\'administrateur pour qu\'il vous donne accès.</p>';
     }
     echo '<div class="w-75 m-auto"><h2 class="mt-5 mb-2 text-center">Les articles</h2>';
     if (isset($_SESSION['articles'])) {
@@ -217,7 +217,7 @@
             echo '</table></div>';
         }
     } else {
-        echo '<p>Vous ne pouvez pas modifier ou supprimer cette catégorie. Pour cela adressez-vous à l\'administrateur pour qu\'il vous donne accès.</p>';
+        echo '<p class="text-center">Vous ne pouvez pas modifier ou supprimer cette catégorie. Pour cela adressez-vous à l\'administrateur pour qu\'il vous donne accès.</p>';
     }
 
 
