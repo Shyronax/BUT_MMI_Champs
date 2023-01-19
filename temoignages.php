@@ -35,7 +35,7 @@
             foreach ($result as $temoignage) {
                 $x = $x % 2;
                 if ($x == 1) { ?>
-                    <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
+                    <div data-aos="fade-left" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                         <div class="row gap-5">
                             <div class="col-12 col-lg-9 d-flex flex-column justify-content-center bg-body-secondary p-5 rounded-5">
                                 <p><?php echo $temoignage['contenu_temoignage']; ?>
@@ -50,7 +50,7 @@
                 <?php
                 }
                 if ($x == 0) { ?>
-                    <div data-aos="fade-left" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
+                    <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                         <div class="row gap-5">
                             <div class="col-12 col-lg-2 d-flex flex-column justify-content-center">
                                 <img class="img-fluid photoTemoignage" src="src/img/temoignage/profil<?php echo $temoignage['id_temoignage']; ?>.png" alt="">
