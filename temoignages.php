@@ -34,7 +34,7 @@
             $result = getTemoignages();
             foreach ($result as $temoignage) {
                 $x = $x % 2;
-                if ($x == 1) { ?>
+                if ($x == 0) { ?>
                     <div data-aos="fade-right" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                         <div class="row gap-5">
                             <div class="col-12 col-lg-9 d-flex flex-column justify-content-center bg-body-secondary p-5 rounded-5">
@@ -49,7 +49,7 @@
                     </div>
                 <?php
                 }
-                if ($x == 0) { ?>
+                if ($x == 1) { ?>
                     <div data-aos="fade-left" data-aos-offset="200" class="container d-flex flex-column align-items-center  justify-content-center mb-5">
                         <div class="row gap-5">
                             <div class="col-12 col-lg-2 d-flex flex-column justify-content-center">
