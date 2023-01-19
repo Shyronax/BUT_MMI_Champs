@@ -147,8 +147,9 @@
 </form>';
         }
     }
-    echo '<div class="w-75 m-auto"><h2 class="mt-5 mb-2 text-center">Les professeurs</h2>';
+
     if (isset($_SESSION['admin'])) {
+        echo '<div class="w-75 m-auto"><h2 class="mt-5 mb-2 text-center">Les professeurs</h2>';
         if ($_SESSION['admin'] == 1) {
             echo '<table class="table table-bordered table-striped px-5 ">';
             foreach (getProfs() as $prof) {
@@ -160,8 +161,8 @@
             echo '</table></div>';
         }
     }
-    echo '<div class="w-75 m-auto"><h2 class="mt-5 mb-2 text-center">Les matières</h2>';
     if (isset($_SESSION['admin'])) {
+        echo '<div class="w-75 m-auto"><h2 class="mt-5 mb-2 text-center">Les matières</h2>';
         if ($_SESSION['admin'] == 1) {
             echo '<table class="table table-bordered table-striped px-5 ">';
             foreach (getMatieres() as $matiere) {
@@ -185,6 +186,8 @@
             }
             echo '</table></div>';
         }
+    } else {
+        echo '<p>Vous ne pouvez pas modifier ou supprimer cette catégorie. Pour cela adressez-vous à l\'administrateur pour qu\'il vous donne accès.</p>'
     }
     echo '<div class="w-75 m-auto"><h2 class="mt-5 mb-2 text-center">Les témoignages</h2>';
     if (isset($_SESSION['temoignages'])) {
@@ -198,6 +201,8 @@
             }
             echo '</table></div>';
         }
+    } else {
+        echo '<p>Vous ne pouvez pas modifier ou supprimer cette catégorie. Pour cela adressez-vous à l\'administrateur pour qu\'il vous donne accès.</p>'
     }
     echo '<div class="w-75 m-auto"><h2 class="mt-5 mb-2 text-center">Les articles</h2>';
     if (isset($_SESSION['articles'])) {
@@ -211,6 +216,8 @@
             }
             echo '</table></div>';
         }
+    } else {
+        echo '<p>Vous ne pouvez pas modifier ou supprimer cette catégorie. Pour cela adressez-vous à l\'administrateur pour qu\'il vous donne accès.</p>'
     }
 
 
