@@ -18,7 +18,7 @@ $prof = getProf($_GET['id']);
     <textarea name="bio" id="" cols="30" rows="10"><?php echo(htmlspecialchars($prof['bio'])); ?></textarea>
     <fieldset>
         <legend>Matières enseignées</legend>
-        <label class="form-label" for="matiere_1">Matière 1</label>
+        <label class="form-label" for="matiere_1">Matière 1*</label>
         <select name="matiere_1" id=""  required>
             <option value="">---</option>
 
