@@ -35,7 +35,7 @@
                             Combining theory and practice, the course offers to develop skills in programming, graphics and communication.
                             The course lasts offers 2600 hours of teaching over its duration. During the second year, students can choose to focus on digital creation or web development.
                         </p>
-                        <a href="https://www.univ-gustave-eiffel.fr/en/international/international-students" class="nextLink">Find out more about the admission requirements here</a>
+                        <a href="https://www.univ-gustave-eiffel.fr/en/international/international-students" class="link">Find out more about the admission requirements here</a>
                     </div>
                     <div class="col-12 col-lg-5">
                         <img class="img-fluid" src="src/img/illustration/mmi-formation.webp" alt="">
