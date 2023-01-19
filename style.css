@@ -130,6 +130,7 @@ nav input[type=checkbox] {
 
 .link {
   color: #17534c;
+  font-weight: 600;
 }
 
 /* [data-bs-theme="light"] {
